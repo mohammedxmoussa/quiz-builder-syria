@@ -18,15 +18,21 @@ without re-generating the JSON.
 | `minimal` | بسيط | Clean, light layout: thin rules, no heavy frame, lots of white space, two columns. | The teacher wants a modern, simple, ink-saving print. |
 | `ministerial` | وزاري | Official Syrian ministerial style: formal Arabic header block (exam title, branch, session), boxed two-column body. | The exam should mimic official Syrian ministry exams for Arabic subjects. |
 | `english` | الإنكليزي الوزاري | Syrian baccalaureate **English** exam style: Arabic RTL header frame (subject, teacher, name/number, duration, total grade /300), a star medallion showing the model number, then an **LTR English** body in a serif font inside a bordered two-column grid. Sections are numbered with Roman numerals (I, II, III…), each section heading is underlined and shows the section's total as `(N marks)`, question numbering is continuous across sections, and the paper ends with "END OF EXAM / انتهت الأسئلة". | The subject is **English** (اللغة الإنكليزية), especially Syrian secondary/baccalaureate English exams. For English exams prefer this template. |
-| `science` | العلوم (نموذج شامل) | Syrian comprehensive science-model style (نماذج امتحانية شاملة): **single column**, running header band, shaded title plaque with the model number, section headings «السؤال الأول: …» with numbering restarting per section, MCQ options laid out as a bordered 4-cell row (a/b/c/d), and smart placement for diagrams (wide figures full width, tall figures beside the text). | The subject is a science (العلوم، الأحياء، الفيزياء، الكيمياء…), especially Syrian baccalaureate-style comprehensive models with diagrams and grid-style MCQ. |
+| `science` | العلوم (نموذج شامل) | Syrian comprehensive science-model style (نماذج امتحانية شاملة): **single column**, the shared compact header (with the model number), section headings «السؤال الأول: …» with numbering restarting per section, MCQ options laid out as a bordered 4-cell row (a/b/c/d), and smart placement for diagrams (wide figures full width, tall figures beside the text). | The subject is a science (العلوم، الأحياء، الفيزياء، الكيمياء…), especially Syrian baccalaureate-style comprehensive models with diagrams and grid-style MCQ. |
 
 ## Compact variants (مضغوط) — one shared header
 
 Every template above also has a **compact variant**. All templates share ONE
-compact header component: exam title, one info line (subject / grade /
-duration / total marks, plus school and teacher **only when provided**), and a
-student line (الاسم / الرقم) with blanks to write in. Nothing is stacked above
-or below it.
+compact header component: a modest exam title line, the info fields arranged
+in tidy columns (subject / grade | duration / date / total marks | school and
+teacher **only when provided**), and a student line (الاسم / الرقم) with
+blanks to write in. Nothing is stacked above or below it. The printed paper
+is black & white only in every template.
+
+- **Good-luck line is optional.** A teacher may add a closing wish that
+  prints after «انتهت الأسئلة», e.g. «مع تمنياتي لكم بالتوفيق والنجاح» — put
+  it in `exam.goodLuck`, or the teacher can type it in the tool's UI, or skip
+  it (nothing prints).
 
 - **Teacher name is optional.** If the teacher never gave a name, the paper
   prints cleanly without any teacher line. The teacher can give their name in
