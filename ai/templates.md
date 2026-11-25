@@ -1,0 +1,39 @@
+# Exam Builder: Templates Guide (for AI assistants)
+
+This file is an **optional add-on** to the core guide at `quiz-creator-ai.md`.
+Fetch and read it **only** when the teacher asks about the exam's look, design,
+layout or template — or asks you to choose/suggest a template. For writing exam
+questions you do NOT need this file; the core guide is enough.
+
+You cannot change layout or styling through JSON. The only thing you can do is
+**suggest** one template by setting `exam.template` to one of the ids below.
+The teacher makes the final choice inside the tool and can change it any time
+without re-generating the JSON.
+
+## Available templates
+
+| id (use in `exam.template`) | Arabic name in the tool | What it looks like | Suggest it when |
+|---|---|---|---|
+| `classic` | كلاسيكي | Traditional framed paper: double border around the page, formal header with school/teacher fields, two columns. | The teacher wants a familiar, formal school exam look. This is the safe default for Arabic subjects. |
+| `minimal` | بسيط | Clean, light layout: thin rules, no heavy frame, lots of white space, two columns. | The teacher wants a modern, simple, ink-saving print. |
+| `ministerial` | وزاري | Official Syrian ministerial style: formal Arabic header block (exam title, branch, session), boxed two-column body. | The exam should mimic official Syrian ministry exams for Arabic subjects. |
+| `english` | الإنكليزي الوزاري | Syrian baccalaureate **English** exam style: Arabic RTL header frame (subject, teacher, name/number, duration, total grade /300), a star medallion showing the model number, then an **LTR English** body in a serif font inside a bordered two-column grid. Sections are numbered with Roman numerals (I, II, III…), each section heading is underlined and shows the section's total as `(N marks)`, question numbering is continuous across sections, and the paper ends with "END OF EXAM / انتهت الأسئلة". | The subject is **English** (اللغة الإنكليزية), especially Syrian secondary/baccalaureate English exams. For English exams prefer this template. |
+| `science` | العلوم (نموذج شامل) | Syrian comprehensive science-model style (نماذج امتحانية شاملة): **single column**, running header band, shaded title plaque with the model number, section headings «السؤال الأول: …» with numbering restarting per section, MCQ options laid out as a bordered 4-cell row (a/b/c/d), and smart placement for diagrams (wide figures full width, tall figures beside the text). | The subject is a science (العلوم، الأحياء، الفيزياء، الكيمياء…), especially Syrian baccalaureate-style comprehensive models with diagrams and grid-style MCQ. |
+
+## Notes for English exams (`english` template)
+
+- Write all question text, passages and options in English as usual; the tool
+  lays them out left-to-right automatically when this template is selected.
+- Section titles you write in `sections[].title` are shown after the Roman
+  numeral, so write them as the instruction itself, e.g.
+  `"Read the following text then do the tasks below:"` — do not add your own
+  numbering (no "I –", no "1.") inside the title.
+- The `(N marks)` shown in each section heading is the sum of that section's
+  question marks, computed by the tool — just make sure every question carries
+  its correct `marks`, and that they add up to `exam.totalMarks` (300 in the
+  official English baccalaureate model).
+- Typical English baccalaureate structure (for reference only — follow the
+  teacher's own plan): two reading texts with comprehension tasks, gap-fill
+  paragraph, word-list fill, dialogue completion, rewrite-as-required,
+  clause completion, choose-the-correct-word, verb correction, translation
+  (into Arabic and into English), and a composition (~50 marks).
