@@ -2539,7 +2539,18 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
        grid / matching / data tables, embedded images, and a continuous
        second section for the two-column body. Any single question that
        fails to convert degrades to clean plain text instead of failing
-       the whole export. */
+       the whole export.
+       LAYOUT PITFALL (fixed after a teacher report): the section-break
+       type must be set INSIDE each section's `properties` (see
+       wordSectProps). docx.js forwards only `properties` when building
+       a section, so a top-level `type` key on the section object is
+       silently dropped — the break then defaults to "next page", the
+       exam header sat alone on page 1, and the first question started
+       on page 2. The generated file also attaches no Word header or
+       footer to any section and overrides the library's blue default
+       theme styles (Heading 1–6 / Title / Hyperlink) with the exam's
+       own black styling, so nothing of Word's default page furniture
+       shows up when a teacher opens the file. */
     var WFONT = 'Traditional Arabic', WSIZE = 25, WRTL = true, WIMG = {};
     function dxLib(){ return (typeof window !== 'undefined' && window.docx) ? window.docx : null; }
     function wRunOpts(o){
@@ -2995,15 +3006,24 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
       }
       return out;
     }
-    function wordSectProps(cols){
+    function wordSectProps(cols, continuous){
       var mar = Math.round(state.margin * 56.7);
-      return {
+      var props = {
         page: {
           size: { width: 11906, height: 16838 },
           margin: { top: mar, right: mar, bottom: mar, left: mar, header: 0, footer: 0, gutter: 0 }
         },
         column: { count: cols, space: 567 }
       };
+      // The break type MUST live inside `properties` (docx.js drops a
+      // top-level `type` on the section object — see the note at the
+      // top of this section). "continuous" is set on BOTH sections:
+      // Word reads it from the break paragraph's sectPr, LibreOffice
+      // from the following section's sectPr; with both set, the exam
+      // header and the first question share page 1 in either renderer
+      // instead of the header being stranded on its own page.
+      if (continuous) props.type = dxLib().SectionType.CONTINUOUS;
+      return props;
     }
     function buildDocxBlob(dq){
       var DX = dxLib();
@@ -3023,15 +3043,29 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
         var bodyBlocks = wordBodyBlocks(dq, tpl).concat(wordEndingBlocks(dq, tpl));
         WRTL = true; WFONT = 'Traditional Arabic';
         sections = [
-          { properties: wordSectProps(1), children: headBlocks },
-          { type: DX.SectionType.CONTINUOUS, properties: wordSectProps((tpl.id === 'science' || tpl.id === 'automated') ? 1 : state.columns), children: bodyBlocks }
+          { properties: wordSectProps(1, true), children: headBlocks },
+          { properties: wordSectProps((tpl.id === 'science' || tpl.id === 'automated') ? 1 : state.columns, true), children: bodyBlocks }
         ];
       }
+      // Neutralise the docx library's built-in Word theme styles —
+      // blue Heading 1–6 (2E74B5 / 1F4D78), a 28pt Title and a blue
+      // underlined Hyperlink — so the downloaded file carries only the
+      // exam's own black styling and no default Word page styles.
+      // No section ever gets a headers/footers entry, so the package
+      // contains no header/footer parts at all.
+      var plainHead = { run: { font: 'Traditional Arabic', size: WSIZE, bold: true, color: '000000' }, paragraph: { spacing: { after: 60, line: 276 } } };
       var doc = new DX.Document({
-        styles: { default: { document: {
-          run: { font: 'Traditional Arabic', size: WSIZE },
-          paragraph: { spacing: { after: 60, line: 276 } }
-        } } },
+        styles: { default: {
+          document: {
+            run: { font: 'Traditional Arabic', size: WSIZE },
+            paragraph: { spacing: { after: 60, line: 276 } }
+          },
+          title: { run: { font: 'Traditional Arabic', size: WSIZE + 4, bold: true, color: '000000' }, paragraph: { spacing: { after: 60, line: 276 } } },
+          heading1: plainHead, heading2: plainHead, heading3: plainHead,
+          heading4: plainHead, heading5: plainHead, heading6: plainHead,
+          strong: { run: { font: 'Traditional Arabic', size: WSIZE, bold: true, color: '000000' } },
+          hyperlink: { run: { font: 'Traditional Arabic', size: WSIZE, color: '000000' } }
+        } },
         sections: sections
       });
       return DX.Packer.toBlob(doc);
