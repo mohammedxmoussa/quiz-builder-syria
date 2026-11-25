@@ -294,9 +294,9 @@
       }
       /* headers */
       .eh-ministry{ font-weight:700; }
-      .eh-table{ width:100%; border-collapse:collapse; margin-top:2mm; }
+      .eh-table{ width:100%; border-collapse:collapse; margin-top:1.5mm; }
       .eh-table td{ border:1px solid #000; padding:1mm 2.5mm; vertical-align:top; }
-      .eh-title{ text-align:center; font-weight:700; font-size:1.35em; margin:3mm 0 1mm; }
+      .eh-title{ text-align:center; font-weight:700; font-size:1.35em; margin:2mm 0 1mm; }
       .eh-title-u{ border-bottom:3px double #000; padding-bottom:1mm; display:inline-block; }
       .eh-version{ font-weight:700; }
       .eh-student{
@@ -359,22 +359,52 @@
       .passage-title{ text-align:center; font-weight:700; font-size:1.1em; margin-bottom:.3em; }
       .passage-text{ line-height:1.9; }
       .passage-text .rt-p{ text-indent:1.2em; }
-      /* english baccalaureate template */
-      .eng-head{ font-family:'Amiri','Noto Naskh Arabic',serif; }
-      .eng-head-grid{ display:flex; align-items:flex-start; gap:4mm; }
-      .eng-side-r{ flex:1; font-weight:700; }
-      .eng-subject{ font-size:1.05em; }
-      .eng-center{ flex:1.5; text-align:center; }
-      .eng-title{ font-weight:700; font-size:1.25em; }
-      .eng-grade{ font-weight:700; }
-      .eng-star{ position:relative; width:15mm; height:15mm; flex:none; margin-top:1mm; }
+      /* ===== Shared compact header (ALL templates) =====
+         One block, one structure everywhere: title row (ministry side-note
+         or English medallion + title + version label), ONE info line
+         (subject/grade/duration/date/total, school & teacher ONLY when
+         provided), and the student name/number line. Templates restyle
+         this block only — no extra bands above or below it. */
+      .hdr{ border:1.5px solid #000; padding:1.6mm 3mm 1.8mm; }
+      .hdr-title-row{ display:flex; align-items:center; gap:3mm; }
+      .hdr-side{ flex:1; font-weight:700; font-size:.8em; line-height:1.5; }
+      .hdr-title{ flex:2; text-align:center; font-weight:700; font-size:1.22em; line-height:1.45; }
+      .hdr-version{ flex:1; text-align:end; font-weight:700; font-size:.92em; }
+      .hdr-info{ text-align:center; font-weight:700; font-size:.92em; margin-top:.8mm; }
+      .hdr .eh-student{ margin-top:1.4mm; justify-content:flex-start; }
+      .hdr-instr{ text-align:center; font-weight:700; font-size:.88em; margin-top:1mm; }
+      .hdr-classic .hdr-title span{ border-bottom:3px double #000; padding-bottom:.5mm; }
+      .hdr-minimal{ border:none; border-bottom:1px solid #888; padding:0 0 1.8mm; }
+      .hdr-minimal .hdr-title{ text-align:start; }
+      .hdr-minimal .hdr-info{ text-align:start; font-weight:600; }
+      .hdr-minimal .hdr-side,.hdr-minimal .hdr-version{ display:none; }
+      .hdr-ministerial{ border:2.5px solid #000; }
+      .hdr-english{ font-family:'Amiri','Noto Naskh Arabic',serif; }
+      .hdr-english .hdr-title span{ border-bottom:3px double #000; padding-bottom:.5mm; }
+      .hdr-english .eh-dots{ min-width:20mm; }
+      .hdr-english .eh-dots.short{ min-width:14mm; }
+      .hdr-science{ border-color:#174a7c; border-top:4px solid #174a7c; background:#f2f5f8; }
+      .hdr-science .hdr-title{ color:#7c2121; }
+      .hdr-science .hdr-version{ color:#174a7c; }
+      .eng-star{ position:relative; width:14mm; height:14mm; flex:none; }
       .eng-star svg{ width:100%; height:100%; display:block; }
       .eng-star span{ position:absolute; inset:0; display:grid; place-items:center; font-weight:700; font-size:1.05em; }
-      .eng-side-l{ flex:1; font-weight:700; }
-      .eng-head .eh-dots{ min-width:20mm; }
-      .eng-head .eh-dots.short{ min-width:14mm; }
-      .eng-instr{ text-align:center; font-weight:700; margin-top:2mm; font-size:.92em; }
-      .eng-model{ font-weight:700; font-size:1.1em; margin-top:1mm; }
+      /* compact density (any template): tighter everything, font −0.5pt in JS */
+      .exam[data-density="compact"] .hdr{ padding:1.2mm 2.5mm 1.4mm; }
+      .exam[data-density="compact"] .exam-body{ margin-top:2.5mm; }
+      .exam[data-density="compact"] .sec{ margin-bottom:1.2mm; }
+      .exam[data-density="compact"] .q{ margin-bottom:.45em; }
+      .exam[data-density="compact"] .parts{ gap:.28em; }
+      .exam[data-density="compact"] .answer-lines .aline{ height:1.55em; }
+      .exam[data-density="compact"] .opts-inline{ gap:.2em 1em; }
+      .exam[data-density="compact"] .opts-list{ gap:.08em; }
+      .exam[data-density="compact"] .sci-opts{ gap:.7mm; margin-top:.7mm; }
+      .exam[data-density="compact"] .sci-opt{ padding:.35mm 1.6mm; }
+      .exam[data-density="compact"] .q-img{ margin:.25em 0; }
+      .exam[data-density="compact"] .q-img.img-float img{ max-height:40mm; }
+      .exam[data-density="compact"] .data-table th,.exam[data-density="compact"] .data-table td{ padding:.1em .4em; }
+      .exam[data-density="compact"] .sci-sec-title{ margin:.6mm 0 1mm; }
+      .exam[data-density="compact"] .ak-item{ margin-bottom:.35em; }
       .exam[data-template="english"] .exam-body{ border:1.5px solid #000; padding:3mm 4mm 2mm; margin-top:2mm; }
       .exam[data-template="english"] .sec{ border-bottom:1px solid #000; padding-bottom:2.5mm; margin-bottom:3mm; }
       .exam[data-template="english"] .sec:last-child{ border-bottom:none; margin-bottom:0; padding-bottom:0; }
@@ -391,29 +421,25 @@
       .eng-pagefoot b{ font-family:Georgia,'Times New Roman',serif; }
       /* smart image placement (aspect-based, all templates) */
       .q-img.img-float{ float:inline-start; width:32%; margin:0 0 2mm; margin-inline-end:3.5mm; text-align:center; }
-      .q-img.img-float img{ width:100%; max-height:55mm; object-fit:contain; }
+      .q-img.img-float img{ width:100%; max-height:45mm; object-fit:contain; }
       .q-main.with-float::after{ content:''; display:block; clear:both; }
-      /* science comprehensive-model template */
-      .sci-runhead{ display:flex; justify-content:space-between; align-items:baseline; gap:6mm; font-weight:700; font-size:.94em; color:#174a7c; }
-      .sci-runrule{ border-bottom:3px double #174a7c; margin-top:1.5mm; }
-      .sci-plaque{ background:#dfe5ec; border:1.5px solid #9db2c8; text-align:center; padding:3mm 4mm; margin-top:3.5mm; print-color-adjust:exact; -webkit-print-color-adjust:exact; }
-      .sci-plaque-title{ color:#7c2121; font-weight:700; font-size:1.35em; line-height:1.5; }
-      .sci-plaque-sub{ color:#174a7c; font-weight:700; margin-top:.5mm; }
-      .sci-subjectrow{ display:flex; align-items:center; gap:4mm; margin-top:3mm; font-weight:700; }
-      .sci-subjectrow i{ flex:1; border-top:1.5px solid #7c2121; display:block; }
-      .sci-subjectrow span{ white-space:nowrap; }
+      /* science comprehensive-model template (header = shared .hdr-science) */
+      .exam[data-template="science"]{ line-height:1.62; }
       .exam[data-template="science"] .exam-body{ margin-top:2mm; }
-      .exam[data-template="science"] .sec{ margin-bottom:4mm; }
-      .sci-sec-title{ color:#174a7c; font-weight:700; font-size:1.18em; margin:2mm 0 2.5mm; break-after:avoid; }
+      .exam[data-template="science"] .sec{ margin-bottom:2.2mm; }
+      .exam[data-template="science"] .q{ margin-bottom:.5em; }
+      .exam[data-template="science"] .parts{ gap:.3em; }
+      .exam[data-template="science"] .answer-lines .aline{ height:1.65em; }
+      .sci-sec-title{ color:#174a7c; font-weight:700; font-size:1.12em; margin:1mm 0 1.4mm; break-after:avoid; }
       .exam[data-template="science"] .q-num{ color:#174a7c; }
-      .sci-opts{ display:grid; gap:1.5mm; margin-top:1.5mm; }
-      .sci-opt{ border:1px solid #9db2c8; padding:1mm 2.5mm; display:flex; gap:.55em; align-items:baseline; background:#fff; }
+      .sci-opts{ display:grid; gap:1mm; margin-top:1mm; }
+      .sci-opt{ border:1px solid #9db2c8; padding:.55mm 2mm; display:flex; gap:.55em; align-items:baseline; background:#fff; }
       .sci-opt-letter{ font-weight:700; color:#174a7c; white-space:nowrap; border-inline-end:1px solid #9db2c8; padding-inline-end:.55em; }
       .sci-opt-text{ flex:1; min-width:0; }
-      .exam[data-template="science"] .q-img img{ border:1px solid #9db2c8; padding:2mm; background:#fff; }
-      .sci-end{ text-align:center; margin-top:6mm; }
+      .exam[data-template="science"] .q-img img{ border:1px solid #9db2c8; padding:1mm; background:#fff; }
+      .sci-end{ text-align:center; margin-top:3.5mm; }
       .sci-end span{ color:#7c2121; font-weight:700; font-size:1.15em; border-bottom:3px double #7c2121; padding-bottom:1mm; }
-      .sci-pagefoot{ display:flex; justify-content:flex-end; margin-top:5mm; }
+      .sci-pagefoot{ display:flex; justify-content:flex-end; margin-top:3mm; }
       .sci-pagenum{ border:1.5px solid #174a7c; color:#174a7c; font-weight:700; padding:.5mm 3.5mm; line-height:1.4; }
       .sci-ak-table{ width:100%; border-collapse:collapse; margin:.4em 0 .9em; }
       .sci-ak-table th,.sci-ak-table td{ border:1px solid #9db2c8; padding:.2em .6em; vertical-align:top; }
@@ -658,6 +684,15 @@
               </div>
             </div>
 
+            <div>
+              <span class="f-label">الكثافة</span>
+              <div class="seg" id="seg-density">
+                <button type="button" data-val="normal" aria-pressed="true">عادي</button>
+                <button type="button" data-val="compact" aria-pressed="false">مضغوط</button>
+              </div>
+              <p class="hint">«مضغوط» يقرّب الأسئلة من بعضها قليلاً ليتّسع الاختبار في ورقة واحدة (صفحتان: وجه وظهر) — وهو الأنسب لمعظم الاختبارات.</p>
+            </div>
+
             <div class="field-group">
               <h4>بيانات الترويسة</h4>
               <div class="grid2">
@@ -666,7 +701,7 @@
                   <input class="text-input" id="f-school" type="text" autocomplete="off" />
                 </div>
                 <div>
-                  <label class="f-label" for="f-teacher">المعلم/ة</label>
+                  <label class="f-label" for="f-teacher">المعلم/ة (اختياري)</label>
                   <input class="text-input" id="f-teacher" type="text" autocomplete="off" />
                 </div>
                 <div>
@@ -745,6 +780,7 @@
             </div>
 
             <div class="field-group">
+              <div class="warn-chip" id="teacher-warn" role="alert" hidden>تنبيه: لم تُدخل اسم المعلم/ة — سيُطبع الاختبار بدونه. يمكنك إدخاله هنا أو المتابعة</div>
               <button type="button" class="btn primary" id="btn-print">طباعة / حفظ PDF</button>
               <p class="hint">في نافذة الطباعة اختر: الحجم A4، الهوامش: بلا (None)، وألغِ تفعيل خيار «الرؤوس والتذييلات» (Headers and footers) حتى لا يطبع المتصفح رابط الموقع والتاريخ على الورقة، وفعّل خيار «الرسومات الخلفية» (Background graphics)، ثم اختر «حفظ بتنسيق PDF».</p>
             </div>
@@ -928,12 +964,12 @@ You are helping a **Syrian school teacher** build a printable exam with the "م�
 
 1. Speak Arabic (simple Modern Standard Arabic). Be brief.
 2. Ask only what you still need, in one short message (max 5 questions): subject, grade, unit/lesson/topic, how many questions and which types, total marks and how they are split, whether the exam has images, and the exam duration. If the teacher already gave something, do not ask again. Use sensible defaults for anything not specified.
-3. Never invent the teacher's name, school name, or date. Omit those fields; the teacher fills them in inside the tool.
+3. Never invent the teacher's name, school name, or date. The teacher's name is OPTIONAL: tell the teacher they can (a) give you their name in the chat and you put it in `exam.teacher`, (b) type it later themselves in the tool's web UI (the header fields in step 4), or (c) skip it entirely — the paper then prints cleanly with no teacher name at all, which is fine. If they did not give a name, omit the field.
 4. Write the exam, then output **the complete JSON in ONE code block** (```json) and nothing inside the block except the JSON.
 5. After the block, add a short list of the images the teacher must upload, **in order** (image1, image2, …) with a clear description of each image (what it shows, what to label or mark on it).
 6. Check before sending: JSON valid, marks add up to `exam.totalMarks`, every image key used is in `images`.
 7. When the teacher asks for changes, output the **complete** JSON again, never a partial patch.
-8. You cannot change layout/design through JSON. The teacher picks the template and settings inside the tool. You may only suggest `exam.template` (`"classic"`, `"minimal"`, `"ministerial"`, `"english"`, `"science"`). Template details live in a separate file — fetch https://mohammedxmoussa.github.io/quiz-builder-syria/ai/templates.md ONLY if the teacher asks about templates, design or the look of the paper; never fetch it otherwise.
+8. You cannot change layout/design through JSON. The teacher picks the template and settings inside the tool. You may only suggest `exam.template` (`"classic"`, `"minimal"`, `"ministerial"`, `"english"`, `"science"`). Every template also has a compact density variant: set `exam.compact: true` to suggest it — most exams print on ONE sheet (2 pages, front and back), so suggest compact whenever the exam should fit one sheet. All templates share one compact header and the teacher name in it is optional (rule 3). Template details live in a separate file — fetch https://mohammedxmoussa.github.io/quiz-builder-syria/ai/templates.md ONLY if the teacher asks about templates, design or the look of the paper; never fetch it otherwise.
 
 ## JSON rules
 
@@ -968,11 +1004,12 @@ You are helping a **Syrian school teacher** build a printable exam with the "م�
 | `title` | string | yes | e.g. "اختبار الوحدة الأولى" |
 | `subject` | string | yes | |
 | `grade` | string | no | e.g. "الصف السادس" |
-| `school`, `teacher`, `date` | string | no | omit unless the teacher gave them |
+| `school`, `teacher`, `date` | string | no | omit unless the teacher gave them; `teacher` is optional — the teacher may add it in the chat, in the tool's UI, or skip it and the paper prints without it |
 | `duration` | string | no | e.g. "ساعة واحدة" |
 | `totalMarks` | number | recommended | must equal the sum of all marks |
 | `instructions` | string | no | short text under the header, rich text allowed |
 | `template` | `"classic"` \| `"minimal"` \| `"ministerial"` \| `"english"` \| `"science"` | no | suggestion only; details in `templates.md` (fetch only on design questions) |
+| `compact` | boolean | no | `true` = compact density of the chosen template (tighter spacing, smaller image caps, shared compact header) — suggest it when the exam should fit ONE sheet (2 pages, front and back), which is most exams |
 | `numbering` | `"continuous"` \| `"per_section"` | no | default `"continuous"` (1..N through the whole exam) |
 
 ### `images` (object, optional)
@@ -1249,6 +1286,7 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
       quiz: null, errors: [], syntaxError: null,
       images: {},               // key -> {url, name}
       template: null, templateTouched: false,
+      compact: false, compactTouched: false,
       header: { school:'', teacher:'', date:'', duration:'' },
       headerDirty: { school:false, teacher:false, date:false, duration:false },
       lastExamHeaderSig: '',
@@ -1300,7 +1338,7 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
     }
     function guideText(){ return $('guide-data').textContent.replace(/^\n+/, '').replace(/\s+$/, ''); }
     function fetchGuide(){
-      return fetch('data:application/octet-stream;base64,IyBRdWl6IENyZWF0b3I6IEFJIEd1aWRlCgpZb3UgYXJlIGhlbHBpbmcgYSAqKlN5cmlhbiBzY2hvb2wgdGVhY2hlcioqIGJ1aWxkIGEgcHJpbnRhYmxlIGV4YW0gd2l0aCB0aGUgItmF2YbYtNimINin2YTYp9iu2KrYqNin2LHYp9iqIiB3ZWIgdG9vbC4gVGhlIHRvb2wgZG9lcyBOT1QgY3JlYXRlIHF1ZXN0aW9uczsgKip5b3UqKiB3cml0ZSB0aGUgZXhhbSBjb250ZW50IGFzIE9ORSBKU09OIGRvY3VtZW50IHRoYXQgdGhlIHRlYWNoZXIgcGFzdGVzIGludG8gdGhlIHRvb2wuIFRoZSB0b29sIHRoZW4gbGF5cyBpdCBvdXQgYXMgYW4gQTQgcGFwZXIgaW4gdHdvIGNvbHVtbnMgZm9yIHByaW50aW5nLiBOb3RoaW5nIGlzIGFuc3dlcmVkIG9ubGluZS4KCiMjIEhvdyB0byB3b3JrIHdpdGggdGhlIHRlYWNoZXIKCjEuIFNwZWFrIEFyYWJpYyAoc2ltcGxlIE1vZGVybiBTdGFuZGFyZCBBcmFiaWMpLiBCZSBicmllZi4KMi4gQXNrIG9ubHkgd2hhdCB5b3Ugc3RpbGwgbmVlZCwgaW4gb25lIHNob3J0IG1lc3NhZ2UgKG1heCA1IHF1ZXN0aW9ucyk6IHN1YmplY3QsIGdyYWRlLCB1bml0L2xlc3Nvbi90b3BpYywgaG93IG1hbnkgcXVlc3Rpb25zIGFuZCB3aGljaCB0eXBlcywgdG90YWwgbWFya3MgYW5kIGhvdyB0aGV5IGFyZSBzcGxpdCwgd2hldGhlciB0aGUgZXhhbSBoYXMgaW1hZ2VzLCBhbmQgdGhlIGV4YW0gZHVyYXRpb24uIElmIHRoZSB0ZWFjaGVyIGFscmVhZHkgZ2F2ZSBzb21ldGhpbmcsIGRvIG5vdCBhc2sgYWdhaW4uIFVzZSBzZW5zaWJsZSBkZWZhdWx0cyBmb3IgYW55dGhpbmcgbm90IHNwZWNpZmllZC4KMy4gTmV2ZXIgaW52ZW50IHRoZSB0ZWFjaGVyJ3MgbmFtZSwgc2Nob29sIG5hbWUsIG9yIGRhdGUuIE9taXQgdGhvc2UgZmllbGRzOyB0aGUgdGVhY2hlciBmaWxscyB0aGVtIGluIGluc2lkZSB0aGUgdG9vbC4KNC4gV3JpdGUgdGhlIGV4YW0sIHRoZW4gb3V0cHV0ICoqdGhlIGNvbXBsZXRlIEpTT04gaW4gT05FIGNvZGUgYmxvY2sqKiAoYGBganNvbikgYW5kIG5vdGhpbmcgaW5zaWRlIHRoZSBibG9jayBleGNlcHQgdGhlIEpTT04uCjUuIEFmdGVyIHRoZSBibG9jaywgYWRkIGEgc2hvcnQgbGlzdCBvZiB0aGUgaW1hZ2VzIHRoZSB0ZWFjaGVyIG11c3QgdXBsb2FkLCAqKmluIG9yZGVyKiogKGltYWdlMSwgaW1hZ2UyLCDigKYpIHdpdGggYSBjbGVhciBkZXNjcmlwdGlvbiBvZiBlYWNoIGltYWdlICh3aGF0IGl0IHNob3dzLCB3aGF0IHRvIGxhYmVsIG9yIG1hcmsgb24gaXQpLgo2LiBDaGVjayBiZWZvcmUgc2VuZGluZzogSlNPTiB2YWxpZCwgbWFya3MgYWRkIHVwIHRvIGBleGFtLnRvdGFsTWFya3NgLCBldmVyeSBpbWFnZSBrZXkgdXNlZCBpcyBpbiBgaW1hZ2VzYC4KNy4gV2hlbiB0aGUgdGVhY2hlciBhc2tzIGZvciBjaGFuZ2VzLCBvdXRwdXQgdGhlICoqY29tcGxldGUqKiBKU09OIGFnYWluLCBuZXZlciBhIHBhcnRpYWwgcGF0Y2guCjguIFlvdSBjYW5ub3QgY2hhbmdlIGxheW91dC9kZXNpZ24gdGhyb3VnaCBKU09OLiBUaGUgdGVhY2hlciBwaWNrcyB0aGUgdGVtcGxhdGUgYW5kIHNldHRpbmdzIGluc2lkZSB0aGUgdG9vbC4gWW91IG1heSBvbmx5IHN1Z2dlc3QgYGV4YW0udGVtcGxhdGVgIChgImNsYXNzaWMiYCwgYCJtaW5pbWFsImAsIGAibWluaXN0ZXJpYWwiYCwgYCJlbmdsaXNoImAsIGAic2NpZW5jZSJgKS4gVGVtcGxhdGUgZGV0YWlscyBsaXZlIGluIGEgc2VwYXJhdGUgZmlsZSDigJQgZmV0Y2ggaHR0cHM6Ly9tb2hhbW1lZHhtb3Vzc2EuZ2l0aHViLmlvL3F1aXotYnVpbGRlci1zeXJpYS9haS90ZW1wbGF0ZXMubWQgT05MWSBpZiB0aGUgdGVhY2hlciBhc2tzIGFib3V0IHRlbXBsYXRlcywgZGVzaWduIG9yIHRoZSBsb29rIG9mIHRoZSBwYXBlcjsgbmV2ZXIgZmV0Y2ggaXQgb3RoZXJ3aXNlLgoKIyMgSlNPTiBydWxlcwoKLSBWYWxpZCBKU09OIG9ubHk6IGRvdWJsZSBxdW90ZXMsIG5vIGNvbW1lbnRzLCBubyB0cmFpbGluZyBjb21tYXMsIFVURi04LCBBcmFiaWMgdGV4dCB3cml0dGVuIGRpcmVjdGx5IChub3QgZXNjYXBlZCkuCi0gTGluZSBicmVha3MgaW5zaWRlIGEgc3RyaW5nIG11c3QgYmUgd3JpdHRlbiBhcyBgXG5gLgotIERvIG5vdCBwdXQgVVJMcywgYmFzZTY0IG9yIGZpbGUgbmFtZXMgZm9yIGltYWdlcy4gVXNlIG9ubHkgdGhlIGltYWdlIGtleXMgZGVzY3JpYmVkIGJlbG93LgotIE9taXQgb3B0aW9uYWwgZmllbGRzIHlvdSBkbyBub3QgbmVlZC4gRG8gbm90IHVzZSBgbnVsbGAuCgojIyBUZXh0IGZvcm1hdHRpbmcgaW5zaWRlIGFueSB0ZXh0IHN0cmluZwoKLSBgKipib2xkKipgIGJvbGQgdGV4dAotIGBfX3VuZGVybGluZWRfX2AgdW5kZXJsaW5lZCB0ZXh0Ci0gYHt7Ymxhbmt9fWAgYSBibGFuayBsaW5lIHRoZSBzdHVkZW50IGZpbGxzIGluICh1c2UgaW5zaWRlIGZpbGwtaW4tdGhlLWJsYW5rIHF1ZXN0aW9uczsgY2FuIGFwcGVhciBtdWx0aXBsZSB0aW1lcykKLSBgXG5cbmAgbmV3IHBhcmFncmFwaDsgYFxuYCBsaW5lIGJyZWFrCi0gTm90aGluZyBlbHNlIGlzIHN1cHBvcnRlZCAobm8gbGlzdHMsIG5vIEhUTUwsIG5vIG1hcmtkb3duIGhlYWRpbmdzLCBubyBMYVRlWC9tYXRoLCBubyB0YWJsZXMgaW5zaWRlIHRleHQpLgoKIyMgU3RydWN0dXJlCgpgYGAKewogICJzY2hlbWFWZXJzaW9uIjogMSwKICAiZXhhbSI6IHsgLi4uIH0sCiAgImltYWdlcyI6IHsgImltYWdlMSI6ICJ3aGF0IHRoZSB0ZWFjaGVyIHNob3VsZCB1cGxvYWQiIH0sCiAgInNlY3Rpb25zIjogWyB7IC4uLiB9IF0KfQpgYGAKCiMjIyBgZXhhbWAgKG9iamVjdCwgcmVxdWlyZWQpCgp8IGZpZWxkIHwgdHlwZSB8IHJlcXVpcmVkIHwgbm90ZXMgfAp8LS0tfC0tLXwtLS18LS0tfAp8IGB0aXRsZWAgfCBzdHJpbmcgfCB5ZXMgfCBlLmcuICLYp9iu2KrYqNin2LEg2KfZhNmI2K3Yr9ipINin2YTYo9mI2YTZiSIgfAp8IGBzdWJqZWN0YCB8IHN0cmluZyB8IHllcyB8IHwKfCBgZ3JhZGVgIHwgc3RyaW5nIHwgbm8gfCBlLmcuICLYp9mE2LXZgSDYp9mE2LPYp9iv2LMiIHwKfCBgc2Nob29sYCwgYHRlYWNoZXJgLCBgZGF0ZWAgfCBzdHJpbmcgfCBubyB8IG9taXQgdW5sZXNzIHRoZSB0ZWFjaGVyIGdhdmUgdGhlbSB8CnwgYGR1cmF0aW9uYCB8IHN0cmluZyB8IG5vIHwgZS5nLiAi2LPYp9i52Kkg2YjYp9it2K/YqSIgfAp8IGB0b3RhbE1hcmtzYCB8IG51bWJlciB8IHJlY29tbWVuZGVkIHwgbXVzdCBlcXVhbCB0aGUgc3VtIG9mIGFsbCBtYXJrcyB8CnwgYGluc3RydWN0aW9uc2AgfCBzdHJpbmcgfCBubyB8IHNob3J0IHRleHQgdW5kZXIgdGhlIGhlYWRlciwgcmljaCB0ZXh0IGFsbG93ZWQgfAp8IGB0ZW1wbGF0ZWAgfCBgImNsYXNzaWMiYCBcfCBgIm1pbmltYWwiYCBcfCBgIm1pbmlzdGVyaWFsImAgXHwgYCJlbmdsaXNoImAgXHwgYCJzY2llbmNlImAgfCBubyB8IHN1Z2dlc3Rpb24gb25seTsgZGV0YWlscyBpbiBgdGVtcGxhdGVzLm1kYCAoZmV0Y2ggb25seSBvbiBkZXNpZ24gcXVlc3Rpb25zKSB8CnwgYG51bWJlcmluZ2AgfCBgImNvbnRpbnVvdXMiYCBcfCBgInBlcl9zZWN0aW9uImAgfCBubyB8IGRlZmF1bHQgYCJjb250aW51b3VzImAgKDEuLk4gdGhyb3VnaCB0aGUgd2hvbGUgZXhhbSkgfAoKIyMjIGBpbWFnZXNgIChvYmplY3QsIG9wdGlvbmFsKQpNYXAgZnJvbSBpbWFnZSBrZXkgdG8gYSBzaG9ydCBBcmFiaWMgZGVzY3JpcHRpb24gb2Ygd2hhdCB0aGUgdGVhY2hlciBtdXN0IHVwbG9hZC4gS2V5cyBhcmUgZXhhY3RseSBgaW1hZ2UxYCwgYGltYWdlMmAsIGBpbWFnZTNgLCDigKYgd2l0aCBubyBnYXBzLCBudW1iZXJlZCBpbiBvcmRlciBvZiBmaXJzdCBhcHBlYXJhbmNlIGluIHRoZSBleGFtLiBPbmx5IGluY2x1ZGUgaXQgaWYgc29tZSBxdWVzdGlvbiB1c2VzIGFuIGltYWdlLiBUaGUgdGVhY2hlciB1cGxvYWRzIHRoZSBwaWN0dXJlcyBpbiB0aGlzIG9yZGVyIGFuZCB0aGUgdG9vbCBwdXRzIGVhY2ggb25lIGludG8gdGhlIHF1ZXN0aW9uIHRoYXQgcmVmZXJlbmNlcyBpdHMga2V5LgoKIyMjIGBzZWN0aW9uc2AgKGFycmF5LCByZXF1aXJlZCwgYXQgbGVhc3QgMSkKCnwgZmllbGQgfCB0eXBlIHwgcmVxdWlyZWQgfCBub3RlcyB8CnwtLS18LS0tfC0tLXwtLS18CnwgYHRpdGxlYCB8IHN0cmluZyB8IG5vIHwgZS5nLiAi2KfZhNiz2KTYp9mEINin2YTYo9mI2YQ6INin2K7YqtixINin2YTYpdis2KfYqNipINin2YTYtdit2YrYrdipIiB8CnwgYGRlc2NyaXB0aW9uYCB8IHN0cmluZyB8IG5vIHwgZXh0cmEgaW5zdHJ1Y3Rpb24gbGluZSB8CnwgYGZpeGVkYCB8IGJvb2xlYW4gfCBubyB8IGB0cnVlYCA9IGRvIG5vdCBzaHVmZmxlIHRoaXMgc2VjdGlvbidzIHF1ZXN0aW9ucyBiZXR3ZWVuIGV4YW0gdmVyc2lvbnMgfAp8IGBxdWVzdGlvbnNgIHwgYXJyYXkgfCB5ZXMgfCBhdCBsZWFzdCAxIHwKCiMjIFF1ZXN0aW9uOiBjb21tb24gZmllbGRzIChldmVyeSBxdWVzdGlvbikKCnwgZmllbGQgfCB0eXBlIHwgbm90ZXMgfAp8LS0tfC0tLXwtLS18CnwgYHR5cGVgIHwgc3RyaW5nIHwgcmVxdWlyZWQ7IG9uZSBvZiB0aGUgOCB0eXBlcyBiZWxvdyB8CnwgYHRleHRgIHwgc3RyaW5nIHwgcmVxdWlyZWQgKHRoZSBxdWVzdGlvbiAvIHN0YXRlbWVudCAvIHBhc3NhZ2UgdGV4dCk7IHJpY2ggdGV4dCBhbGxvd2VkIHwKfCBgbWFya3NgIHwgbnVtYmVyIHwgcmVxdWlyZWQgZm9yIGV2ZXJ5IHF1ZXN0aW9uLCDiiaUgMCwgaGFsdmVzIGFsbG93ZWQgKDEuNSkuICoqRXhjZXB0aW9uOioqIGlmIHRoZSBxdWVzdGlvbiBoYXMgYHBhcnRzYCwgcHV0IG1hcmtzIG9uIGVhY2ggcGFydCBhbmQgb21pdCB0aGUgcXVlc3Rpb24ncyBgbWFya3NgLiBGb3IgYHBhc3NhZ2VgLCBvbWl0IG1hcmtzIChpdHMgc3ViLXF1ZXN0aW9ucyBjYXJyeSB0aGVtKS4gfAp8IGBhbnN3ZXJgIHwgc2VlIGVhY2ggdHlwZSB8IG9wdGlvbmFsIGJ1dCBzdHJvbmdseSByZWNvbW1lbmRlZDogdGhlIHRvb2wgcHJpbnRzIGFuIGFuc3dlciBrZXkgZnJvbSBpdCB8CnwgYGltYWdlYCB8IHN0cmluZyB8IGFuIGltYWdlIGtleSBzdWNoIGFzIGAiaW1hZ2UxImAgfAp8IGBpbWFnZVNpemVgIHwgYCJzbWFsbCJgIFx8IGAibWVkaXVtImAgXHwgYCJsYXJnZSJgIHwgZGVmYXVsdCBgIm1lZGl1bSJgIHwKfCBgaW1hZ2VQb3NpdGlvbmAgfCBgImFib3ZlImAgXHwgYCJiZWxvdyJgIHwgcmVsYXRpdmUgdG8gdGhlIHF1ZXN0aW9uIHRleHQ7IGRlZmF1bHQgYCJiZWxvdyJgIHwKfCBgcGFydHNgIHwgYXJyYXkgb2YgYHsgInRleHQiOiBzdHJpbmcsICJtYXJrcyI6IG51bWJlciwgImFuc3dlciI/OiBzdHJpbmcgfWAgfCBzdWItcXVlc3Rpb25zINij2Iwg2KjYjCDYrOKApiAobm90IGFsbG93ZWQgb24gYHBhc3NhZ2VgKSB8CnwgYHNwYW5gIHwgYCJjb2x1bW4iYCBcfCBgImZ1bGwiYCB8IGAiZnVsbCJgIHN0cmV0Y2hlcyBhY3Jvc3MgYm90aCBjb2x1bW5zOyBkZWZhdWx0IGAiY29sdW1uImAuIFVzZSBzcGFyaW5nbHksIGZvciB3aWRlIHRhYmxlcy9pbWFnZXMuIHwKfCBgZml4ZWRgIHwgYm9vbGVhbiB8IGB0cnVlYCA9IGtlZXAgdGhpcyBxdWVzdGlvbiBpbiBwbGFjZSB3aGVuIHZlcnNpb25zIGFyZSBzaHVmZmxlZCB8CgpOdW1iZXIgdGhlIHF1ZXN0aW9ucyB5b3Vyc2VsZj8gKipOby4qKiBUaGUgdG9vbCBudW1iZXJzIHRoZW0gYXV0b21hdGljYWxseS4gTmV2ZXIgd3JpdGUgIjEtIiBvciAi2KfZhNiz2KTYp9mEIDMiIGluc2lkZSBgdGV4dGAuCgojIyBUaGUgOCBxdWVzdGlvbiB0eXBlcwoKIyMjIDEuIGBtY3FgIChtdWx0aXBsZSBjaG9pY2UpCi0gYG9wdGlvbnNgOiBhcnJheSBvZiAy4oCTNiBzdHJpbmdzIChyZXF1aXJlZCkuIERvIG5vdCBwcmVmaXggdGhlbSB3aXRoINijL9ioL9isOiB0aGUgdG9vbCBhZGRzIHRoZSBsZXR0ZXJzLgotIGBhbnN3ZXJgOiB6ZXJvLWJhc2VkIGluZGV4IG9mIHRoZSBjb3JyZWN0IG9wdGlvbiAobnVtYmVyKS4KLSBgZml4ZWRPcHRpb25zYDogYHRydWVgIGlmIG9wdGlvbnMgbXVzdCBrZWVwIHRoZWlyIG9yZGVyIChlLmcuIG9uZSBvZiB0aGVtIGlzICLYrNmF2YrYuSDZhdinINiz2KjZgiIpLgpgYGBqc29uCnsgInR5cGUiOiAibWNxIiwgInRleHQiOiAi2KrYqtit2YjZhCDYp9mE2YXZitin2Ycg2YXZhiDYp9mE2K3Yp9mE2Kkg2KfZhNiz2KfYptmE2Kkg2KXZhNmJINin2YTYrdin2YTYqSDYp9mE2LrYp9iy2YrYqSDYqNi52YXZhNmK2Kk6IiwgIm9wdGlvbnMiOiBbItin2YTYqtmD2KfYq9mBIiwgItin2YTYqtio2K7YsSIsICLYp9mE2KrYrNmF2K8iLCAi2KfZhNin2YbYtdmH2KfYsSJdLCAiYW5zd2VyIjogMSwgIm1hcmtzIjogMiB9CmBgYAoKIyMjIDIuIGB0cnVlX2ZhbHNlYAotIGB0ZXh0YCBpcyB0aGUgc3RhdGVtZW50LiBUaGUgc3R1ZGVudCB3cml0ZXMg2LXYrSBvciDYrti32KMgaW4gYSBicmFja2V0IHRoZSB0b29sIGRyYXdzLgotIGBhbnN3ZXJgOiBgdHJ1ZWAgb3IgYGZhbHNlYC4KLSBgYXNrVG9Db3JyZWN0YDogYHRydWVgIGFkZHMgYSBsaW5lICLYtdit2ZHYrSDYp9mE2LnYqNin2LHYqSDYp9mE2K7Yp9i32KbYqSIuCmBgYGpzb24KeyAidHlwZSI6ICJ0cnVlX2ZhbHNlIiwgInRleHQiOiAi2YrYqtit2YjZhCDYqNiu2KfYsSDYp9mE2YXYp9ihINil2YTZiSDZgti32LHYp9iqINi12LrZitix2Kkg2YHZiiDYt9io2YLYp9iqINin2YTYrNmIINin2YTYqNin2LHYr9ipLiIsICJhbnN3ZXIiOiB0cnVlLCAiYXNrVG9Db3JyZWN0IjogdHJ1ZSwgIm1hcmtzIjogMiB9CmBgYAoKIyMjIDMuIGBmaWxsX2JsYW5rYAotIGB0ZXh0YCBjb250YWlucyBvbmUgb3IgbW9yZSBge3tibGFua319YC4KLSBgYW5zd2VyYDogYXJyYXkgb2Ygc3RyaW5ncywgb25lIHBlciBibGFuaywgaW4gb3JkZXIuCmBgYGpzb24KeyAidHlwZSI6ICJmaWxsX2JsYW5rIiwgInRleHQiOiAi2KrYs9mF2Ykg2LnZhdmE2YrYqSDYqtit2YjZhCDYqNiu2KfYsSDYp9mE2YXYp9ihINil2YTZiSDYs9in2KbZhCB7e2JsYW5rfX3YjCDZiNiz2YLZiNi3INin2YTZhdin2KEg2YXZhiDYp9mE2LrZitmI2YUge3tibGFua319LiIsICJhbnN3ZXIiOiBbItin2YTYqtmD2KfYq9mBIiwgItin2YTZh9i32YjZhCJdLCAibWFya3MiOiAyIH0KYGBgCgojIyMgNC4gYHNob3J0X2Fuc3dlcmAKLSBgbGluZXNgOiBudW1iZXIgb2YgYW5zd2VyIGxpbmVzLCAx4oCTNiAoZGVmYXVsdCAyKS4KLSBgYW5zd2VyU3BhY2VgOiBgImxpbmVzImAgKGRlZmF1bHQpLCBgImJveCJgIChhbiBlbXB0eSBib3gsIGdvb2QgZm9yIGNhbGN1bGF0aW9ucyBvciBkcmF3aW5nKSwgb3IgYCJub25lImAuCi0gYGFuc3dlcmA6IHN0cmluZy4gV2l0aCBgcGFydHNgLCBnaXZlIHRoZSBhbnN3ZXIgaW5zaWRlIGVhY2ggcGFydCBpbnN0ZWFkLgpgYGBqc29uCnsgInR5cGUiOiAic2hvcnRfYW5zd2VyIiwgInRleHQiOiAi2YXYpyDZgdin2KbYr9ipINin2YTZhdi32LEg2YTZhNmF2LLYp9ix2LnYnyIsICJsaW5lcyI6IDIsICJhbnN3ZXIiOiAi2YrYsdmI2Yog2KfZhNmF2LLYsdmI2LnYp9iqINmI2YrYutiw2Yog2KfZhNmF2YrYp9mHINin2YTYrNmI2YHZitipLiIsICJtYXJrcyI6IDMgfQpgYGAKCiMjIyA1LiBgZXNzYXlgCi0gU2FtZSBhcyBgc2hvcnRfYW5zd2VyYCBidXQgbG9uZ2VyOiBgbGluZXNgIDPigJMxNSAoZGVmYXVsdCA4KS4gSXQgbWF5IGJlIHNwbGl0IGFjcm9zcyBjb2x1bW5zL3BhZ2VzLgpgYGBqc29uCnsgInR5cGUiOiAiZXNzYXkiLCAidGV4dCI6ICLYp9mD2KrYqCDZgdmC2LHYqSDZhdmGINiu2YXYs9ipINij2LPYt9ixINi52YYg2KPZh9mF2YrYqSDYp9mE2YXYt9ixINmE2YTYpdmG2LPYp9mGLiIsICJsaW5lcyI6IDYsICJtYXJrcyI6IDQgfQpgYGAKCiMjIyA2LiBgbWF0Y2hpbmdgCi0gYGxlZnRgOiBhcnJheSBvZiAy4oCTOCBzdHJpbmdzLiBUaGV5IGFyZSBudW1iZXJlZCAxLCAyLCAz4oCmIGFuZCB0aGUgc3R1ZGVudCB3cml0ZXMgdGhlIG1hdGNoaW5nIGxldHRlciBiZXNpZGUgZWFjaC4KLSBgcmlnaHRgOiBhcnJheSBvZiAy4oCTMTAgc3RyaW5ncywgbGV0dGVyZWQg2KPYjCDYqNiMINis4oCmIEl0IG1heSBjb250YWluIGV4dHJhIGRpc3RyYWN0b3JzIChtb3JlIGl0ZW1zIHRoYW4gYGxlZnRgKS4KLSBgYW5zd2VyYDogYXJyYXkgb2YgemVyby1iYXNlZCBpbmRleGVzIGludG8gYHJpZ2h0YCwgb25lIHBlciBgbGVmdGAgaXRlbS4KYGBganNvbgp7ICJ0eXBlIjogIm1hdGNoaW5nIiwgInRleHQiOiAi2LXZhCDYqNmK2YYg2KfZhNmF2LHYrdmE2Kkg2YjZhdinINmK2YbYp9iz2KjZh9inOiIsICJsZWZ0IjogWyLYp9mE2KrYqNiu2LEiLCAi2KfZhNiq2YPYp9ir2YEiLCAi2KfZhNmH2LfZiNmEIl0sICJyaWdodCI6IFsi2KrYtNmD2YQg2KfZhNi62YrZiNmFIiwgItiz2YLZiNi3INin2YTZhdi32LEiLCAi2KfYsdiq2YHYp9i5INio2K7Yp9ixINin2YTZhdin2KEiLCAi2KrYrNmF2K8g2KfZhNmF2KfYoSJdLCAiYW5zd2VyIjogWzIsIDAsIDFdLCAibWFya3MiOiAzIH0KYGBgCihIZXJlINin2YTYqtio2K7YsSDihpAg2KfYsdiq2YHYp9i5INio2K7Yp9ixINin2YTZhdin2KEgPSBpbmRleCAyLCDYp9mE2KrZg9in2KvZgSDihpAg2KrYtNmD2YQg2KfZhNi62YrZiNmFID0gaW5kZXggMCwg2KfZhNmH2LfZiNmEIOKGkCDYs9mC2YjYtyDYp9mE2YXYt9ixID0gaW5kZXggMS4pCgojIyMgNy4gYHRhYmxlYAotIGBoZWFkZXJzYDogYXJyYXkgb2YgY29sdW1uIHRpdGxlcyAoMuKAkzYpLgotIGByb3dzYDogYXJyYXkgb2Ygcm93czsgZWFjaCByb3cgaXMgYW4gYXJyYXkgb2Ygc3RyaW5ncyB3aXRoIHRoZSBzYW1lIGxlbmd0aCBhcyBgaGVhZGVyc2AuIFVzZSBgIiJgIGZvciBhbiBlbXB0eSBjZWxsIHRoZSBzdHVkZW50IG11c3QgZmlsbC4KLSBgYW5zd2VyYDogYSBzaG9ydCBzdHJpbmcgZGVzY3JpYmluZyB0aGUgZXhwZWN0ZWQgZmlsbHMuCmBgYGpzb24KeyAidHlwZSI6ICJ0YWJsZSIsICJ0ZXh0IjogItij2YPZhdmEINin2YTYrNiv2YjZhCDYp9mE2KLYqtmKOiIsICJoZWFkZXJzIjogWyLYp9mE2K3Yp9mE2KkiLCAi2YXYq9in2YQiLCAi2K7Yp9i12YrYqSJdLCAicm93cyI6IFtbIti12YTYqNipIiwgItin2YTYrNmE2YrYryIsICIiXSwgWyLYs9in2KbZhNipIiwgIiIsICIiXSwgWyLYutin2LLZitipIiwgIiIsICLZhNmK2LMg2YTZh9inINi02YPZhCDYq9in2KjYqiJdXSwgImFuc3dlciI6ICLYs9in2KbZhNipOiDYp9mE2YXYp9ih2Iwg2KrYo9iu2LAg2LTZg9mEINin2YTYpdmG2KfYodibINi62KfYstmK2Kk6INio2K7Yp9ixINin2YTZhdin2KEiLCAibWFya3MiOiA0IH0KYGBgCgojIyMgOC4gYHBhc3NhZ2VgIChyZWFkaW5nIHRleHQgd2l0aCBxdWVzdGlvbnMpCi0gYHRpdGxlYDogb3B0aW9uYWwuCi0gYHRleHRgOiB0aGUgcGFzc2FnZTsgdXNlIGBcblxuYCBiZXR3ZWVuIHBhcmFncmFwaHMuCi0gYHF1ZXN0aW9uc2A6IGFycmF5IChhdCBsZWFzdCAxKSBvZiBhbnkgb3RoZXIgdHlwZSAobm90IGFub3RoZXIgcGFzc2FnZSkuIFRoZWlyIGBtYXJrc2AgY291bnQ7IHRoZSBwYXNzYWdlIGl0c2VsZiBoYXMgbm8gYG1hcmtzYC4KLSBUaGUgcGFzc2FnZSBpcyBub3QgbnVtYmVyZWQ7IGl0cyBzdWItcXVlc3Rpb25zIGFyZSBudW1iZXJlZCBub3JtYWxseS4KYGBganNvbgp7ICJ0eXBlIjogInBhc3NhZ2UiLCAidGl0bGUiOiAi2KfZhNmF2LfYsSIsICJ0ZXh0IjogItin2YTZhdi32LEg2YbYudmF2Kkg2LnYuNmK2YXYqS4uLlxuXG7Yqti52KrZhdivINi52YTZitmHINin2YTYstix2KfYudipLi4uIiwgInF1ZXN0aW9ucyI6IFsgeyAidHlwZSI6ICJzaG9ydF9hbnN3ZXIiLCAidGV4dCI6ICLZhdinINmB2KfYptiv2Kkg2KfZhNmF2LfYsSDZhNmE2YXYstin2LHYudifIiwgImxpbmVzIjogMiwgIm1hcmtzIjogMyB9IF0gfQpgYGAKCiMjIEltYWdlcwoKLSBVc2UgYW4gaW1hZ2Ugb25seSB3aGVuIGEgcXVlc3Rpb24gcmVhbGx5IG5lZWRzIGl0IChhIG1hcCwgYSBkaWFncmFtLCBhIHBob3RvKS4gWW91IGNhbm5vdCBjcmVhdGUgaW1hZ2VzOiB0aGUgdGVhY2hlciB1cGxvYWRzIHRoZW0uCi0gUmVmZXJlbmNlIHdpdGggYCJpbWFnZSI6ICJpbWFnZTEiYCBvbiB0aGUgcXVlc3Rpb24sIGFuZCBkZXNjcmliZSBpdCBpbiB0aGUgdG9wLWxldmVsIGBpbWFnZXNgIG1hcDogYCJpbWFnZXMiOiB7ICJpbWFnZTEiOiAi2LHYs9mFINmE2K/ZiNix2Kkg2KfZhNmF2KfYoSDZhdi5INiz2YfZhSDZiti02YrYsSDYpdmE2Ykg2YXYsdit2YTYqSDYp9mE2KrZg9in2KvZgSIgfWAuCi0gS2V5cyBhcmUgY29uc2VjdXRpdmUgaW4gb3JkZXIgb2YgYXBwZWFyYW5jZS4gSWYgbm8gcXVlc3Rpb24gdXNlcyBpbWFnZXMsIG9taXQgYGltYWdlc2AuCi0gQWx3YXlzIGZpbmlzaCB5b3VyIHJlcGx5IHdpdGggdGhlIG9yZGVyZWQgdXBsb2FkIGxpc3QgZm9yIHRoZSB0ZWFjaGVyLgoKIyMgTWFya3MKCi0gRXZlcnkgZ3JhZGFibGUgaXRlbSBoYXMgbWFya3MuIFRvdGFsIG9mIGFsbCBtYXJrcyAoYWxsIHF1ZXN0aW9ucywgYWxsIHBhcnRzLCBhbGwgcGFzc2FnZSBzdWItcXVlc3Rpb25zKSBtdXN0IGVxdWFsIGBleGFtLnRvdGFsTWFya3NgLiBSZS1hZGQgYmVmb3JlIHJlcGx5aW5nLgotIFB1dCBtYXJrcyBvbiB0aGUgcGFydCBsZXZlbCB3aGVuIGEgcXVlc3Rpb24gaGFzIGBwYXJ0c2AuCgojIyBRdWFsaXR5IGNoZWNrbGlzdCAocnVuIHNpbGVudGx5IGJlZm9yZSByZXBseWluZykKCjEuIE9uZSBjb2RlIGJsb2NrLCB2YWxpZCBKU09OLCBub3RoaW5nIGVsc2UgaW5zaWRlLgoyLiBgc2NoZW1hVmVyc2lvbmAgaXMgMS4gYGV4YW0udGl0bGVgIGFuZCBgZXhhbS5zdWJqZWN0YCBleGlzdC4KMy4gTm8gbnVtYmVyaW5nIHdvcmRzIGluc2lkZSBxdWVzdGlvbiB0ZXh0LiBObyBvcHRpb24gbGV0dGVycyBpbnNpZGUgYG9wdGlvbnNgLgo0LiBge3tibGFua319YCBjb3VudCBlcXVhbHMgYGFuc3dlcmAgbGVuZ3RoIGZvciBgZmlsbF9ibGFua2AuCjUuIGBtY3FgIGFuc3dlciBpbmRleCBpcyB3aXRoaW4gcmFuZ2U7IGBtYXRjaGluZ2AgYW5zd2VyIGhhcyBvbmUgaW5kZXggcGVyIGBsZWZ0YCBpdGVtLgo2LiBJbWFnZSBrZXlzIGFyZSBjb25zZWN1dGl2ZSBhbmQgYWxsIGFyZSBkZXNjcmliZWQuCjcuIE1hcmtzIGFkZCB1cCB0byBgdG90YWxNYXJrc2AuCjguIEFyYWJpYyB0ZXh0IGlzIGNvcnJlY3QsIGNsZWFyLCBhZ2UtYXBwcm9wcmlhdGUsIHdpdGggY29ycmVjdCBzcGVsbGluZy4KCiMjIENvbXBsZXRlIGV4YW1wbGUgKHRoaXMgZXhhY3QgZmlsZSBpcyBgL2FpL2V4YW1wbGUtcXVpei5qc29uYCkKCmBgYGpzb24KewogICJzY2hlbWFWZXJzaW9uIjogMSwKICAiZXhhbSI6IHsKICAgICJ0aXRsZSI6ICLYp9iu2KrYqNin2LEg2KfZhNmI2K3Yr9ipINin2YTYq9in2YTYq9ipOiDYr9mI2LHYqSDYp9mE2YXYp9ihIiwKICAgICJzdWJqZWN0IjogItin2YTYudmE2YjZhSIsCiAgICAiZ3JhZGUiOiAi2KfZhNi12YEg2KfZhNiz2KfYr9izIiwKICAgICJkdXJhdGlvbiI6ICI0NSDYr9mC2YrZgtipIiwKICAgICJ0b3RhbE1hcmtzIjogMzAsCiAgICAiaW5zdHJ1Y3Rpb25zIjogItij2KzYqCDYudmGICoq2KzZhdmK2LkqKiDYp9mE2KPYs9im2YTYqSDYp9mE2KLYqtmK2KnYjCDZiNmE2KfYrdi4INij2YYg2LnYr9ivINin2YTYo9iz2KbZhNipINij2LHYqNi52KkuIiwKICAgICJ0ZW1wbGF0ZSI6ICJtaW5pc3RlcmlhbCIsCiAgICAibnVtYmVyaW5nIjogImNvbnRpbnVvdXMiCiAgfSwKICAiaW1hZ2VzIjogewogICAgImltYWdlMSI6ICLYsdiz2YUg2KrZiNi22YrYrdmKINmE2K/ZiNix2Kkg2KfZhNmF2KfYoSDZgdmKINin2YTYt9io2YrYudip2Iwg2YXYuSDYs9mH2YUgKNijKSDZiti02YrYsSDYpdmE2Ykg2YXYsdit2YTYqSDYp9mE2KrZg9in2KvZgSIKICB9LAogICJzZWN0aW9ucyI6IFsKICAgIHsKICAgICAgInRpdGxlIjogItin2YTYs9ik2KfZhCDYp9mE2KPZiNmEOiDYp9iu2KrYsSDYp9mE2KXYrNin2KjYqSDYp9mE2LXYrdmK2K3YqSIsCiAgICAgICJxdWVzdGlvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgInR5cGUiOiAibWNxIiwKICAgICAgICAgICJ0ZXh0IjogItiq2KrYrdmI2YQg2KfZhNmF2YrYp9mHINmF2YYg2KfZhNit2KfZhNipINin2YTYs9in2KbZhNipINil2YTZiSDYp9mE2K3Yp9mE2Kkg2KfZhNi62KfYstmK2Kkg2KjYudmF2YTZitipOiIsCiAgICAgICAgICAib3B0aW9ucyI6IFsi2KfZhNiq2YPYp9ir2YEiLCAi2KfZhNiq2KjYrtixIiwgItin2YTYqtis2YXYryIsICLYp9mE2KfZhti12YfYp9ixIl0sCiAgICAgICAgICAiYW5zd2VyIjogMSwKICAgICAgICAgICJtYXJrcyI6IDIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJ0eXBlIjogIm1jcSIsCiAgICAgICAgICAidGV4dCI6ICLZhdmGINij2YXYq9mE2Kkg2KfZhNmF2YrYp9mHINin2YTYudiw2KjYqToiLAogICAgICAgICAgIm9wdGlvbnMiOiBbItmF2YrYp9mHINin2YTYqNit2LEiLCAi2YXZitin2Ycg2KfZhNij2YbZh9in2LEiLCAi2YXZitin2Ycg2KfZhNmF2K3Ziti3IiwgItis2YXZiti5INmF2Kcg2LPYqNmCIl0sCiAgICAgICAgICAiZml4ZWRPcHRpb25zIjogdHJ1ZSwKICAgICAgICAgICJhbnN3ZXIiOiAxLAogICAgICAgICAgIm1hcmtzIjogMgogICAgICAgIH0KICAgICAgXQogICAgfSwKICAgIHsKICAgICAgInRpdGxlIjogItin2YTYs9ik2KfZhCDYp9mE2KvYp9mG2Yo6INij2KzYqCDYudmF2Kcg2YrYo9iq2YoiLAogICAgICAicXVlc3Rpb25zIjogWwogICAgICAgIHsKICAgICAgICAgICJ0eXBlIjogInRydWVfZmFsc2UiLAogICAgICAgICAgInRleHQiOiAi2YrYqtit2YjZhCDYqNiu2KfYsSDYp9mE2YXYp9ihINil2YTZiSDZgti32LHYp9iqINi12LrZitix2Kkg2LnZhtivINin2LHYqtmB2KfYudmHINil2YTZiSDYt9io2YLYp9iqINin2YTYrNmIINin2YTYqNin2LHYr9ipLiIsCiAgICAgICAgICAiYW5zd2VyIjogdHJ1ZSwKICAgICAgICAgICJhc2tUb0NvcnJlY3QiOiB0cnVlLAogICAgICAgICAgIm1hcmtzIjogMgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgInR5cGUiOiAiZmlsbF9ibGFuayIsCiAgICAgICAgICAidGV4dCI6ICLYqtiz2YXZiSDYudmF2YTZitipINiq2K3ZiNmEINio2K7Yp9ixINin2YTZhdin2KEg2KXZhNmJINmF2KfYoSDYs9in2KbZhCB7e2JsYW5rfX3YjCDZiNiq2LPZhdmJINiz2YLZiNi3INin2YTZhdin2KEg2YXZhiDYp9mE2LrZitmI2YUge3tibGFua319LiIsCiAgICAgICAgICAiYW5zd2VyIjogWyLYp9mE2KrZg9in2KvZgSIsICLYp9mE2YfYt9mI2YQiXSwKICAgICAgICAgICJtYXJrcyI6IDIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJ0eXBlIjogIm1hdGNoaW5nIiwKICAgICAgICAgICJ0ZXh0IjogIti12YQg2KjZitmGINin2YTZhdix2K3ZhNipICjYp9mE2LnZhdmI2K8g2KfZhNij2YjZhCkg2YjZhdinINmK2YbYp9iz2KjZh9inICjYp9mE2LnZhdmI2K8g2KfZhNir2KfZhtmKKToiLAogICAgICAgICAgImxlZnQiOiBbItin2YTYqtio2K7YsSIsICLYp9mE2KrZg9in2KvZgSIsICLYp9mE2YfYt9mI2YQiXSwKICAgICAgICAgICJyaWdodCI6IFsi2KrYtNmD2YQg2KfZhNi62YrZiNmFIiwgItiz2YLZiNi3INin2YTZhdi32LEiLCAi2KfYsdiq2YHYp9i5INio2K7Yp9ixINin2YTZhdin2KEiLCAi2KrYrNmF2K8g2KfZhNmF2KfYoSJdLAogICAgICAgICAgImFuc3dlciI6IFsyLCAwLCAxXSwKICAgICAgICAgICJtYXJrcyI6IDMKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJ0eXBlIjogInRhYmxlIiwKICAgICAgICAgICJ0ZXh0IjogItij2YPZhdmEINin2YTYrNiv2YjZhCDYp9mE2KLYqtmKOiIsCiAgICAgICAgICAiaGVhZGVycyI6IFsi2KfZhNit2KfZhNipIiwgItmF2KvYp9mEIiwgItiu2KfYtdmK2KkiXSwKICAgICAgICAgICJyb3dzIjogWwogICAgICAgICAgICBbIti12YTYqNipIiwgItin2YTYrNmE2YrYryIsICIiXSwKICAgICAgICAgICAgWyLYs9in2KbZhNipIiwgIiIsICIiXSwKICAgICAgICAgICAgWyLYutin2LLZitipIiwgIiIsICLZhNmK2LMg2YTZh9inINi02YPZhCDYq9in2KjYqiJdCiAgICAgICAgICBdLAogICAgICAgICAgImFuc3dlciI6ICLYtdmE2KjYqTog2YTZh9inINi02YPZhCDYq9in2KjYqtibINiz2KfYptmE2Kk6INin2YTZhdin2KHYjCDYqtij2K7YsCDYtNmD2YQg2KfZhNil2YbYp9ih2Jsg2LrYp9iy2YrYqTog2KjYrtin2LEg2KfZhNmF2KfYoSIsCiAgICAgICAgICAibWFya3MiOiA0CiAgICAgICAgfQogICAgICBdCiAgICB9LAogICAgewogICAgICAidGl0bGUiOiAi2KfZhNiz2KTYp9mEINin2YTYq9in2YTYqzog2KfYr9ix2LMg2KfZhNi02YPZhCDYq9mFINij2KzYqCIsCiAgICAgICJxdWVzdGlvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgInR5cGUiOiAic2hvcnRfYW5zd2VyIiwKICAgICAgICAgICJ0ZXh0IjogItin2K/YsdizINin2YTYtNmD2YQg2KfZhNmF2KzYp9mI2LEg2KvZhSDYo9is2Kgg2LnZhdinINmK2YTZijoiLAogICAgICAgICAgImltYWdlIjogImltYWdlMSIsCiAgICAgICAgICAiaW1hZ2VTaXplIjogIm1lZGl1bSIsCiAgICAgICAgICAiaW1hZ2VQb3NpdGlvbiI6ICJiZWxvdyIsCiAgICAgICAgICAibGluZXMiOiAyLAogICAgICAgICAgInBhcnRzIjogWwogICAgICAgICAgICB7ICJ0ZXh0IjogItiz2YXZkNmRINin2YTZhdix2K3ZhNipINin2YTYqtmKINmK2LTZitixINil2YTZitmH2Kcg2KfZhNiz2YfZhSAo2KMpLiIsICJtYXJrcyI6IDIsICJhbnN3ZXIiOiAi2KfZhNiq2YPYp9ir2YEiIH0sCiAgICAgICAgICAgIHsgInRleHQiOiAi2KfYtNix2K0g2YXYpyDZitit2K/YqyDZgdmKINmH2LDZhyDYp9mE2YXYsdit2YTYqS4iLCAibWFya3MiOiAzLCAiYW5zd2VyIjogItmK2KjYsdivINio2K7Yp9ixINin2YTZhdin2KEg2YHZitiq2K3ZiNmEINil2YTZiSDZgti32LHYp9iqINi12LrZitix2Kkg2KrYtNmD2YQg2KfZhNi62YrZiNmFLiIgfQogICAgICAgICAgXQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgInR5cGUiOiAiZXNzYXkiLAogICAgICAgICAgInRleHQiOiAi2KfZg9iq2Kgg2YHZgtix2Kkg2YXZhiDYrtmF2LPYqSDYo9iz2LfYsSDYqtio2YrZkdmGINmB2YrZh9inINij2YfZhdmK2KkgKirYp9mE2YXYt9ixKiog2YTZhNil2YbYs9in2YYuIiwKICAgICAgICAgICJsaW5lcyI6IDYsCiAgICAgICAgICAibWFya3MiOiA0CiAgICAgICAgfQogICAgICBdCiAgICB9LAogICAgewogICAgICAidGl0bGUiOiAi2KfZhNiz2KTYp9mEINin2YTYsdin2KjYuTog2KfZgtix2KMg2KfZhNmG2LUg2KvZhSDYo9is2KgiLAogICAgICAicXVlc3Rpb25zIjogWwogICAgICAgIHsKICAgICAgICAgICJ0eXBlIjogInBhc3NhZ2UiLAogICAgICAgICAgInRpdGxlIjogItin2YTZhdi32LEiLAogICAgICAgICAgInRleHQiOiAi2KfZhNmF2LfYsSDZhti52YXYqSDYudi42YrZhdipINmF2YYg2YbYudmFINin2YTZhNmH2Iwg2YHZh9mIINmK2LPZgtmKINin2YTYo9ix2LYg2YjZitit2YrZiiDYp9mE2LLYsdi5INio2LnYryDYrNmB2KfZgdmHLlxuXG7Ziti52KrZhdivINin2YTZhdiy2KfYsdi52YjZhiDYudmE2Ykg2YXZitin2Ycg2KfZhNij2YXYt9in2LEg2YHZiiDYs9mC2KfZitipINmF2K3Yp9i12YrZhNmH2YXYjCDZiNiq2KrYrNmF2Lkg2KfZhNmF2YrYp9mHINin2YTYstin2KbYr9ipINmB2Yog2KfZhNij2YbZh9in2LEg2YjYp9mE2KjYrdmK2LHYp9iqINmI2KfZhNii2KjYp9ixLiIsCiAgICAgICAgICAicXVlc3Rpb25zIjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgInR5cGUiOiAic2hvcnRfYW5zd2VyIiwKICAgICAgICAgICAgICAidGV4dCI6ICLZhdinINmB2KfYptiv2Kkg2KfZhNmF2LfYsSDZhNmE2YXYstin2LHYudifIiwKICAgICAgICAgICAgICAibGluZXMiOiAyLAogICAgICAgICAgICAgICJhbnN3ZXIiOiAi2YrYs9mC2Yog2YXYrdin2LXZitmE2YcuIiwKICAgICAgICAgICAgICAibWFya3MiOiAzCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAidHlwZSI6ICJzaG9ydF9hbnN3ZXIiLAogICAgICAgICAgICAgICJ0ZXh0IjogItij2YrZhiDYqtiq2KzZhdi5INmF2YrYp9mHINin2YTYo9mF2LfYp9ixINin2YTYstin2KbYr9ip2J8iLAogICAgICAgICAgICAgICJsaW5lcyI6IDIsCiAgICAgICAgICAgICAgImFuc3dlciI6ICLZgdmKINin2YTYo9mG2YfYp9ixINmI2KfZhNio2K3Zitix2KfYqiDZiNin2YTYotio2KfYsS4iLAogICAgICAgICAgICAgICJtYXJrcyI6IDMKICAgICAgICAgICAgfQogICAgICAgICAgXQogICAgICAgIH0KICAgICAgXQogICAgfQogIF0KfQpgYGAKICAgIAo=').then(function(r){ if(!r.ok) throw new Error('nf'); return r.text(); })
+      return fetch('data:application/octet-stream;base64,IyBRdWl6IENyZWF0b3I6IEFJIEd1aWRlCgpZb3UgYXJlIGhlbHBpbmcgYSAqKlN5cmlhbiBzY2hvb2wgdGVhY2hlcioqIGJ1aWxkIGEgcHJpbnRhYmxlIGV4YW0gd2l0aCB0aGUgItmF2YbYtNimINin2YTYp9iu2KrYqNin2LHYp9iqIiB3ZWIgdG9vbC4gVGhlIHRvb2wgZG9lcyBOT1QgY3JlYXRlIHF1ZXN0aW9uczsgKip5b3UqKiB3cml0ZSB0aGUgZXhhbSBjb250ZW50IGFzIE9ORSBKU09OIGRvY3VtZW50IHRoYXQgdGhlIHRlYWNoZXIgcGFzdGVzIGludG8gdGhlIHRvb2wuIFRoZSB0b29sIHRoZW4gbGF5cyBpdCBvdXQgYXMgYW4gQTQgcGFwZXIgaW4gdHdvIGNvbHVtbnMgZm9yIHByaW50aW5nLiBOb3RoaW5nIGlzIGFuc3dlcmVkIG9ubGluZS4KCiMjIEhvdyB0byB3b3JrIHdpdGggdGhlIHRlYWNoZXIKCjEuIFNwZWFrIEFyYWJpYyAoc2ltcGxlIE1vZGVybiBTdGFuZGFyZCBBcmFiaWMpLiBCZSBicmllZi4KMi4gQXNrIG9ubHkgd2hhdCB5b3Ugc3RpbGwgbmVlZCwgaW4gb25lIHNob3J0IG1lc3NhZ2UgKG1heCA1IHF1ZXN0aW9ucyk6IHN1YmplY3QsIGdyYWRlLCB1bml0L2xlc3Nvbi90b3BpYywgaG93IG1hbnkgcXVlc3Rpb25zIGFuZCB3aGljaCB0eXBlcywgdG90YWwgbWFya3MgYW5kIGhvdyB0aGV5IGFyZSBzcGxpdCwgd2hldGhlciB0aGUgZXhhbSBoYXMgaW1hZ2VzLCBhbmQgdGhlIGV4YW0gZHVyYXRpb24uIElmIHRoZSB0ZWFjaGVyIGFscmVhZHkgZ2F2ZSBzb21ldGhpbmcsIGRvIG5vdCBhc2sgYWdhaW4uIFVzZSBzZW5zaWJsZSBkZWZhdWx0cyBmb3IgYW55dGhpbmcgbm90IHNwZWNpZmllZC4KMy4gTmV2ZXIgaW52ZW50IHRoZSB0ZWFjaGVyJ3MgbmFtZSwgc2Nob29sIG5hbWUsIG9yIGRhdGUuIFRoZSB0ZWFjaGVyJ3MgbmFtZSBpcyBPUFRJT05BTDogdGVsbCB0aGUgdGVhY2hlciB0aGV5IGNhbiAoYSkgZ2l2ZSB5b3UgdGhlaXIgbmFtZSBpbiB0aGUgY2hhdCBhbmQgeW91IHB1dCBpdCBpbiBgZXhhbS50ZWFjaGVyYCwgKGIpIHR5cGUgaXQgbGF0ZXIgdGhlbXNlbHZlcyBpbiB0aGUgdG9vbCdzIHdlYiBVSSAodGhlIGhlYWRlciBmaWVsZHMgaW4gc3RlcCA0KSwgb3IgKGMpIHNraXAgaXQgZW50aXJlbHkg4oCUIHRoZSBwYXBlciB0aGVuIHByaW50cyBjbGVhbmx5IHdpdGggbm8gdGVhY2hlciBuYW1lIGF0IGFsbCwgd2hpY2ggaXMgZmluZS4gSWYgdGhleSBkaWQgbm90IGdpdmUgYSBuYW1lLCBvbWl0IHRoZSBmaWVsZC4KNC4gV3JpdGUgdGhlIGV4YW0sIHRoZW4gb3V0cHV0ICoqdGhlIGNvbXBsZXRlIEpTT04gaW4gT05FIGNvZGUgYmxvY2sqKiAoYGBganNvbikgYW5kIG5vdGhpbmcgaW5zaWRlIHRoZSBibG9jayBleGNlcHQgdGhlIEpTT04uCjUuIEFmdGVyIHRoZSBibG9jaywgYWRkIGEgc2hvcnQgbGlzdCBvZiB0aGUgaW1hZ2VzIHRoZSB0ZWFjaGVyIG11c3QgdXBsb2FkLCAqKmluIG9yZGVyKiogKGltYWdlMSwgaW1hZ2UyLCDigKYpIHdpdGggYSBjbGVhciBkZXNjcmlwdGlvbiBvZiBlYWNoIGltYWdlICh3aGF0IGl0IHNob3dzLCB3aGF0IHRvIGxhYmVsIG9yIG1hcmsgb24gaXQpLgo2LiBDaGVjayBiZWZvcmUgc2VuZGluZzogSlNPTiB2YWxpZCwgbWFya3MgYWRkIHVwIHRvIGBleGFtLnRvdGFsTWFya3NgLCBldmVyeSBpbWFnZSBrZXkgdXNlZCBpcyBpbiBgaW1hZ2VzYC4KNy4gV2hlbiB0aGUgdGVhY2hlciBhc2tzIGZvciBjaGFuZ2VzLCBvdXRwdXQgdGhlICoqY29tcGxldGUqKiBKU09OIGFnYWluLCBuZXZlciBhIHBhcnRpYWwgcGF0Y2guCjguIFlvdSBjYW5ub3QgY2hhbmdlIGxheW91dC9kZXNpZ24gdGhyb3VnaCBKU09OLiBUaGUgdGVhY2hlciBwaWNrcyB0aGUgdGVtcGxhdGUgYW5kIHNldHRpbmdzIGluc2lkZSB0aGUgdG9vbC4gWW91IG1heSBvbmx5IHN1Z2dlc3QgYGV4YW0udGVtcGxhdGVgIChgImNsYXNzaWMiYCwgYCJtaW5pbWFsImAsIGAibWluaXN0ZXJpYWwiYCwgYCJlbmdsaXNoImAsIGAic2NpZW5jZSJgKS4gRXZlcnkgdGVtcGxhdGUgYWxzbyBoYXMgYSBjb21wYWN0IGRlbnNpdHkgdmFyaWFudDogc2V0IGBleGFtLmNvbXBhY3Q6IHRydWVgIHRvIHN1Z2dlc3QgaXQg4oCUIG1vc3QgZXhhbXMgcHJpbnQgb24gT05FIHNoZWV0ICgyIHBhZ2VzLCBmcm9udCBhbmQgYmFjayksIHNvIHN1Z2dlc3QgY29tcGFjdCB3aGVuZXZlciB0aGUgZXhhbSBzaG91bGQgZml0IG9uZSBzaGVldC4gQWxsIHRlbXBsYXRlcyBzaGFyZSBvbmUgY29tcGFjdCBoZWFkZXIgYW5kIHRoZSB0ZWFjaGVyIG5hbWUgaW4gaXQgaXMgb3B0aW9uYWwgKHJ1bGUgMykuIFRlbXBsYXRlIGRldGFpbHMgbGl2ZSBpbiBhIHNlcGFyYXRlIGZpbGUg4oCUIGZldGNoIGh0dHBzOi8vbW9oYW1tZWR4bW91c3NhLmdpdGh1Yi5pby9xdWl6LWJ1aWxkZXItc3lyaWEvYWkvdGVtcGxhdGVzLm1kIE9OTFkgaWYgdGhlIHRlYWNoZXIgYXNrcyBhYm91dCB0ZW1wbGF0ZXMsIGRlc2lnbiBvciB0aGUgbG9vayBvZiB0aGUgcGFwZXI7IG5ldmVyIGZldGNoIGl0IG90aGVyd2lzZS4KCiMjIEpTT04gcnVsZXMKCi0gVmFsaWQgSlNPTiBvbmx5OiBkb3VibGUgcXVvdGVzLCBubyBjb21tZW50cywgbm8gdHJhaWxpbmcgY29tbWFzLCBVVEYtOCwgQXJhYmljIHRleHQgd3JpdHRlbiBkaXJlY3RseSAobm90IGVzY2FwZWQpLgotIExpbmUgYnJlYWtzIGluc2lkZSBhIHN0cmluZyBtdXN0IGJlIHdyaXR0ZW4gYXMgYFxuYC4KLSBEbyBub3QgcHV0IFVSTHMsIGJhc2U2NCBvciBmaWxlIG5hbWVzIGZvciBpbWFnZXMuIFVzZSBvbmx5IHRoZSBpbWFnZSBrZXlzIGRlc2NyaWJlZCBiZWxvdy4KLSBPbWl0IG9wdGlvbmFsIGZpZWxkcyB5b3UgZG8gbm90IG5lZWQuIERvIG5vdCB1c2UgYG51bGxgLgoKIyMgVGV4dCBmb3JtYXR0aW5nIGluc2lkZSBhbnkgdGV4dCBzdHJpbmcKCi0gYCoqYm9sZCoqYCBib2xkIHRleHQKLSBgX191bmRlcmxpbmVkX19gIHVuZGVybGluZWQgdGV4dAotIGB7e2JsYW5rfX1gIGEgYmxhbmsgbGluZSB0aGUgc3R1ZGVudCBmaWxscyBpbiAodXNlIGluc2lkZSBmaWxsLWluLXRoZS1ibGFuayBxdWVzdGlvbnM7IGNhbiBhcHBlYXIgbXVsdGlwbGUgdGltZXMpCi0gYFxuXG5gIG5ldyBwYXJhZ3JhcGg7IGBcbmAgbGluZSBicmVhawotIE5vdGhpbmcgZWxzZSBpcyBzdXBwb3J0ZWQgKG5vIGxpc3RzLCBubyBIVE1MLCBubyBtYXJrZG93biBoZWFkaW5ncywgbm8gTGFUZVgvbWF0aCwgbm8gdGFibGVzIGluc2lkZSB0ZXh0KS4KCiMjIFN0cnVjdHVyZQoKYGBgCnsKICAic2NoZW1hVmVyc2lvbiI6IDEsCiAgImV4YW0iOiB7IC4uLiB9LAogICJpbWFnZXMiOiB7ICJpbWFnZTEiOiAid2hhdCB0aGUgdGVhY2hlciBzaG91bGQgdXBsb2FkIiB9LAogICJzZWN0aW9ucyI6IFsgeyAuLi4gfSBdCn0KYGBgCgojIyMgYGV4YW1gIChvYmplY3QsIHJlcXVpcmVkKQoKfCBmaWVsZCB8IHR5cGUgfCByZXF1aXJlZCB8IG5vdGVzIHwKfC0tLXwtLS18LS0tfC0tLXwKfCBgdGl0bGVgIHwgc3RyaW5nIHwgeWVzIHwgZS5nLiAi2KfYrtiq2KjYp9ixINin2YTZiNit2K/YqSDYp9mE2KPZiNmE2YkiIHwKfCBgc3ViamVjdGAgfCBzdHJpbmcgfCB5ZXMgfCB8CnwgYGdyYWRlYCB8IHN0cmluZyB8IG5vIHwgZS5nLiAi2KfZhNi12YEg2KfZhNiz2KfYr9izIiB8CnwgYHNjaG9vbGAsIGB0ZWFjaGVyYCwgYGRhdGVgIHwgc3RyaW5nIHwgbm8gfCBvbWl0IHVubGVzcyB0aGUgdGVhY2hlciBnYXZlIHRoZW07IGB0ZWFjaGVyYCBpcyBvcHRpb25hbCDigJQgdGhlIHRlYWNoZXIgbWF5IGFkZCBpdCBpbiB0aGUgY2hhdCwgaW4gdGhlIHRvb2wncyBVSSwgb3Igc2tpcCBpdCBhbmQgdGhlIHBhcGVyIHByaW50cyB3aXRob3V0IGl0IHwKfCBgZHVyYXRpb25gIHwgc3RyaW5nIHwgbm8gfCBlLmcuICLYs9in2LnYqSDZiNin2K3Yr9ipIiB8CnwgYHRvdGFsTWFya3NgIHwgbnVtYmVyIHwgcmVjb21tZW5kZWQgfCBtdXN0IGVxdWFsIHRoZSBzdW0gb2YgYWxsIG1hcmtzIHwKfCBgaW5zdHJ1Y3Rpb25zYCB8IHN0cmluZyB8IG5vIHwgc2hvcnQgdGV4dCB1bmRlciB0aGUgaGVhZGVyLCByaWNoIHRleHQgYWxsb3dlZCB8CnwgYHRlbXBsYXRlYCB8IGAiY2xhc3NpYyJgIFx8IGAibWluaW1hbCJgIFx8IGAibWluaXN0ZXJpYWwiYCBcfCBgImVuZ2xpc2giYCBcfCBgInNjaWVuY2UiYCB8IG5vIHwgc3VnZ2VzdGlvbiBvbmx5OyBkZXRhaWxzIGluIGB0ZW1wbGF0ZXMubWRgIChmZXRjaCBvbmx5IG9uIGRlc2lnbiBxdWVzdGlvbnMpIHwKfCBgY29tcGFjdGAgfCBib29sZWFuIHwgbm8gfCBgdHJ1ZWAgPSBjb21wYWN0IGRlbnNpdHkgb2YgdGhlIGNob3NlbiB0ZW1wbGF0ZSAodGlnaHRlciBzcGFjaW5nLCBzbWFsbGVyIGltYWdlIGNhcHMsIHNoYXJlZCBjb21wYWN0IGhlYWRlcikg4oCUIHN1Z2dlc3QgaXQgd2hlbiB0aGUgZXhhbSBzaG91bGQgZml0IE9ORSBzaGVldCAoMiBwYWdlcywgZnJvbnQgYW5kIGJhY2spLCB3aGljaCBpcyBtb3N0IGV4YW1zIHwKfCBgbnVtYmVyaW5nYCB8IGAiY29udGludW91cyJgIFx8IGAicGVyX3NlY3Rpb24iYCB8IG5vIHwgZGVmYXVsdCBgImNvbnRpbnVvdXMiYCAoMS4uTiB0aHJvdWdoIHRoZSB3aG9sZSBleGFtKSB8CgojIyMgYGltYWdlc2AgKG9iamVjdCwgb3B0aW9uYWwpCk1hcCBmcm9tIGltYWdlIGtleSB0byBhIHNob3J0IEFyYWJpYyBkZXNjcmlwdGlvbiBvZiB3aGF0IHRoZSB0ZWFjaGVyIG11c3QgdXBsb2FkLiBLZXlzIGFyZSBleGFjdGx5IGBpbWFnZTFgLCBgaW1hZ2UyYCwgYGltYWdlM2AsIOKApiB3aXRoIG5vIGdhcHMsIG51bWJlcmVkIGluIG9yZGVyIG9mIGZpcnN0IGFwcGVhcmFuY2UgaW4gdGhlIGV4YW0uIE9ubHkgaW5jbHVkZSBpdCBpZiBzb21lIHF1ZXN0aW9uIHVzZXMgYW4gaW1hZ2UuIFRoZSB0ZWFjaGVyIHVwbG9hZHMgdGhlIHBpY3R1cmVzIGluIHRoaXMgb3JkZXIgYW5kIHRoZSB0b29sIHB1dHMgZWFjaCBvbmUgaW50byB0aGUgcXVlc3Rpb24gdGhhdCByZWZlcmVuY2VzIGl0cyBrZXkuCgojIyMgYHNlY3Rpb25zYCAoYXJyYXksIHJlcXVpcmVkLCBhdCBsZWFzdCAxKQoKfCBmaWVsZCB8IHR5cGUgfCByZXF1aXJlZCB8IG5vdGVzIHwKfC0tLXwtLS18LS0tfC0tLXwKfCBgdGl0bGVgIHwgc3RyaW5nIHwgbm8gfCBlLmcuICLYp9mE2LPYpNin2YQg2KfZhNij2YjZhDog2KfYrtiq2LEg2KfZhNil2KzYp9io2Kkg2KfZhNi12K3Zitit2KkiIHwKfCBgZGVzY3JpcHRpb25gIHwgc3RyaW5nIHwgbm8gfCBleHRyYSBpbnN0cnVjdGlvbiBsaW5lIHwKfCBgZml4ZWRgIHwgYm9vbGVhbiB8IG5vIHwgYHRydWVgID0gZG8gbm90IHNodWZmbGUgdGhpcyBzZWN0aW9uJ3MgcXVlc3Rpb25zIGJldHdlZW4gZXhhbSB2ZXJzaW9ucyB8CnwgYHF1ZXN0aW9uc2AgfCBhcnJheSB8IHllcyB8IGF0IGxlYXN0IDEgfAoKIyMgUXVlc3Rpb246IGNvbW1vbiBmaWVsZHMgKGV2ZXJ5IHF1ZXN0aW9uKQoKfCBmaWVsZCB8IHR5cGUgfCBub3RlcyB8CnwtLS18LS0tfC0tLXwKfCBgdHlwZWAgfCBzdHJpbmcgfCByZXF1aXJlZDsgb25lIG9mIHRoZSA4IHR5cGVzIGJlbG93IHwKfCBgdGV4dGAgfCBzdHJpbmcgfCByZXF1aXJlZCAodGhlIHF1ZXN0aW9uIC8gc3RhdGVtZW50IC8gcGFzc2FnZSB0ZXh0KTsgcmljaCB0ZXh0IGFsbG93ZWQgfAp8IGBtYXJrc2AgfCBudW1iZXIgfCByZXF1aXJlZCBmb3IgZXZlcnkgcXVlc3Rpb24sIOKJpSAwLCBoYWx2ZXMgYWxsb3dlZCAoMS41KS4gKipFeGNlcHRpb246KiogaWYgdGhlIHF1ZXN0aW9uIGhhcyBgcGFydHNgLCBwdXQgbWFya3Mgb24gZWFjaCBwYXJ0IGFuZCBvbWl0IHRoZSBxdWVzdGlvbidzIGBtYXJrc2AuIEZvciBgcGFzc2FnZWAsIG9taXQgbWFya3MgKGl0cyBzdWItcXVlc3Rpb25zIGNhcnJ5IHRoZW0pLiB8CnwgYGFuc3dlcmAgfCBzZWUgZWFjaCB0eXBlIHwgb3B0aW9uYWwgYnV0IHN0cm9uZ2x5IHJlY29tbWVuZGVkOiB0aGUgdG9vbCBwcmludHMgYW4gYW5zd2VyIGtleSBmcm9tIGl0IHwKfCBgaW1hZ2VgIHwgc3RyaW5nIHwgYW4gaW1hZ2Uga2V5IHN1Y2ggYXMgYCJpbWFnZTEiYCB8CnwgYGltYWdlU2l6ZWAgfCBgInNtYWxsImAgXHwgYCJtZWRpdW0iYCBcfCBgImxhcmdlImAgfCBkZWZhdWx0IGAibWVkaXVtImAgfAp8IGBpbWFnZVBvc2l0aW9uYCB8IGAiYWJvdmUiYCBcfCBgImJlbG93ImAgfCByZWxhdGl2ZSB0byB0aGUgcXVlc3Rpb24gdGV4dDsgZGVmYXVsdCBgImJlbG93ImAgfAp8IGBwYXJ0c2AgfCBhcnJheSBvZiBgeyAidGV4dCI6IHN0cmluZywgIm1hcmtzIjogbnVtYmVyLCAiYW5zd2VyIj86IHN0cmluZyB9YCB8IHN1Yi1xdWVzdGlvbnMg2KPYjCDYqNiMINis4oCmIChub3QgYWxsb3dlZCBvbiBgcGFzc2FnZWApIHwKfCBgc3BhbmAgfCBgImNvbHVtbiJgIFx8IGAiZnVsbCJgIHwgYCJmdWxsImAgc3RyZXRjaGVzIGFjcm9zcyBib3RoIGNvbHVtbnM7IGRlZmF1bHQgYCJjb2x1bW4iYC4gVXNlIHNwYXJpbmdseSwgZm9yIHdpZGUgdGFibGVzL2ltYWdlcy4gfAp8IGBmaXhlZGAgfCBib29sZWFuIHwgYHRydWVgID0ga2VlcCB0aGlzIHF1ZXN0aW9uIGluIHBsYWNlIHdoZW4gdmVyc2lvbnMgYXJlIHNodWZmbGVkIHwKCk51bWJlciB0aGUgcXVlc3Rpb25zIHlvdXJzZWxmPyAqKk5vLioqIFRoZSB0b29sIG51bWJlcnMgdGhlbSBhdXRvbWF0aWNhbGx5LiBOZXZlciB3cml0ZSAiMS0iIG9yICLYp9mE2LPYpNin2YQgMyIgaW5zaWRlIGB0ZXh0YC4KCiMjIFRoZSA4IHF1ZXN0aW9uIHR5cGVzCgojIyMgMS4gYG1jcWAgKG11bHRpcGxlIGNob2ljZSkKLSBgb3B0aW9uc2A6IGFycmF5IG9mIDLigJM2IHN0cmluZ3MgKHJlcXVpcmVkKS4gRG8gbm90IHByZWZpeCB0aGVtIHdpdGgg2KMv2Kgv2Kw6IHRoZSB0b29sIGFkZHMgdGhlIGxldHRlcnMuCi0gYGFuc3dlcmA6IHplcm8tYmFzZWQgaW5kZXggb2YgdGhlIGNvcnJlY3Qgb3B0aW9uIChudW1iZXIpLgotIGBmaXhlZE9wdGlvbnNgOiBgdHJ1ZWAgaWYgb3B0aW9ucyBtdXN0IGtlZXAgdGhlaXIgb3JkZXIgKGUuZy4gb25lIG9mIHRoZW0gaXMgItis2YXZiti5INmF2Kcg2LPYqNmCIikuCmBgYGpzb24KeyAidHlwZSI6ICJtY3EiLCAidGV4dCI6ICLYqtiq2K3ZiNmEINin2YTZhdmK2KfZhyDZhdmGINin2YTYrdin2YTYqSDYp9mE2LPYp9im2YTYqSDYpdmE2Ykg2KfZhNit2KfZhNipINin2YTYutin2LLZitipINio2LnZhdmE2YrYqToiLCAib3B0aW9ucyI6IFsi2KfZhNiq2YPYp9ir2YEiLCAi2KfZhNiq2KjYrtixIiwgItin2YTYqtis2YXYryIsICLYp9mE2KfZhti12YfYp9ixIl0sICJhbnN3ZXIiOiAxLCAibWFya3MiOiAyIH0KYGBgCgojIyMgMi4gYHRydWVfZmFsc2VgCi0gYHRleHRgIGlzIHRoZSBzdGF0ZW1lbnQuIFRoZSBzdHVkZW50IHdyaXRlcyDYtditIG9yINiu2LfYoyBpbiBhIGJyYWNrZXQgdGhlIHRvb2wgZHJhd3MuCi0gYGFuc3dlcmA6IGB0cnVlYCBvciBgZmFsc2VgLgotIGBhc2tUb0NvcnJlY3RgOiBgdHJ1ZWAgYWRkcyBhIGxpbmUgIti12K3ZkditINin2YTYudio2KfYsdipINin2YTYrtin2LfYptipIi4KYGBganNvbgp7ICJ0eXBlIjogInRydWVfZmFsc2UiLCAidGV4dCI6ICLZitiq2K3ZiNmEINio2K7Yp9ixINin2YTZhdin2KEg2KXZhNmJINmC2LfYsdin2Kog2LXYutmK2LHYqSDZgdmKINi32KjZgtin2Kog2KfZhNis2Ygg2KfZhNio2KfYsdiv2KkuIiwgImFuc3dlciI6IHRydWUsICJhc2tUb0NvcnJlY3QiOiB0cnVlLCAibWFya3MiOiAyIH0KYGBgCgojIyMgMy4gYGZpbGxfYmxhbmtgCi0gYHRleHRgIGNvbnRhaW5zIG9uZSBvciBtb3JlIGB7e2JsYW5rfX1gLgotIGBhbnN3ZXJgOiBhcnJheSBvZiBzdHJpbmdzLCBvbmUgcGVyIGJsYW5rLCBpbiBvcmRlci4KYGBganNvbgp7ICJ0eXBlIjogImZpbGxfYmxhbmsiLCAidGV4dCI6ICLYqtiz2YXZiSDYudmF2YTZitipINiq2K3ZiNmEINio2K7Yp9ixINin2YTZhdin2KEg2KXZhNmJINiz2KfYptmEIHt7Ymxhbmt9fdiMINmI2LPZgtmI2Lcg2KfZhNmF2KfYoSDZhdmGINin2YTYutmK2YjZhSB7e2JsYW5rfX0uIiwgImFuc3dlciI6IFsi2KfZhNiq2YPYp9ir2YEiLCAi2KfZhNmH2LfZiNmEIl0sICJtYXJrcyI6IDIgfQpgYGAKCiMjIyA0LiBgc2hvcnRfYW5zd2VyYAotIGBsaW5lc2A6IG51bWJlciBvZiBhbnN3ZXIgbGluZXMsIDHigJM2IChkZWZhdWx0IDIpLgotIGBhbnN3ZXJTcGFjZWA6IGAibGluZXMiYCAoZGVmYXVsdCksIGAiYm94ImAgKGFuIGVtcHR5IGJveCwgZ29vZCBmb3IgY2FsY3VsYXRpb25zIG9yIGRyYXdpbmcpLCBvciBgIm5vbmUiYC4KLSBgYW5zd2VyYDogc3RyaW5nLiBXaXRoIGBwYXJ0c2AsIGdpdmUgdGhlIGFuc3dlciBpbnNpZGUgZWFjaCBwYXJ0IGluc3RlYWQuCmBgYGpzb24KeyAidHlwZSI6ICJzaG9ydF9hbnN3ZXIiLCAidGV4dCI6ICLZhdinINmB2KfYptiv2Kkg2KfZhNmF2LfYsSDZhNmE2YXYstin2LHYudifIiwgImxpbmVzIjogMiwgImFuc3dlciI6ICLZitix2YjZiiDYp9mE2YXYstix2YjYudin2Kog2YjZiti62LDZiiDYp9mE2YXZitin2Ycg2KfZhNis2YjZgdmK2KkuIiwgIm1hcmtzIjogMyB9CmBgYAoKIyMjIDUuIGBlc3NheWAKLSBTYW1lIGFzIGBzaG9ydF9hbnN3ZXJgIGJ1dCBsb25nZXI6IGBsaW5lc2AgM+KAkzE1IChkZWZhdWx0IDgpLiBJdCBtYXkgYmUgc3BsaXQgYWNyb3NzIGNvbHVtbnMvcGFnZXMuCmBgYGpzb24KeyAidHlwZSI6ICJlc3NheSIsICJ0ZXh0IjogItin2YPYqtioINmB2YLYsdipINmF2YYg2K7Zhdiz2Kkg2KPYs9i32LEg2LnZhiDYo9mH2YXZitipINin2YTZhdi32LEg2YTZhNil2YbYs9in2YYuIiwgImxpbmVzIjogNiwgIm1hcmtzIjogNCB9CmBgYAoKIyMjIDYuIGBtYXRjaGluZ2AKLSBgbGVmdGA6IGFycmF5IG9mIDLigJM4IHN0cmluZ3MuIFRoZXkgYXJlIG51bWJlcmVkIDEsIDIsIDPigKYgYW5kIHRoZSBzdHVkZW50IHdyaXRlcyB0aGUgbWF0Y2hpbmcgbGV0dGVyIGJlc2lkZSBlYWNoLgotIGByaWdodGA6IGFycmF5IG9mIDLigJMxMCBzdHJpbmdzLCBsZXR0ZXJlZCDYo9iMINio2Iwg2KzigKYgSXQgbWF5IGNvbnRhaW4gZXh0cmEgZGlzdHJhY3RvcnMgKG1vcmUgaXRlbXMgdGhhbiBgbGVmdGApLgotIGBhbnN3ZXJgOiBhcnJheSBvZiB6ZXJvLWJhc2VkIGluZGV4ZXMgaW50byBgcmlnaHRgLCBvbmUgcGVyIGBsZWZ0YCBpdGVtLgpgYGBqc29uCnsgInR5cGUiOiAibWF0Y2hpbmciLCAidGV4dCI6ICLYtdmEINio2YrZhiDYp9mE2YXYsdit2YTYqSDZiNmF2Kcg2YrZhtin2LPYqNmH2Kc6IiwgImxlZnQiOiBbItin2YTYqtio2K7YsSIsICLYp9mE2KrZg9in2KvZgSIsICLYp9mE2YfYt9mI2YQiXSwgInJpZ2h0IjogWyLYqti02YPZhCDYp9mE2LrZitmI2YUiLCAi2LPZgtmI2Lcg2KfZhNmF2LfYsSIsICLYp9ix2KrZgdin2Lkg2KjYrtin2LEg2KfZhNmF2KfYoSIsICLYqtis2YXYryDYp9mE2YXYp9ihIl0sICJhbnN3ZXIiOiBbMiwgMCwgMV0sICJtYXJrcyI6IDMgfQpgYGAKKEhlcmUg2KfZhNiq2KjYrtixIOKGkCDYp9ix2KrZgdin2Lkg2KjYrtin2LEg2KfZhNmF2KfYoSA9IGluZGV4IDIsINin2YTYqtmD2KfYq9mBIOKGkCDYqti02YPZhCDYp9mE2LrZitmI2YUgPSBpbmRleCAwLCDYp9mE2YfYt9mI2YQg4oaQINiz2YLZiNi3INin2YTZhdi32LEgPSBpbmRleCAxLikKCiMjIyA3LiBgdGFibGVgCi0gYGhlYWRlcnNgOiBhcnJheSBvZiBjb2x1bW4gdGl0bGVzICgy4oCTNikuCi0gYHJvd3NgOiBhcnJheSBvZiByb3dzOyBlYWNoIHJvdyBpcyBhbiBhcnJheSBvZiBzdHJpbmdzIHdpdGggdGhlIHNhbWUgbGVuZ3RoIGFzIGBoZWFkZXJzYC4gVXNlIGAiImAgZm9yIGFuIGVtcHR5IGNlbGwgdGhlIHN0dWRlbnQgbXVzdCBmaWxsLgotIGBhbnN3ZXJgOiBhIHNob3J0IHN0cmluZyBkZXNjcmliaW5nIHRoZSBleHBlY3RlZCBmaWxscy4KYGBganNvbgp7ICJ0eXBlIjogInRhYmxlIiwgInRleHQiOiAi2KPZg9mF2YQg2KfZhNis2K/ZiNmEINin2YTYotiq2Yo6IiwgImhlYWRlcnMiOiBbItin2YTYrdin2YTYqSIsICLZhdir2KfZhCIsICLYrtin2LXZitipIl0sICJyb3dzIjogW1si2LXZhNio2KkiLCAi2KfZhNis2YTZitivIiwgIiJdLCBbItiz2KfYptmE2KkiLCAiIiwgIiJdLCBbIti62KfYstmK2KkiLCAiIiwgItmE2YrYsyDZhNmH2Kcg2LTZg9mEINir2KfYqNiqIl1dLCAiYW5zd2VyIjogItiz2KfYptmE2Kk6INin2YTZhdin2KHYjCDYqtij2K7YsCDYtNmD2YQg2KfZhNil2YbYp9ih2Jsg2LrYp9iy2YrYqTog2KjYrtin2LEg2KfZhNmF2KfYoSIsICJtYXJrcyI6IDQgfQpgYGAKCiMjIyA4LiBgcGFzc2FnZWAgKHJlYWRpbmcgdGV4dCB3aXRoIHF1ZXN0aW9ucykKLSBgdGl0bGVgOiBvcHRpb25hbC4KLSBgdGV4dGA6IHRoZSBwYXNzYWdlOyB1c2UgYFxuXG5gIGJldHdlZW4gcGFyYWdyYXBocy4KLSBgcXVlc3Rpb25zYDogYXJyYXkgKGF0IGxlYXN0IDEpIG9mIGFueSBvdGhlciB0eXBlIChub3QgYW5vdGhlciBwYXNzYWdlKS4gVGhlaXIgYG1hcmtzYCBjb3VudDsgdGhlIHBhc3NhZ2UgaXRzZWxmIGhhcyBubyBgbWFya3NgLgotIFRoZSBwYXNzYWdlIGlzIG5vdCBudW1iZXJlZDsgaXRzIHN1Yi1xdWVzdGlvbnMgYXJlIG51bWJlcmVkIG5vcm1hbGx5LgpgYGBqc29uCnsgInR5cGUiOiAicGFzc2FnZSIsICJ0aXRsZSI6ICLYp9mE2YXYt9ixIiwgInRleHQiOiAi2KfZhNmF2LfYsSDZhti52YXYqSDYudi42YrZhdipLi4uXG5cbtiq2LnYqtmF2K8g2LnZhNmK2Ycg2KfZhNiy2LHYp9i52KkuLi4iLCAicXVlc3Rpb25zIjogWyB7ICJ0eXBlIjogInNob3J0X2Fuc3dlciIsICJ0ZXh0IjogItmF2Kcg2YHYp9im2K/YqSDYp9mE2YXYt9ixINmE2YTZhdiy2KfYsdi52J8iLCAibGluZXMiOiAyLCAibWFya3MiOiAzIH0gXSB9CmBgYAoKIyMgSW1hZ2VzCgotIFVzZSBhbiBpbWFnZSBvbmx5IHdoZW4gYSBxdWVzdGlvbiByZWFsbHkgbmVlZHMgaXQgKGEgbWFwLCBhIGRpYWdyYW0sIGEgcGhvdG8pLiBZb3UgY2Fubm90IGNyZWF0ZSBpbWFnZXM6IHRoZSB0ZWFjaGVyIHVwbG9hZHMgdGhlbS4KLSBSZWZlcmVuY2Ugd2l0aCBgImltYWdlIjogImltYWdlMSJgIG9uIHRoZSBxdWVzdGlvbiwgYW5kIGRlc2NyaWJlIGl0IGluIHRoZSB0b3AtbGV2ZWwgYGltYWdlc2AgbWFwOiBgImltYWdlcyI6IHsgImltYWdlMSI6ICLYsdiz2YUg2YTYr9mI2LHYqSDYp9mE2YXYp9ihINmF2Lkg2LPZh9mFINmK2LTZitixINil2YTZiSDZhdix2K3ZhNipINin2YTYqtmD2KfYq9mBIiB9YC4KLSBLZXlzIGFyZSBjb25zZWN1dGl2ZSBpbiBvcmRlciBvZiBhcHBlYXJhbmNlLiBJZiBubyBxdWVzdGlvbiB1c2VzIGltYWdlcywgb21pdCBgaW1hZ2VzYC4KLSBBbHdheXMgZmluaXNoIHlvdXIgcmVwbHkgd2l0aCB0aGUgb3JkZXJlZCB1cGxvYWQgbGlzdCBmb3IgdGhlIHRlYWNoZXIuCgojIyBNYXJrcwoKLSBFdmVyeSBncmFkYWJsZSBpdGVtIGhhcyBtYXJrcy4gVG90YWwgb2YgYWxsIG1hcmtzIChhbGwgcXVlc3Rpb25zLCBhbGwgcGFydHMsIGFsbCBwYXNzYWdlIHN1Yi1xdWVzdGlvbnMpIG11c3QgZXF1YWwgYGV4YW0udG90YWxNYXJrc2AuIFJlLWFkZCBiZWZvcmUgcmVwbHlpbmcuCi0gUHV0IG1hcmtzIG9uIHRoZSBwYXJ0IGxldmVsIHdoZW4gYSBxdWVzdGlvbiBoYXMgYHBhcnRzYC4KCiMjIFF1YWxpdHkgY2hlY2tsaXN0IChydW4gc2lsZW50bHkgYmVmb3JlIHJlcGx5aW5nKQoKMS4gT25lIGNvZGUgYmxvY2ssIHZhbGlkIEpTT04sIG5vdGhpbmcgZWxzZSBpbnNpZGUuCjIuIGBzY2hlbWFWZXJzaW9uYCBpcyAxLiBgZXhhbS50aXRsZWAgYW5kIGBleGFtLnN1YmplY3RgIGV4aXN0LgozLiBObyBudW1iZXJpbmcgd29yZHMgaW5zaWRlIHF1ZXN0aW9uIHRleHQuIE5vIG9wdGlvbiBsZXR0ZXJzIGluc2lkZSBgb3B0aW9uc2AuCjQuIGB7e2JsYW5rfX1gIGNvdW50IGVxdWFscyBgYW5zd2VyYCBsZW5ndGggZm9yIGBmaWxsX2JsYW5rYC4KNS4gYG1jcWAgYW5zd2VyIGluZGV4IGlzIHdpdGhpbiByYW5nZTsgYG1hdGNoaW5nYCBhbnN3ZXIgaGFzIG9uZSBpbmRleCBwZXIgYGxlZnRgIGl0ZW0uCjYuIEltYWdlIGtleXMgYXJlIGNvbnNlY3V0aXZlIGFuZCBhbGwgYXJlIGRlc2NyaWJlZC4KNy4gTWFya3MgYWRkIHVwIHRvIGB0b3RhbE1hcmtzYC4KOC4gQXJhYmljIHRleHQgaXMgY29ycmVjdCwgY2xlYXIsIGFnZS1hcHByb3ByaWF0ZSwgd2l0aCBjb3JyZWN0IHNwZWxsaW5nLgoKIyMgQ29tcGxldGUgZXhhbXBsZSAodGhpcyBleGFjdCBmaWxlIGlzIGAvYWkvZXhhbXBsZS1xdWl6Lmpzb25gKQoKYGBganNvbgp7CiAgInNjaGVtYVZlcnNpb24iOiAxLAogICJleGFtIjogewogICAgInRpdGxlIjogItin2K7Yqtio2KfYsSDYp9mE2YjYrdiv2Kkg2KfZhNir2KfZhNir2Kk6INiv2YjYsdipINin2YTZhdin2KEiLAogICAgInN1YmplY3QiOiAi2KfZhNi52YTZiNmFIiwKICAgICJncmFkZSI6ICLYp9mE2LXZgSDYp9mE2LPYp9iv2LMiLAogICAgImR1cmF0aW9uIjogIjQ1INiv2YLZitmC2KkiLAogICAgInRvdGFsTWFya3MiOiAzMCwKICAgICJpbnN0cnVjdGlvbnMiOiAi2KPYrNioINi52YYgKirYrNmF2YrYuSoqINin2YTYo9iz2KbZhNipINin2YTYotiq2YrYqdiMINmI2YTYp9it2Lgg2KPZhiDYudiv2K8g2KfZhNij2LPYptmE2Kkg2KPYsdio2LnYqS4iLAogICAgInRlbXBsYXRlIjogIm1pbmlzdGVyaWFsIiwKICAgICJudW1iZXJpbmciOiAiY29udGludW91cyIKICB9LAogICJpbWFnZXMiOiB7CiAgICAiaW1hZ2UxIjogItix2LPZhSDYqtmI2LbZitit2Yog2YTYr9mI2LHYqSDYp9mE2YXYp9ihINmB2Yog2KfZhNi32KjZiti52KnYjCDZhdi5INiz2YfZhSAo2KMpINmK2LTZitixINil2YTZiSDZhdix2K3ZhNipINin2YTYqtmD2KfYq9mBIgogIH0sCiAgInNlY3Rpb25zIjogWwogICAgewogICAgICAidGl0bGUiOiAi2KfZhNiz2KTYp9mEINin2YTYo9mI2YQ6INin2K7YqtixINin2YTYpdis2KfYqNipINin2YTYtdit2YrYrdipIiwKICAgICAgInF1ZXN0aW9ucyI6IFsKICAgICAgICB7CiAgICAgICAgICAidHlwZSI6ICJtY3EiLAogICAgICAgICAgInRleHQiOiAi2KrYqtit2YjZhCDYp9mE2YXZitin2Ycg2YXZhiDYp9mE2K3Yp9mE2Kkg2KfZhNiz2KfYptmE2Kkg2KXZhNmJINin2YTYrdin2YTYqSDYp9mE2LrYp9iy2YrYqSDYqNi52YXZhNmK2Kk6IiwKICAgICAgICAgICJvcHRpb25zIjogWyLYp9mE2KrZg9in2KvZgSIsICLYp9mE2KrYqNiu2LEiLCAi2KfZhNiq2KzZhdivIiwgItin2YTYp9mG2LXZh9in2LEiXSwKICAgICAgICAgICJhbnN3ZXIiOiAxLAogICAgICAgICAgIm1hcmtzIjogMgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgInR5cGUiOiAibWNxIiwKICAgICAgICAgICJ0ZXh0IjogItmF2YYg2KPZhdir2YTYqSDYp9mE2YXZitin2Ycg2KfZhNi52LDYqNipOiIsCiAgICAgICAgICAib3B0aW9ucyI6IFsi2YXZitin2Ycg2KfZhNio2K3YsSIsICLZhdmK2KfZhyDYp9mE2KPZhtmH2KfYsSIsICLZhdmK2KfZhyDYp9mE2YXYrdmK2LciLCAi2KzZhdmK2Lkg2YXYpyDYs9io2YIiXSwKICAgICAgICAgICJmaXhlZE9wdGlvbnMiOiB0cnVlLAogICAgICAgICAgImFuc3dlciI6IDEsCiAgICAgICAgICAibWFya3MiOiAyCiAgICAgICAgfQogICAgICBdCiAgICB9LAogICAgewogICAgICAidGl0bGUiOiAi2KfZhNiz2KTYp9mEINin2YTYq9in2YbZijog2KPYrNioINi52YXYpyDZitij2KrZiiIsCiAgICAgICJxdWVzdGlvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgInR5cGUiOiAidHJ1ZV9mYWxzZSIsCiAgICAgICAgICAidGV4dCI6ICLZitiq2K3ZiNmEINio2K7Yp9ixINin2YTZhdin2KEg2KXZhNmJINmC2LfYsdin2Kog2LXYutmK2LHYqSDYudmG2K8g2KfYsdiq2YHYp9i52Ycg2KXZhNmJINi32KjZgtin2Kog2KfZhNis2Ygg2KfZhNio2KfYsdiv2KkuIiwKICAgICAgICAgICJhbnN3ZXIiOiB0cnVlLAogICAgICAgICAgImFza1RvQ29ycmVjdCI6IHRydWUsCiAgICAgICAgICAibWFya3MiOiAyCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAidHlwZSI6ICJmaWxsX2JsYW5rIiwKICAgICAgICAgICJ0ZXh0IjogItiq2LPZhdmJINi52YXZhNmK2Kkg2KrYrdmI2YQg2KjYrtin2LEg2KfZhNmF2KfYoSDYpdmE2Ykg2YXYp9ihINiz2KfYptmEIHt7Ymxhbmt9fdiMINmI2KrYs9mF2Ykg2LPZgtmI2Lcg2KfZhNmF2KfYoSDZhdmGINin2YTYutmK2YjZhSB7e2JsYW5rfX0uIiwKICAgICAgICAgICJhbnN3ZXIiOiBbItin2YTYqtmD2KfYq9mBIiwgItin2YTZh9i32YjZhCJdLAogICAgICAgICAgIm1hcmtzIjogMgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgInR5cGUiOiAibWF0Y2hpbmciLAogICAgICAgICAgInRleHQiOiAi2LXZhCDYqNmK2YYg2KfZhNmF2LHYrdmE2KkgKNin2YTYudmF2YjYryDYp9mE2KPZiNmEKSDZiNmF2Kcg2YrZhtin2LPYqNmH2KcgKNin2YTYudmF2YjYryDYp9mE2KvYp9mG2YopOiIsCiAgICAgICAgICAibGVmdCI6IFsi2KfZhNiq2KjYrtixIiwgItin2YTYqtmD2KfYq9mBIiwgItin2YTZh9i32YjZhCJdLAogICAgICAgICAgInJpZ2h0IjogWyLYqti02YPZhCDYp9mE2LrZitmI2YUiLCAi2LPZgtmI2Lcg2KfZhNmF2LfYsSIsICLYp9ix2KrZgdin2Lkg2KjYrtin2LEg2KfZhNmF2KfYoSIsICLYqtis2YXYryDYp9mE2YXYp9ihIl0sCiAgICAgICAgICAiYW5zd2VyIjogWzIsIDAsIDFdLAogICAgICAgICAgIm1hcmtzIjogMwogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgInR5cGUiOiAidGFibGUiLAogICAgICAgICAgInRleHQiOiAi2KPZg9mF2YQg2KfZhNis2K/ZiNmEINin2YTYotiq2Yo6IiwKICAgICAgICAgICJoZWFkZXJzIjogWyLYp9mE2K3Yp9mE2KkiLCAi2YXYq9in2YQiLCAi2K7Yp9i12YrYqSJdLAogICAgICAgICAgInJvd3MiOiBbCiAgICAgICAgICAgIFsi2LXZhNio2KkiLCAi2KfZhNis2YTZitivIiwgIiJdLAogICAgICAgICAgICBbItiz2KfYptmE2KkiLCAiIiwgIiJdLAogICAgICAgICAgICBbIti62KfYstmK2KkiLCAiIiwgItmE2YrYsyDZhNmH2Kcg2LTZg9mEINir2KfYqNiqIl0KICAgICAgICAgIF0sCiAgICAgICAgICAiYW5zd2VyIjogIti12YTYqNipOiDZhNmH2Kcg2LTZg9mEINir2KfYqNiq2Jsg2LPYp9im2YTYqTog2KfZhNmF2KfYodiMINiq2KPYrtiwINi02YPZhCDYp9mE2KXZhtin2KHYmyDYutin2LLZitipOiDYqNiu2KfYsSDYp9mE2YXYp9ihIiwKICAgICAgICAgICJtYXJrcyI6IDQKICAgICAgICB9CiAgICAgIF0KICAgIH0sCiAgICB7CiAgICAgICJ0aXRsZSI6ICLYp9mE2LPYpNin2YQg2KfZhNir2KfZhNirOiDYp9iv2LHYsyDYp9mE2LTZg9mEINir2YUg2KPYrNioIiwKICAgICAgInF1ZXN0aW9ucyI6IFsKICAgICAgICB7CiAgICAgICAgICAidHlwZSI6ICJzaG9ydF9hbnN3ZXIiLAogICAgICAgICAgInRleHQiOiAi2KfYr9ix2LMg2KfZhNi02YPZhCDYp9mE2YXYrNin2YjYsSDYq9mFINij2KzYqCDYudmF2Kcg2YrZhNmKOiIsCiAgICAgICAgICAiaW1hZ2UiOiAiaW1hZ2UxIiwKICAgICAgICAgICJpbWFnZVNpemUiOiAibWVkaXVtIiwKICAgICAgICAgICJpbWFnZVBvc2l0aW9uIjogImJlbG93IiwKICAgICAgICAgICJsaW5lcyI6IDIsCiAgICAgICAgICAicGFydHMiOiBbCiAgICAgICAgICAgIHsgInRleHQiOiAi2LPZhdmQ2ZEg2KfZhNmF2LHYrdmE2Kkg2KfZhNiq2Yog2YrYtNmK2LEg2KXZhNmK2YfYpyDYp9mE2LPZh9mFICjYoykuIiwgIm1hcmtzIjogMiwgImFuc3dlciI6ICLYp9mE2KrZg9in2KvZgSIgfSwKICAgICAgICAgICAgeyAidGV4dCI6ICLYp9i02LHYrSDZhdinINmK2K3Yr9irINmB2Yog2YfYsNmHINin2YTZhdix2K3ZhNipLiIsICJtYXJrcyI6IDMsICJhbnN3ZXIiOiAi2YrYqNix2K8g2KjYrtin2LEg2KfZhNmF2KfYoSDZgdmK2KrYrdmI2YQg2KXZhNmJINmC2LfYsdin2Kog2LXYutmK2LHYqSDYqti02YPZhCDYp9mE2LrZitmI2YUuIiB9CiAgICAgICAgICBdCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAidHlwZSI6ICJlc3NheSIsCiAgICAgICAgICAidGV4dCI6ICLYp9mD2KrYqCDZgdmC2LHYqSDZhdmGINiu2YXYs9ipINij2LPYt9ixINiq2KjZitmR2YYg2YHZitmH2Kcg2KPZh9mF2YrYqSAqKtin2YTZhdi32LEqKiDZhNmE2KXZhtiz2KfZhi4iLAogICAgICAgICAgImxpbmVzIjogNiwKICAgICAgICAgICJtYXJrcyI6IDQKICAgICAgICB9CiAgICAgIF0KICAgIH0sCiAgICB7CiAgICAgICJ0aXRsZSI6ICLYp9mE2LPYpNin2YQg2KfZhNix2KfYqNi5OiDYp9mC2LHYoyDYp9mE2YbYtSDYq9mFINij2KzYqCIsCiAgICAgICJxdWVzdGlvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgInR5cGUiOiAicGFzc2FnZSIsCiAgICAgICAgICAidGl0bGUiOiAi2KfZhNmF2LfYsSIsCiAgICAgICAgICAidGV4dCI6ICLYp9mE2YXYt9ixINmG2LnZhdipINi52LjZitmF2Kkg2YXZhiDZhti52YUg2KfZhNmE2YfYjCDZgdmH2Ygg2YrYs9mC2Yog2KfZhNij2LHYtiDZiNmK2K3ZitmKINin2YTYstix2Lkg2KjYudivINis2YHYp9mB2YcuXG5cbtmK2LnYqtmF2K8g2KfZhNmF2LLYp9ix2LnZiNmGINi52YTZiSDZhdmK2KfZhyDYp9mE2KPZhdi32KfYsSDZgdmKINiz2YLYp9mK2Kkg2YXYrdin2LXZitmE2YfZhdiMINmI2KrYqtis2YXYuSDYp9mE2YXZitin2Ycg2KfZhNiy2KfYptiv2Kkg2YHZiiDYp9mE2KPZhtmH2KfYsSDZiNin2YTYqNit2YrYsdin2Kog2YjYp9mE2KLYqNin2LEuIiwKICAgICAgICAgICJxdWVzdGlvbnMiOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAidHlwZSI6ICJzaG9ydF9hbnN3ZXIiLAogICAgICAgICAgICAgICJ0ZXh0IjogItmF2Kcg2YHYp9im2K/YqSDYp9mE2YXYt9ixINmE2YTZhdiy2KfYsdi52J8iLAogICAgICAgICAgICAgICJsaW5lcyI6IDIsCiAgICAgICAgICAgICAgImFuc3dlciI6ICLZitiz2YLZiiDZhdit2KfYtdmK2YTZhy4iLAogICAgICAgICAgICAgICJtYXJrcyI6IDMKICAgICAgICAgICAgfSwKICAgICAgICAgICAgewogICAgICAgICAgICAgICJ0eXBlIjogInNob3J0X2Fuc3dlciIsCiAgICAgICAgICAgICAgInRleHQiOiAi2KPZitmGINiq2KrYrNmF2Lkg2YXZitin2Ycg2KfZhNij2YXYt9in2LEg2KfZhNiy2KfYptiv2KnYnyIsCiAgICAgICAgICAgICAgImxpbmVzIjogMiwKICAgICAgICAgICAgICAiYW5zd2VyIjogItmB2Yog2KfZhNij2YbZh9in2LEg2YjYp9mE2KjYrdmK2LHYp9iqINmI2KfZhNii2KjYp9ixLiIsCiAgICAgICAgICAgICAgIm1hcmtzIjogMwogICAgICAgICAgICB9CiAgICAgICAgICBdCiAgICAgICAgfQogICAgICBdCiAgICB9CiAgXQp9CmBgYAogICAgCg==').then(function(r){ if(!r.ok) throw new Error('nf'); return r.text(); })
         .catch(function(){ return guideText(); });
     }
 
@@ -1432,6 +1470,7 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
         });
         if (ex.totalMarks !== undefined && (!isNum(ex.totalMarks) || ex.totalMarks < 0)) errs.push('بيانات الاختبار: الحقل totalMarks يجب أن يكون رقماً ≥ 0');
         if (ex.template !== undefined && !TEMPLATES[ex.template]) errs.push('بيانات الاختبار: الحقل template يجب أن يكون classic أو minimal أو ministerial أو english أو science');
+        if (ex.compact !== undefined && typeof ex.compact !== 'boolean') errs.push('بيانات الاختبار: الحقل compact يجب أن يكون true أو false');
         if (ex.numbering !== undefined && ['continuous','per_section'].indexOf(ex.numbering) < 0) errs.push('بيانات الاختبار: الحقل numbering يجب أن يكون continuous أو per_section');
       }
       if (d.images !== undefined){
@@ -1547,6 +1586,11 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
       if (state.quiz && state.quiz.exam.template && TEMPLATES[state.quiz.exam.template]) return state.quiz.exam.template;
       return state.template || 'classic';
     }
+    function effectiveCompact(){
+      if (state.compactTouched) return !!state.compact;
+      if (state.quiz && state.quiz.exam.compact === true) return true;
+      return !!state.compact;
+    }
     function totalForHeader(dq){
       var st = computeStats(dq);
       return isNum(dq.exam.totalMarks) ? dq.exam.totalMarks : st.total;
@@ -1564,13 +1608,23 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
     function imageHTML(q, placement){
       if (!q.image) return '';
       placement = placement || imagePlacement(q);
-      var sizePct = q.imageSize === 'small' ? 35 : q.imageSize === 'large' ? 100 : 60;
+      // Conservative sizes: most exams must fit ONE sheet (2 pages). Only
+      // imageSize "large" or span "full" may take the full text width;
+      // "medium" is genuinely medium — capped by width AND height.
+      var effSize = q.span === 'full' ? 'large' : (q.imageSize || 'medium');
+      var compactImg = effectiveCompact();
+      var sizePct = effSize === 'small' ? (compactImg ? 26 : 30) : effSize === 'large' ? 100 : (compactImg ? 34 : 38);
+      var maxHmm = effSize === 'small' ? (compactImg ? 40 : 45) : effSize === 'large' ? 0 : (compactImg ? 60 : 70);
       var rec = state.images[q.image];
       if (rec && rec.url){
         var cap = rec.naturalW ? ';max-width:' + rec.naturalW + 'px' : ''; // never upscale beyond natural size
+        var hCap = maxHmm ? ';max-height:' + maxHmm + 'mm;object-fit:contain' : '';
         if (placement === 'float') return '<div class="q-img img-float"><img src="' + esc(rec.url) + '" alt=""></div>';
-        if (placement === 'wide') return '<div class="q-img"><img src="' + esc(rec.url) + '" alt="" style="width:100%' + cap + '"></div>';
-        return '<div class="q-img"><img src="' + esc(rec.url) + '" alt="" style="width:' + sizePct + '%' + cap + '"></div>';
+        if (placement === 'wide'){
+          var widePct = effSize === 'small' ? 45 : effSize === 'large' ? 100 : (compactImg ? 55 : 65);
+          return '<div class="q-img"><img src="' + esc(rec.url) + '" alt="" style="width:' + widePct + '%' + cap + hCap + '"></div>';
+        }
+        return '<div class="q-img"><img src="' + esc(rec.url) + '" alt="" style="width:' + sizePct + '%' + cap + hCap + '"></div>';
       }
       var n = String(q.image).replace(/^image/, '');
       return '<div class="q-img"><div class="img-placeholder" style="width:' + sizePct + '%">الصورة ' + esc(n) + ': لم تُرفع بعد</div></div>';
@@ -1690,127 +1744,60 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
       else inner = head + img + body;
       return '<div class="' + cls + '">' + inner + '</div>';
     }
-    function englishHeaderHTML(dq){
-      var ex = dq.exam, h = state.header;
-      var total = totalForHeader(dq);
-      var vnum = ENG_VERSION_NUM[state.version] || 1;
-      var ordinal = ENG_ORDINALS[vnum - 1] || 'الأول';
+    /* ===== Shared compact header — ONE component for ALL templates =====
+       Same structure and field logic everywhere: title row (side note or
+       English medallion + title + version/model label), ONE info line
+       (subject/grade/duration/date/total; school and teacher ONLY when
+       provided — an empty teacher name prints nothing at all), and the
+       student name/number line. Templates differ only via the hdr-<id>
+       CSS restyle. Nothing is stacked above or below this block. */
+    function starMedallionHTML(vnum){
       var pts = [];
       for (var k = 0; k < 16; k++){
         var ang = Math.PI / 8 * k - Math.PI / 2;
         var rr = k % 2 === 0 ? 47 : 20;
         pts.push((50 + rr * Math.cos(ang)).toFixed(1) + ',' + (50 + rr * Math.sin(ang)).toFixed(1));
       }
-      var star = '<div class="eng-star" aria-hidden="true"><svg viewBox="0 0 100 100"><polygon points="' + pts.join(' ') + '" fill="#fff" stroke="#000" stroke-width="2.5"/></svg><span>' + fmtNum(vnum) + '</span></div>';
-      var out = '<div class="eng-head" dir="rtl"><div class="eng-head-grid">';
-      out += '<div class="eng-side-r">'
-        + (ex.subject ? '<div class="eng-subject"><u>' + esc(ex.subject) + '</u></div>' : '')
-        + (h.teacher ? '<div>إعداد المدرّس: ' + esc(h.teacher) + '</div>' : '')
-        + (h.school ? '<div>' + esc(h.school) + '</div>' : '')
-        + '</div>';
-      out += '<div class="eng-center"><div class="eng-title"><u>' + esc(ex.title) + '</u></div>'
-        + (ex.grade ? '<div class="eng-grade">(' + esc(ex.grade) + ')</div>' : '')
-        + '</div>';
-      out += star;
-      out += '<div class="eng-side-l">';
-      if (state.studentLine && state.mode === 'student'){
-        out += '<div>الاسم: <span class="eh-dots"></span></div><div>الرقم: <span class="eh-dots short"></span></div>';
-      }
-      if (h.duration) out += '<div>المدة: ' + esc(h.duration) + '</div>';
-      if (h.date) out += '<div>التاريخ: ' + esc(h.date) + '</div>';
-      out += '<div>الدرجة: /' + fmtNum(total) + '/</div>';
-      out += '</div></div>';
-      out += '<div class="eng-instr">(انتبه إلى رقم السؤال بحيث يتطابق مع رقم الجواب ولا تنقّل صيغة السؤال إلى ورقة الإجابة)</div>';
-      out += '<div class="eng-model">النموذج ' + ordinal + '</div>';
-      out += '</div>';
-      if (ex.instructions) out += '<div class="eh-instructions" dir="rtl">' + richHTML(ex.instructions) + '</div>';
-      if (state.mode === 'key') out += '<div class="eh-title" style="font-size:1.15em">نموذج الإجابة</div>';
-      return out;
-    }
-    function scienceHeaderHTML(dq){
-      var ex = dq.exam, h = state.header;
-      var total = totalForHeader(dq);
-      var vnum = ENG_VERSION_NUM[state.version] || 1;
-      var out = '<div class="sci-head">';
-      var runLine = 'نماذج امتحانية في مادة ' + esc(ex.subject || '');
-      if (ex.grade) runLine += ' لطلاب ' + esc(ex.grade);
-      out += '<div class="sci-runhead"><span>' + runLine + '</span>'
-        + '<span>' + (h.teacher ? 'إعداد: ' + esc(h.teacher) : '') + (h.school ? (h.teacher ? ' · ' : '') + esc(h.school) : '') + '</span></div>';
-      out += '<div class="sci-runrule"></div>';
-      out += '<div class="sci-plaque">'
-        + (ex.title ? '<div class="sci-plaque-title">' + esc(ex.title) + '</div>' : '')
-        + '<div class="sci-plaque-sub">نموذج امتحاني شامل (' + fmtNum(vnum) + ')</div>'
-        + '</div>';
-      var mid = [];
-      if (ex.subject) mid.push('المادة: ' + esc(ex.subject));
-      if (ex.grade) mid.push('الصف: ' + esc(ex.grade));
-      if (h.duration) mid.push('المدة: ' + esc(h.duration));
-      if (h.date) mid.push('التاريخ: ' + esc(h.date));
-      mid.push('الدرجة: /' + fmtNum(total) + '/');
-      out += '<div class="sci-subjectrow" aria-hidden="false"><i></i><span>' + mid.join('&nbsp;&nbsp;—&nbsp;&nbsp;') + '</span><i></i></div>';
-      if (state.studentLine && state.mode === 'student'){
-        out += '<div class="eh-student" style="margin-top:2.5mm"><span>الاسم: <span class="eh-dots"></span>&nbsp;&nbsp; الرقم: <span class="eh-dots short"></span></span></div>';
-      }
-      out += '</div>';
-      if (ex.instructions) out += '<div class="eh-instructions">' + richHTML(ex.instructions) + '</div>';
-      if (state.mode === 'key') out += '<div class="eh-title" style="font-size:1.15em;color:#174a7c">نموذج الإجابة (الحل)</div>';
-      return out;
+      return '<div class="eng-star" aria-hidden="true"><svg viewBox="0 0 100 100"><polygon points="' + pts.join(' ') + '" fill="#fff" stroke="#000" stroke-width="2.5"/></svg><span>' + fmtNum(vnum) + '</span></div>';
     }
     function headerHTML(dq, tpl){
-      if (tpl.headerLayout === 'english') return englishHeaderHTML(dq);
-      if (tpl.headerLayout === 'science') return scienceHeaderHTML(dq);
       var ex = dq.exam, h = state.header;
       var total = totalForHeader(dq);
-      var versionLine = state.version !== 'none' ? 'النموذج (' + VERSION_LABELS[state.version] + ')' : '';
-      var school = h.school, teacher = h.teacher, date = h.date, duration = h.duration;
-      var studentRow = '';
+      var v = tpl.id;
+      var vnum = ENG_VERSION_NUM[state.version] || 1;
+      var side = '', version = '';
+      if (v === 'classic' || v === 'ministerial'){
+        side = 'الجمهورية العربية السورية<br>وزارة التربية';
+        if (state.version !== 'none') version = 'النموذج (' + VERSION_LABELS[state.version] + ')';
+      } else if (v === 'english'){
+        version = 'النموذج ' + (ENG_ORDINALS[vnum - 1] || 'الأول');
+      } else if (v === 'science'){
+        version = 'نموذج امتحاني شامل (' + fmtNum(vnum) + ')';
+      } else if (state.version !== 'none'){
+        version = 'النموذج (' + VERSION_LABELS[state.version] + ')';
+      }
+      var info = [];
+      if (ex.subject) info.push('المادة: ' + esc(ex.subject));
+      if (ex.grade) info.push('الصف: ' + esc(ex.grade));
+      if (h.duration) info.push('المدة: ' + esc(h.duration));
+      if (h.date) info.push('التاريخ: ' + esc(h.date));
+      info.push('الدرجة: /' + fmtNum(total) + '/');
+      if (h.school) info.push('المدرسة: ' + esc(h.school));
+      if (h.teacher) info.push('المعلم/ة: ' + esc(h.teacher));
+      var out = '<div class="hdr hdr-' + v + '" dir="rtl"><div class="hdr-title-row">';
+      if (v === 'english') out += starMedallionHTML(vnum);
+      else out += '<div class="hdr-side">' + side + '</div>';
+      out += '<div class="hdr-title"><span>' + esc(ex.title) + '</span></div>';
+      out += '<div class="hdr-version">' + version + '</div>';
+      out += '</div>';
+      out += '<div class="hdr-info">' + info.join('&nbsp;&nbsp;—&nbsp;&nbsp;') + '</div>';
       if (state.studentLine && state.mode === 'student'){
-        studentRow = '<div class="eh-student"><span>الاسم: <span class="eh-dots"></span>&nbsp;&nbsp; الشعبة: <span class="eh-dots short"></span></span>'
-          + '<span class="eh-score">العلامة: ……… / ' + fmtNum(total) + '</span></div>';
+        out += '<div class="eh-student"><span>الاسم: <span class="eh-dots"></span>&nbsp;&nbsp; الرقم: <span class="eh-dots short"></span></span></div>';
       }
-      var out = '';
-      if (tpl.headerLayout === 'centered-box'){
-        out += '<div style="text-align:center"><div class="eh-ministry">الجمهورية العربية السورية</div><div class="eh-ministry">وزارة التربية</div></div>';
-        var cell = function(label, val){ return '<td>' + (val ? '<strong>' + label + ':</strong> ' + esc(val) : '') + '</td>'; };
-        out += '<table class="eh-table"><tr>'
-          + cell('المدرسة', school) + cell('المادة', ex.subject) + cell('الصف', ex.grade)
-          + '</tr><tr>'
-          + cell('المعلم/ة', teacher) + cell('التاريخ', date) + cell('المدة', duration)
-          + '</tr></table>';
-        out += '<div class="eh-title"><span class="eh-title-u">' + esc(ex.title) + '</span></div>';
-        if (versionLine) out += '<div style="text-align:center" class="eh-version">' + versionLine + '</div>';
-        out += studentRow;
-        if (!state.studentLine && isNum(ex.totalMarks)) out += '<div style="text-align:center">العلامة الكلية: ' + fmtNum(total) + '</div>';
-      } else if (tpl.headerLayout === 'minimal-lines'){
-        out += '<div class="eh-min-lines">';
-        out += '<div class="eh-ministry">الجمهورية العربية السورية · وزارة التربية</div>';
-        out += '<div class="eh-title">' + esc(ex.title) + '</div>';
-        out += '<hr class="eh-min-rule">';
-        var parts = [];
-        if (school) parts.push('المدرسة: ' + esc(school));
-        if (teacher) parts.push('المعلم/ة: ' + esc(teacher));
-        if (ex.subject) parts.push('المادة: ' + esc(ex.subject));
-        if (ex.grade) parts.push('الصف: ' + esc(ex.grade));
-        if (date) parts.push('التاريخ: ' + esc(date));
-        if (duration) parts.push('المدة: ' + esc(duration));
-        parts.push('العلامة الكلية: ' + fmtNum(total));
-        if (versionLine) parts.push(versionLine);
-        out += '<div class="eh-inline-info">' + parts.join(' · ') + '</div>';
-        out += studentRow;
-        out += '</div>';
-      } else { // three-cell-table
-        var line = function(label, val){ return val ? '<div><strong>' + label + ':</strong> ' + esc(val) + '</div>' : ''; };
-        out += '<table class="eh-table"><tr>'
-          + '<td style="width:33%"><div class="eh-ministry">الجمهورية العربية السورية</div><div class="eh-ministry">وزارة التربية</div>' + line('المدرسة', school) + line('المعلم/ة', teacher) + '</td>'
-          + '<td style="width:34%;text-align:center"><div style="font-weight:700;font-size:1.2em">' + esc(ex.title) + '</div>' + line('المادة', ex.subject) + line('الصف', ex.grade) + (versionLine ? '<div class="eh-version">' + versionLine + '</div>' : '') + '</td>'
-          + '<td style="width:33%">' + line('التاريخ', date) + line('المدة', duration) + '<div><strong>العلامة:</strong> ……… / ' + fmtNum(total) + '</div></td>'
-          + '</tr></table>';
-        if (state.studentLine && state.mode === 'student'){
-          out += '<div class="eh-student-box">الاسم: <span class="eh-dots"></span>&nbsp;&nbsp; الشعبة: <span class="eh-dots short"></span></div>';
-        }
-      }
-      if (ex.instructions) out += '<div class="eh-instructions">' + richHTML(ex.instructions) + '</div>';
-      if (state.mode === 'key') out += '<div class="eh-title" style="font-size:1.15em">نموذج الإجابة</div>';
+      if (v === 'english') out += '<div class="hdr-instr">(انتبه إلى رقم السؤال بحيث يتطابق مع رقم الجواب ولا تنقّل صيغة السؤال إلى ورقة الإجابة)</div>';
+      out += '</div>';
+      if (ex.instructions) out += '<div class="eh-instructions" dir="rtl">' + richHTML(ex.instructions) + '</div>';
+      if (state.mode === 'key') out += '<div class="eh-title" style="font-size:1.15em' + (v === 'science' ? ';color:#174a7c' : '') + '">نموذج الإجابة' + (v === 'science' ? ' (الحل)' : '') + '</div>';
       return out;
     }
     function answerTextFor(q){
@@ -1888,10 +1875,12 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
       if (!state.quiz){ root.innerHTML = ''; $('preview-empty').hidden = false; $('preview-scroll').hidden = true; return; }
       var dq = buildDisplayQuiz();
       var tpl = TEMPLATES[effectiveTemplate()];
-      var fontPt = Math.round(tpl.baseSizePt * FONT_SCALES[state.fontSize] * 10) / 10;
+      var compact = effectiveCompact();
+      var fontPt = Math.round((tpl.baseSizePt * FONT_SCALES[state.fontSize] - (compact ? 0.5 : 0)) * 10) / 10;
       root.className = 'sheet exam';
       root.setAttribute('dir', 'rtl');
       root.setAttribute('data-template', tpl.id);
+      root.setAttribute('data-density', compact ? 'compact' : 'normal');
       root.setAttribute('data-frame', tpl.pageFrame);
       root.style.fontFamily = tpl.fontFamily;
       root.style.fontSize = fontPt + 'pt';
@@ -1938,6 +1927,8 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
       root.innerHTML = html;
       $('preview-empty').hidden = true;
       $('preview-scroll').hidden = false;
+      setSeg('seg-density', compact ? 'compact' : 'normal');
+      updateTeacherWarn();
       requestAnimationFrame(fitPreview);
     }
 
@@ -1966,6 +1957,7 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
       try {
         localStorage.setItem(LS.settings, JSON.stringify({
           template: state.template, templateTouched: state.templateTouched,
+          compact: state.compact, compactTouched: state.compactTouched,
           columns: state.columns, fontSize: state.fontSize, margin: state.margin,
           digits: state.digits, showMarks: state.showMarks, studentLine: state.studentLine,
           version: state.version, shuffleOptions: state.shuffleOptions, mode: state.mode,
@@ -2033,6 +2025,7 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
       ['school','teacher','date','duration'].forEach(function(f){
         if (!state.headerDirty[f]){ state.header[f] = vals[f]; $('f-' + f).value = vals[f]; }
       });
+      updateTeacherWarn();
     }
     function parseAndValidate(){
       var raw = $('json-input').value;
@@ -2108,7 +2101,7 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
     }
 
     /* ================= Copy prompts (Appendix B) ================= */
-    var PROMPT_BODY = 'أنت مساعد لمعلّم في سوريا، مهمتك مساعدتي على إنشاء ورقة اختبار قابلة للطباعة باستخدام أداة «منشئ الاختبارات».\n\n{{DOCS_SECTION}}\n\nطريقة العمل:\n1) اسألني أسئلة قصيرة (5 كحدّ أقصى) عن: المادة، الصف، موضوع الدرس أو الوحدة، عدد الأسئلة وأنواعها، العلامة الكلية وتوزيعها، وهل ستكون هناك صور.\n2) بعد أن أجيب، اكتب لي ملف JSON واحداً صحيحاً داخل كتلة كود واحدة وفق المخطط في الدليل، وبدون أي شرح داخل الكتلة.\n3) بعد الكتلة، اكتب لي قائمة الصور التي يجب أن أرفعها بالترتيب (image1، image2، …) مع وصف كل صورة.\n4) تأكد أن مجموع العلامات يساوي العلامة الكلية، وأن اللغة العربية سليمة.\n5) عند طلبي أي تعديل، أعد لي ملف JSON كاملاً وليس جزءاً منه.\n\nابدأ الآن بسؤالي عن تفاصيل الاختبار.';
+    var PROMPT_BODY = 'أنت مساعد لمعلّم في سوريا، مهمتك مساعدتي على إنشاء ورقة اختبار قابلة للطباعة باستخدام أداة «منشئ الاختبارات».\n\n{{DOCS_SECTION}}\n\nطريقة العمل:\n1) اسألني أسئلة قصيرة (5 كحدّ أقصى) عن: المادة، الصف، موضوع الدرس أو الوحدة، عدد الأسئلة وأنواعها، العلامة الكلية وتوزيعها، وهل ستكون هناك صور.\n2) بعد أن أجيب، اكتب لي ملف JSON واحداً صحيحاً داخل كتلة كود واحدة وفق المخطط في الدليل، وبدون أي شرح داخل الكتلة.\n3) بعد الكتلة، اكتب لي قائمة الصور التي يجب أن أرفعها بالترتيب (image1، image2، …) مع وصف كل صورة.\n4) تأكد أن مجموع العلامات يساوي العلامة الكلية، وأن اللغة العربية سليمة.\n5) عند طلبي أي تعديل، أعد لي ملف JSON كاملاً وليس جزءاً منه.\n6) اسم المعلم/ة اختياري تماماً: أخبرني أن بإمكاني (أ) إعطاءك اسمي هنا في المحادثة فتضعه في حقل exam.teacher، أو (ب) كتابته لاحقاً بنفسي في واجهة الأداة (حقول الترويسة في الخطوة الرابعة)، أو (ج) تركه فارغاً تماماً فتُطبع الورقة بدونه بشكل سليم. لا تخترع لي اسماً أبداً، واترك الحقل محذوفاً إن لم أعطك اسمي.\n7) ترويسة الورقة واحدة ومضغوطة في كل القوالب وتتولاها الأداة تلقائياً، فلا تحاول وصفها أو تغييرها في ملف JSON. ومعظم الاختبارات تُطبع على ورقة واحدة (صفحتان، وجه وظهر)، فإذا كان اختباري من النوع المعتاد ضع exam.compact: true في ملف JSON لاختيار الكثافة المضغوطة التي تساعد على اتّساعه في ورقة واحدة، وأخبرني بذلك.\n\nابدأ الآن بسؤالي عن تفاصيل الاختبار.';
     function buildPrompt(docsSection){ return PROMPT_BODY.replace('{{DOCS_SECTION}}', docsSection); }
 
     /* ================= Settings wiring ================= */
@@ -2124,8 +2117,15 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
         b.setAttribute('aria-pressed', String(b.getAttribute('data-tpl') === eff));
       });
     }
+    function updateTeacherWarn(){
+      // Screen-only, non-blocking: warn before printing when no teacher
+      // name was provided. The paper itself simply omits the name.
+      var w = $('teacher-warn');
+      if (w) w.hidden = !!String(state.header.teacher || '').trim();
+    }
     function syncAllControls(){
       syncTemplateButtons();
+      setSeg('seg-density', effectiveCompact() ? 'compact' : 'normal');
       setSeg('seg-columns', state.columns);
       setSeg('seg-fontsize', state.fontSize);
       setSeg('seg-margin', state.margin);
@@ -2136,6 +2136,7 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
       $('sw-student').checked = state.studentLine;
       $('sw-shuffle-opts').checked = state.shuffleOptions;
       ['school','teacher','date','duration'].forEach(function(f){ $('f-' + f).value = state.header[f] || ''; });
+      updateTeacherWarn();
     }
     function updatePageStyle(){
       // Always margin:0 — the paper's own padding (state.margin on #print-root)
@@ -2787,6 +2788,8 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
         if (saved){
           if (saved.template) state.template = saved.template;
           state.templateTouched = !!saved.templateTouched;
+          if (typeof saved.compact === 'boolean') state.compact = saved.compact;
+          state.compactTouched = !!saved.compactTouched;
           if (saved.columns) state.columns = saved.columns;
           if (saved.fontSize) state.fontSize = saved.fontSize;
           if (saved.margin) state.margin = saved.margin;
@@ -2917,9 +2920,10 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
       ['school','teacher','date','duration'].forEach(function(f){
         $('f-' + f).addEventListener('input', function(){
           state.header[f] = this.value; state.headerDirty[f] = true;
-          saveSettings(); renderExam();
+          saveSettings(); renderExam(); updateTeacherWarn();
         });
       });
+      wireSeg('seg-density', function(v){ state.compact = v === 'compact'; state.compactTouched = true; });
       wireSeg('seg-columns', function(v){ state.columns = +v; });
       wireSeg('seg-fontsize', function(v){ state.fontSize = v; });
       wireSeg('seg-margin', function(v){ state.margin = +v; updatePageStyle(); });
