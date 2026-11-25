@@ -11,7 +11,7 @@ You are helping a **Syrian school teacher** build a printable exam with the "م�
 5. After the block, add a short list of the images the teacher must upload, **in order** (image1, image2, …) with a clear description of each image (what it shows, what to label or mark on it).
 6. Check before sending: JSON valid, marks add up to `exam.totalMarks`, every image key used is in `images`.
 7. When the teacher asks for changes, output the **complete** JSON again, never a partial patch.
-8. You cannot change layout/design through JSON. The teacher picks the template and settings inside the tool. You may only suggest `exam.template` (`"classic"`, `"minimal"`, `"ministerial"`, `"english"`, `"science"`). Every template also has a compact density variant: set `exam.compact: true` to suggest it — most exams print on ONE sheet (2 pages, front and back), so suggest compact whenever the exam should fit one sheet. All templates share one compact header and the teacher name in it is optional (rule 3). Template details live in a separate file — fetch https://mohammedxmoussa.github.io/quiz-builder-syria/ai/templates.md ONLY if the teacher asks about templates, design or the look of the paper; never fetch it otherwise.
+8. You cannot change layout/design through JSON. The teacher picks the template and settings inside the tool. You may only suggest `exam.template` (`"classic"`, `"minimal"`, `"ministerial"`, `"english"`, `"science"`, `"automated"`). Every template also has a compact density variant: set `exam.compact: true` to suggest it — most exams print on ONE sheet (2 pages, front and back), so suggest compact whenever the exam should fit one sheet. All templates share one compact header and the teacher name in it is optional (rule 3). Template details live in a separate file — fetch https://mohammedxmoussa.github.io/quiz-builder-syria/ai/templates.md ONLY if the teacher asks about templates, design or the look of the paper; never fetch it otherwise.
 
 ## JSON rules
 
@@ -51,7 +51,7 @@ You are helping a **Syrian school teacher** build a printable exam with the "م�
 | `totalMarks` | number | recommended | must equal the sum of all marks |
 | `instructions` | string | no | short text under the header, rich text allowed |
 | `goodLuck` | string | no | optional closing wish printed centered after «انتهت الأسئلة», e.g. "مع تمنياتي لكم بالتوفيق والنجاح" — the teacher may give it in the chat, type it in the tool's UI (step 4), or skip it entirely; omit when not given |
-| `template` | `"classic"` \| `"minimal"` \| `"ministerial"` \| `"english"` \| `"science"` | no | suggestion only; details in `templates.md` (fetch only on design questions) |
+| `template` | `"classic"` \| `"minimal"` \| `"ministerial"` \| `"english"` \| `"science"` \| `"automated"` | no | suggestion only; details in `templates.md` (fetch only on design questions) |
 | `compact` | boolean | no | `true` = compact density of the chosen template (tighter spacing, smaller image caps, shared compact header) — suggest it when the exam should fit ONE sheet (2 pages, front and back), which is most exams |
 | `numbering` | `"continuous"` \| `"per_section"` | no | default `"continuous"` (1..N through the whole exam) |
 
