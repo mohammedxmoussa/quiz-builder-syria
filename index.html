@@ -490,7 +490,9 @@
       .ed-img-row{ display:flex; flex-direction:column; gap:.4rem; border:1px dashed var(--line); border-radius:10px; padding:.6rem; }
 
       /* ---------- Responsive ---------- */
-      @media (max-width: 980px){
+      /* screen-only: print width (A4 ≈ 794px) is under these breakpoints, and
+         these rules must never hide the preview pane on paper */
+      @media screen and (max-width: 980px){
         .layout{ grid-template-columns:1fr; padding-inline:.8rem; }
         .mobile-tabs{
           display:flex; gap:.5rem; margin:0 auto .8rem; max-width:1560px; padding:.5rem .8rem;
@@ -504,7 +506,7 @@
         body[data-tab="settings"] .preview-pane{ display:none; }
         body[data-tab="preview"] .panel{ display:none; }
       }
-      @media (max-width: 640px){
+      @media screen and (max-width: 640px){
         .ed-grid2,.ed-grid3{ grid-template-columns:1fr; }
         .ed-q-head{ flex-wrap:wrap; }
         .ed-q-title{ flex:1 1 100%; }
@@ -518,16 +520,32 @@
 
       /* ---------- Print ---------- */
       #page-style-slot{ display:none; }
+      /* @page margin is 0 so the browser has no margin area in which to draw
+         its own headers/footers (URL, date, page number). The paper carries
+         its own margins as padding on #print-root (state.margin). */
+      @page{ size:A4; margin:0; }
       @media print{
-        body{ background:#fff !important; }
-        body *{ visibility:hidden; }
-        #print-root, #print-root *{ visibility:visible; }
-        #print-root{
-          position:absolute; inset:0; width:100%; box-shadow:none !important; transform:none !important;
+        html,body{ background:#fff !important; height:auto !important; }
+        /* Hide the app chrome with display:none. The old visibility:hidden
+           approach left the (long) control panel in the print flow, where it
+           paginated into many blank pages, and it could not resurrect the
+           paper at all when an ancestor had display:none. */
+        .app-head,.mobile-tabs,.panel,.preview-note,.toast,.modal-back{ display:none !important; }
+        #preview-empty{ display:none !important; }
+        /* Flatten every wrapper between body and the paper: no grid, no
+           preview scaling transform, no overflow clipping, no inline
+           scaled height — all of these break print fragmentation. */
+        .layout,.preview-pane,.preview-scroll,.sheet-wrap,.sheet-scale{
+          display:block !important; position:static !important; transform:none !important;
+          overflow:visible !important; width:auto !important; height:auto !important;
+          max-width:none !important; margin:0 !important; padding:0 !important;
+          background:transparent !important;
         }
-        .sheet{ box-shadow:none !important; width:100% !important; }
-        .sheet-wrap{ height:auto !important; }
-        .sheet-scale{ transform:none !important; }
+        body[data-tab] .preview-pane{ display:block !important; }
+        #print-root{
+          position:static !important; inset:auto !important; width:100% !important;
+          margin:0 !important; box-shadow:none !important; transform:none !important;
+        }
         .img-placeholder{ display:none !important; }
         .exam .page-frame{ position:fixed; }
         *{ print-color-adjust:exact; -webkit-print-color-adjust:exact; }
@@ -728,7 +746,7 @@
 
             <div class="field-group">
               <button type="button" class="btn primary" id="btn-print">طباعة / حفظ PDF</button>
-              <p class="hint">في نافذة الطباعة اختر: الحجم A4، الهوامش: بلا (None)، وفعّل خيار «الرسومات الخلفية»، ثم اختر «حفظ بتنسيق PDF».</p>
+              <p class="hint">في نافذة الطباعة اختر: الحجم A4، الهوامش: بلا (None)، وألغِ تفعيل خيار «الرؤوس والتذييلات» (Headers and footers) حتى لا يطبع المتصفح رابط الموقع والتاريخ على الورقة، وفعّل خيار «الرسومات الخلفية» (Background graphics)، ثم اختر «حفظ بتنسيق PDF».</p>
             </div>
           </div>
         </details>
@@ -2120,7 +2138,10 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
       ['school','teacher','date','duration'].forEach(function(f){ $('f-' + f).value = state.header[f] || ''; });
     }
     function updatePageStyle(){
-      $('page-style').textContent = '@page { size: A4; margin: ' + state.margin + 'mm; }';
+      // Always margin:0 — the paper's own padding (state.margin on #print-root)
+      // provides the margins. A non-zero @page margin gives the browser a
+      // margin area where it draws its URL/date/page-number headers & footers.
+      $('page-style').textContent = '@page { size: A4; margin: 0; }';
     }
     function changed(){ saveSettings(); renderExam(); }
 
