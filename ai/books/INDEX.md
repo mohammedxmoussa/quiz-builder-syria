@@ -1,0 +1,281 @@
+# Textbook library (مكتبة الكتب المدرسية) — index
+
+The official Syrian school textbooks (منهاج 2025–2026, وزارة التربية —
+curricula.moed.gov.sy) for grade 9 (الصف التاسع) and grade 12 /
+baccalaureate (البكالوريا), as extracted text. Fetch this index **only**
+when a teacher asks you to base an exam on textbook pages or content
+(e.g. «اعمل الاختبار من الصفحات 1–100 من كتاب الفيزياء»). For all other
+exams you do not need anything in this folder.
+
+## How to use this library
+
+1. Find the teacher's book below by grade and subject.
+2. Each book is split into chunk files of **50 pages**. Work out which
+   chunk file(s) cover the page range the teacher asked for, and fetch
+   **only those chunks** — a normal request (e.g. pages 1–100) needs just
+   one or two files. Never fetch a whole book, and there are no
+   single-page files to fetch one by one.
+3. Inside a chunk, every page starts with a marker line `## صفحة N`.
+   **N is the book's page number** (the PDF page). When the teacher says
+   «الصفحة 40» they mean the text under `## صفحة 40`.
+4. Write questions strictly from the content of the pages you fetched,
+   in the teacher's requested range. Do not invent book content for
+   pages you did not read.
+
+## ⚠️ Scanned books — read this before promising anything
+
+Books whose status is «مسح ضوئي — النص غير مكتمل، يحتاج OCR» are scanned
+image PDFs. Their chunk files currently contain little or no text (OCR
+is still pending). If a teacher asks for an exam from a scanned book's
+pages, tell them honestly that this book's text is not available yet —
+do **not** write questions from memory and pretend they came from the
+book. Books marked «نص رقمي نظيف» are fully extracted and safe to use.
+
+Base URL of this folder (GitHub Pages):
+`https://mohammedxmoussa.github.io/quiz-builder-syria/ai/books/`
+
+## الصف التاسع (Grade 9)
+
+### اللغة العربية — الصف التاسع
+
+- Total pages: 200 · Status: نص رقمي نظيف
+- [الصفحات 1–50](9-arabic/pages-001-050.md)
+- [الصفحات 51–100](9-arabic/pages-051-100.md)
+- [الصفحات 101–150](9-arabic/pages-101-150.md)
+- [الصفحات 151–200](9-arabic/pages-151-200.md)
+
+### الجبر — الصف التاسع
+
+- Total pages: 116 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- [الصفحات 1–50](9-Algebra/pages-001-050.md)
+- [الصفحات 51–100](9-Algebra/pages-051-100.md)
+- [الصفحات 101–116](9-Algebra/pages-101-116.md)
+
+### الهندسة — الصف التاسع
+
+- Total pages: 84 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- [الصفحات 1–50](9-Geometry/pages-001-050.md)
+- [الصفحات 51–84](9-Geometry/pages-051-084.md)
+
+### الفيزياء والكيمياء — الصف التاسع
+
+- Total pages: 180 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- [الصفحات 1–50](9-Physics-Chemistry/pages-001-050.md)
+- [الصفحات 51–100](9-Physics-Chemistry/pages-051-100.md)
+- [الصفحات 101–150](9-Physics-Chemistry/pages-101-150.md)
+- [الصفحات 151–180](9-Physics-Chemistry/pages-151-180.md)
+
+### العلوم (علم الأحياء والأرض) — الصف التاسع
+
+- Total pages: 232 · Status: نص رقمي نظيف
+- [الصفحات 1–50](9-science/pages-001-050.md)
+- [الصفحات 51–100](9-science/pages-051-100.md)
+- [الصفحات 101–150](9-science/pages-101-150.md)
+- [الصفحات 151–200](9-science/pages-151-200.md)
+- [الصفحات 201–232](9-science/pages-201-232.md)
+
+### الجغرافية — الصف التاسع
+
+- Total pages: 176 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- [الصفحات 1–50](9-geography/pages-001-050.md)
+- [الصفحات 51–100](9-geography/pages-051-100.md)
+- [الصفحات 101–150](9-geography/pages-101-150.md)
+- [الصفحات 151–176](9-geography/pages-151-176.md)
+
+### التاريخ — الصف التاسع
+
+- Total pages: 123 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- [الصفحات 1–50](9-history/pages-001-050.md)
+- [الصفحات 51–100](9-history/pages-051-100.md)
+- [الصفحات 101–123](9-history/pages-101-123.md)
+
+### التربية الدينية الإسلامية — الصف التاسع
+
+- Total pages: 140 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- [الصفحات 1–50](9-islamic/pages-001-050.md)
+- [الصفحات 51–100](9-islamic/pages-051-100.md)
+- [الصفحات 101–140](9-islamic/pages-101-140.md)
+
+### التربية الدينية المسيحية — الصف التاسع
+
+- Total pages: 148 · Status: نص رقمي نظيف
+- [الصفحات 1–50](9-christianity/pages-001-050.md)
+- [الصفحات 51–100](9-christianity/pages-051-100.md)
+- [الصفحات 101–148](9-christianity/pages-101-148.md)
+
+### اللغة الإنكليزية (كتاب الطالب) — الصف التاسع
+
+- Total pages: 80 · Status: نص رقمي نظيف
+- [الصفحات 1–50](9-English-SB/pages-001-050.md)
+- [الصفحات 51–80](9-English-SB/pages-051-080.md)
+
+### اللغة الإنكليزية (كتاب الأنشطة) — الصف التاسع
+
+- Total pages: 64 · Status: نص رقمي نظيف
+- [الصفحات 1–50](9-English-AB/pages-001-050.md)
+- [الصفحات 51–64](9-English-AB/pages-051-064.md)
+
+### اللغة الفرنسية (كتاب الأنشطة) — الصف التاسع
+
+- Total pages: 56 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- [الصفحات 1–50](9-French-AB/pages-001-050.md)
+- [الصفحات 51–56](9-French-AB/pages-051-056.md)
+
+### اللغة الروسية — الصف التاسع
+
+- Total pages: 96 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- [الصفحات 1–50](9-Russian/pages-001-050.md)
+- [الصفحات 51–96](9-Russian/pages-051-096.md)
+
+### تكنولوجيا المعلومات والاتصالات — الصف التاسع
+
+- Total pages: 189 · Status: نص رقمي نظيف
+- [الصفحات 1–50](9-technology/pages-001-050.md)
+- [الصفحات 51–100](9-technology/pages-051-100.md)
+- [الصفحات 101–150](9-technology/pages-101-150.md)
+- [الصفحات 151–189](9-technology/pages-151-189.md)
+
+### التربية الموسيقية — الصف التاسع
+
+- Total pages: 64 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- [الصفحات 1–50](9-music/pages-001-050.md)
+- [الصفحات 51–64](9-music/pages-051-064.md)
+
+## البكالوريا — الصف الثاني عشر (Grade 12)
+
+### اللغة العربية — البكالوريا العلمي
+
+- Total pages: 110 · Status: نص رقمي نظيف
+- [الصفحات 1–50](12-Arabic-Sci/pages-001-050.md)
+- [الصفحات 51–100](12-Arabic-Sci/pages-051-100.md)
+- [الصفحات 101–110](12-Arabic-Sci/pages-101-110.md)
+
+### اللغة العربية — البكالوريا الأدبي
+
+- Total pages: 148 · Status: نص رقمي نظيف
+- [الصفحات 1–50](12-Arabic-Lit/pages-001-050.md)
+- [الصفحات 51–100](12-Arabic-Lit/pages-051-100.md)
+- [الصفحات 101–148](12-Arabic-Lit/pages-101-148.md)
+
+### الرياضيات ١ — البكالوريا العلمي
+
+- Total pages: 232 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- [الصفحات 1–50](12-sci-math-1/pages-001-050.md)
+- [الصفحات 51–100](12-sci-math-1/pages-051-100.md)
+- [الصفحات 101–150](12-sci-math-1/pages-101-150.md)
+- [الصفحات 151–200](12-sci-math-1/pages-151-200.md)
+- [الصفحات 201–232](12-sci-math-1/pages-201-232.md)
+
+### الرياضيات ٢ — البكالوريا العلمي
+
+- Total pages: 196 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- [الصفحات 1–50](12-sci-math-2/pages-001-050.md)
+- [الصفحات 51–100](12-sci-math-2/pages-051-100.md)
+- [الصفحات 101–150](12-sci-math-2/pages-101-150.md)
+- [الصفحات 151–196](12-sci-math-2/pages-151-196.md)
+
+### الفيزياء — البكالوريا العلمي
+
+- Total pages: 268 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- [الصفحات 1–50](12-physics-Sci/pages-001-050.md)
+- [الصفحات 51–100](12-physics-Sci/pages-051-100.md)
+- [الصفحات 101–150](12-physics-Sci/pages-101-150.md)
+- [الصفحات 151–200](12-physics-Sci/pages-151-200.md)
+- [الصفحات 201–250](12-physics-Sci/pages-201-250.md)
+- [الصفحات 251–268](12-physics-Sci/pages-251-268.md)
+
+### علم الأحياء — البكالوريا العلمي
+
+- Total pages: 287 · Status: نص رقمي نظيف
+- [الصفحات 1–50](12-science/pages-001-050.md)
+- [الصفحات 51–100](12-science/pages-051-100.md)
+- [الصفحات 101–150](12-science/pages-101-150.md)
+- [الصفحات 151–200](12-science/pages-151-200.md)
+- [الصفحات 201–250](12-science/pages-201-250.md)
+- [الصفحات 251–287](12-science/pages-251-287.md)
+
+### الجغرافية — البكالوريا الأدبي
+
+- Total pages: 280 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- [الصفحات 1–50](12-geography-Lit/pages-001-050.md)
+- [الصفحات 51–100](12-geography-Lit/pages-051-100.md)
+- [الصفحات 101–150](12-geography-Lit/pages-101-150.md)
+- [الصفحات 151–200](12-geography-Lit/pages-151-200.md)
+- [الصفحات 201–250](12-geography-Lit/pages-201-250.md)
+- [الصفحات 251–280](12-geography-Lit/pages-251-280.md)
+
+### الفلسفة ١ — البكالوريا الأدبي
+
+- Total pages: 144 · Status: نص رقمي نظيف
+- [الصفحات 1–50](12-Lit-Philosophy-1/pages-001-050.md)
+- [الصفحات 51–100](12-Lit-Philosophy-1/pages-051-100.md)
+- [الصفحات 101–144](12-Lit-Philosophy-1/pages-101-144.md)
+
+### الفلسفة ٢ — البكالوريا الأدبي
+
+- Total pages: 156 · Status: نص رقمي نظيف
+- [الصفحات 1–50](12-Lit-Philosophy-2/pages-001-050.md)
+- [الصفحات 51–100](12-Lit-Philosophy-2/pages-051-100.md)
+- [الصفحات 101–150](12-Lit-Philosophy-2/pages-101-150.md)
+- [الصفحات 151–156](12-Lit-Philosophy-2/pages-151-156.md)
+
+### التربية الدينية الإسلامية — البكالوريا
+
+- Total pages: 164 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- [الصفحات 1–50](12-islamic/pages-001-050.md)
+- [الصفحات 51–100](12-islamic/pages-051-100.md)
+- [الصفحات 101–150](12-islamic/pages-101-150.md)
+- [الصفحات 151–164](12-islamic/pages-151-164.md)
+
+### التربية الدينية المسيحية — البكالوريا
+
+- Total pages: 135 · Status: نص رقمي نظيف
+- [الصفحات 1–50](12-christianity/pages-001-050.md)
+- [الصفحات 51–100](12-christianity/pages-051-100.md)
+- [الصفحات 101–135](12-christianity/pages-101-135.md)
+
+### اللغة الإنكليزية (كتاب الأنشطة) — البكالوريا العلمي
+
+- Total pages: 112 · Status: نص رقمي نظيف
+- [الصفحات 1–50](12-English-Sci-wb/pages-001-050.md)
+- [الصفحات 51–100](12-English-Sci-wb/pages-051-100.md)
+- [الصفحات 101–112](12-English-Sci-wb/pages-101-112.md)
+
+### اللغة الإنكليزية (كتاب الطالب) — البكالوريا الأدبي
+
+- Total pages: 128 · Status: نص رقمي نظيف
+- [الصفحات 1–50](12-English-lit-Sb/pages-001-050.md)
+- [الصفحات 51–100](12-English-lit-Sb/pages-051-100.md)
+- [الصفحات 101–128](12-English-lit-Sb/pages-101-128.md)
+
+### اللغة الفرنسية (كتاب الطالب) — البكالوريا
+
+- Total pages: 120 · Status: نص رقمي نظيف
+- [الصفحات 1–50](12-French-SB/pages-001-050.md)
+- [الصفحات 51–100](12-French-SB/pages-051-100.md)
+- [الصفحات 101–120](12-French-SB/pages-101-120.md)
+
+### اللغة الفرنسية — البكالوريا الأدبي
+
+- Total pages: 40 · Status: نص رقمي نظيف
+- [الصفحات 1–40](12-French-lit/pages-001-040.md)
+
+### اللغة الروسية — البكالوريا العلمي
+
+- Total pages: 128 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- [الصفحات 1–50](12-sci-Russian/pages-001-050.md)
+- [الصفحات 51–100](12-sci-Russian/pages-051-100.md)
+- [الصفحات 101–128](12-sci-Russian/pages-101-128.md)
+
+### اللغة الروسية — البكالوريا الأدبي
+
+- Total pages: 140 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- [الصفحات 1–50](12-lit-Russian/pages-001-050.md)
+- [الصفحات 51–100](12-lit-Russian/pages-051-100.md)
+- [الصفحات 101–140](12-lit-Russian/pages-101-140.md)
+
+---
+
+Not yet available: التربية الفنية — الصف التاسع (art). The ministry's
+file for it is corrupted, so it is not in the library yet. If a teacher
+asks for it, say it is not available yet instead of inventing content.
