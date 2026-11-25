@@ -20,6 +20,25 @@ without re-generating the JSON.
 | `english` | الإنكليزي الوزاري | Syrian baccalaureate **English** exam style: Arabic RTL header frame (subject, teacher, name/number, duration, total grade /300), a star medallion showing the model number, then an **LTR English** body in a serif font inside a bordered two-column grid. Sections are numbered with Roman numerals (I, II, III…), each section heading is underlined and shows the section's total as `(N marks)`, question numbering is continuous across sections, and the paper ends with "END OF EXAM / انتهت الأسئلة". | The subject is **English** (اللغة الإنكليزية), especially Syrian secondary/baccalaureate English exams. For English exams prefer this template. |
 | `science` | العلوم (نموذج شامل) | Syrian comprehensive science-model style (نماذج امتحانية شاملة): **single column**, running header band, shaded title plaque with the model number, section headings «السؤال الأول: …» with numbering restarting per section, MCQ options laid out as a bordered 4-cell row (a/b/c/d), and smart placement for diagrams (wide figures full width, tall figures beside the text). | The subject is a science (العلوم، الأحياء، الفيزياء، الكيمياء…), especially Syrian baccalaureate-style comprehensive models with diagrams and grid-style MCQ. |
 
+## Compact variants (مضغوط) — one shared header
+
+Every template above also has a **compact variant**. All templates share ONE
+compact header component: exam title, one info line (subject / grade /
+duration / total marks, plus school and teacher **only when provided**), and a
+student line (الاسم / الرقم) with blanks to write in. Nothing is stacked above
+or below it.
+
+- **Teacher name is optional.** If the teacher never gave a name, the paper
+  prints cleanly without any teacher line. The teacher can give their name in
+  the chat with you (put it in `exam.teacher`), type it later in the tool's
+  web UI, or skip it entirely. Never invent a name.
+- Compact density tightens spacing and image sizes so a typical exam fits
+  **one sheet of paper — 2 pages, front and back** (the case for ~95% of
+  exams). To suggest it, keep `exam.template` as the base template id and add
+  **`"compact": true`** inside `exam`. Suggest compact whenever the teacher
+  wants the exam to fit on a single sheet; the teacher can also switch
+  density in the tool (عادي/مضغوط toggle) without regenerating the JSON.
+
 ## Notes for English exams (`english` template)
 
 - Write all question text, passages and options in English as usual; the tool
