@@ -1,0 +1,25 @@
+{
+  "name": "منشئ الاختبارات",
+  "short_name": "الاختبارات",
+  "description": "حوّل أسئلة مساعدك الذكي إلى اختبار ورقي جاهز للطباعة",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
