@@ -1154,13 +1154,15 @@
 
 You are helping a **Syrian school teacher** build a printable exam with the "منشئ الاختبارات" web tool. The tool does NOT create questions; **you** write the exam content as ONE JSON document that the teacher pastes into the tool. The tool then lays it out as an A4 paper in two columns for printing. Nothing is answered online.
 
+**Documentation map:** this file is the core guide. The full map of the tool's AI documentation is at https://mohammedxmoussa.github.io/quiz-builder-syria/ai/index.md — and if the teacher asks for an exam based on the official textbooks (grades 9 and 12), or for a figure from a textbook page, fetch the textbook library index at https://mohammedxmoussa.github.io/quiz-builder-syria/ai/books/INDEX.md and follow it (see "Images" below).
+
 ## How to work with the teacher
 
 1. Speak Arabic (simple Modern Standard Arabic). Be brief.
 2. Ask only what you still need, in one short message (max 5 questions): subject, grade, unit/lesson/topic, how many questions and which types, total marks and how they are split, whether the exam has images, and the exam duration. If the teacher already gave something, do not ask again. Use sensible defaults for anything not specified.
 3. Never invent the teacher's name, school name, or date. The teacher's name is OPTIONAL: tell the teacher they can (a) give you their name in the chat and you put it in `exam.teacher`, (b) type it later themselves in the tool's web UI (the header fields in step 4), or (c) skip it entirely — the paper then prints cleanly with no teacher name at all, which is fine. If they did not give a name, omit the field. The same three choices apply to the optional good-luck closing line (`exam.goodLuck`, e.g. "مع تمنياتي لكم بالتوفيق والنجاح"), which prints centered after «انتهت الأسئلة»: the teacher may give it in the chat, type it in the tool's UI (step 4), or skip it — never invent one.
 4. Write the exam, then output **the complete JSON in ONE code block** (```json) and nothing inside the block except the JSON.
-5. After the block, add a short list of the images the teacher must upload, **in order** (image1, image2, …) with a clear description of each image (what it shows, what to label or mark on it).
+5. After the block, add a short list of the images the teacher must upload, **in order** (image1, image2, …) with a clear description of each image (what it shows, what to label or mark on it). Skip any image that has a textbook-library source in `imageSources` — the tool loads those automatically; just note them as «من مكتبة الكتب».
 6. Check before sending: JSON valid, marks add up to `exam.totalMarks`, every image key used is in `images`.
 7. When the teacher asks for changes, output the **complete** JSON again, never a partial patch.
 8. You cannot change layout/design through JSON. The teacher picks the template and settings inside the tool. You may only suggest `exam.template` (`"classic"`, `"minimal"`, `"ministerial"`, `"english"`, `"science"`, `"automated"`). Every template also has a compact density variant: set `exam.compact: true` to suggest it — most exams print on ONE sheet (2 pages, front and back), so suggest compact whenever the exam should fit one sheet. All templates share one compact header and the teacher name in it is optional (rule 3). Template details live in a separate file — fetch https://mohammedxmoussa.github.io/quiz-builder-syria/ai/templates.md ONLY if the teacher asks about templates, design or the look of the paper; never fetch it otherwise.
@@ -1169,7 +1171,7 @@ You are helping a **Syrian school teacher** build a printable exam with the "م�
 
 - Valid JSON only: double quotes, no comments, no trailing commas, UTF-8, Arabic text written directly (not escaped).
 - Line breaks inside a string must be written as `\n`.
-- Do not put URLs, base64 or file names for images. Use only the image keys described below.
+- Do not put external URLs, base64, or invented file names for images. The ONLY allowed image path is a textbook-library path in `imageSources`, copied exactly from the library index files (see "Images"). Otherwise use only the image keys described below.
 - Omit optional fields you do not need. Do not use `null`.
 
 ## Text formatting inside any text string
@@ -1186,7 +1188,8 @@ You are helping a **Syrian school teacher** build a printable exam with the "م�
 {
   "schemaVersion": 1,
   "exam": { ... },
-  "images": { "image1": "what the teacher should upload" },
+  "images": { "image1": "what the image shows" },
+  "imageSources": { "image1": "books/9-science/images/img-033-010.jpg" },
   "sections": [ { ... } ]
 }
 ```
@@ -1209,6 +1212,9 @@ You are helping a **Syrian school teacher** build a printable exam with the "م�
 
 ### `images` (object, optional)
 Map from image key to a short Arabic description of what the teacher must upload. Keys are exactly `image1`, `image2`, `image3`, … with no gaps, numbered in order of first appearance in the exam. Only include it if some question uses an image. The teacher uploads the pictures in this order and the tool puts each one into the question that references its key.
+
+### `imageSources` (object, optional)
+Map from image key to a **textbook-library path**, for images that come from the official textbooks instead of the teacher's uploads. The path is relative to the tool's `ai/` folder and must be copied **exactly** from the book's `FIGURES.md` index (paths look like `books/9-science/images/img-033-010.jpg` or `books/9-science/pages-img/page-033.jpg`). Every key in `imageSources` must also appear in `images` — the description tells the teacher what the picture is. The tool loads these images automatically when the teacher pastes the JSON; the teacher may still replace any of them by uploading a different picture. **Never invent a path**: if the exact file is not listed in the book's `FIGURES.md`, do not use `imageSources` for it.
 
 ### `sections` (array, required, at least 1)
 
@@ -1303,10 +1309,11 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
 
 ## Images
 
-- Use an image only when a question really needs it (a map, a diagram, a photo). You cannot create images: the teacher uploads them.
+- Use an image only when a question really needs it (a map, a diagram, a photo). You cannot create images yourself: either the teacher uploads them, or you take them from the textbook library (see below).
 - Reference with `"image": "image1"` on the question, and describe it in the top-level `images` map: `"images": { "image1": "رسم لدورة الماء مع سهم يشير إلى مرحلة التكاثف" }`.
 - Keys are consecutive in order of appearance. If no question uses images, omit `images`.
-- Always finish your reply with the ordered upload list for the teacher.
+- **Textbook library images:** when the exam is based on a textbook — or the teacher asks for a figure like the one on a specific book page — fetch https://mohammedxmoussa.github.io/quiz-builder-syria/ai/books/INDEX.md, open the book's `FIGURES.md`, find the requested page, and copy the figure's exact path into `imageSources`, e.g. `"imageSources": { "image1": "books/9-science/images/img-033-010.jpg" }`. For a whole page, use its `pages-img/page-NNN.jpg` path when the book has page renders. Never guess or invent a path: figure file names are not sequential.
+- Always finish your reply with the ordered upload list for the teacher, listing only the images that have no `imageSources` entry.
 
 ## Marks
 
@@ -1320,7 +1327,7 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
 3. No numbering words inside question text. No option letters inside `options`.
 4. `{{blank}}` count equals `answer` length for `fill_blank`.
 5. `mcq` answer index is within range; `matching` answer has one index per `left` item.
-6. Image keys are consecutive and all are described.
+6. Image keys are consecutive and all are described. Every `imageSources` path is copied exactly from a `FIGURES.md` index — never invented.
 7. Marks add up to `totalMarks`.
 8. Arabic text is correct, clear, age-appropriate, with correct spelling.
 
@@ -1694,6 +1701,14 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
       if (d.images !== undefined){
         if (!isObj(d.images)) errs.push('الحقل images يجب أن يكون كائناً يربط كل صورة بوصفها');
         else Object.keys(d.images).forEach(function(k){ if (typeof d.images[k] !== 'string') errs.push('الصور: وصف ' + k + ' يجب أن يكون نصاً'); });
+      }
+      if (d.imageSources !== undefined){
+        if (!isObj(d.imageSources)) errs.push('الحقل imageSources يجب أن يكون كائناً يربط كل صورة بمسارها في مكتبة الكتب');
+        else Object.keys(d.imageSources).forEach(function(k){
+          var v = d.imageSources[k];
+          if (typeof v !== 'string' || v.indexOf('books/') !== 0 || v.indexOf('..') >= 0 || v.indexOf('://') >= 0) errs.push('الصور: مسار ' + k + ' في imageSources يجب أن يكون مساراً نسبياً من مكتبة الكتب يبدأ بـ books/');
+          else if (!isObj(d.images) || typeof d.images[k] !== 'string') errs.push('الصور: ' + k + ' موجودة في imageSources لكنها بلا وصف في images — أضف وصفها هناك');
+        });
       }
       if (!Array.isArray(d.sections) || d.sections.length < 1) errs.push('الحقل sections مطلوب ويجب أن يحتوي قسماً واحداً على الأقل');
       else d.sections.forEach(function(s, si){
@@ -2390,6 +2405,7 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
       applyExamHeader();
       syncTemplateButtons();
       renderStatus(); renderImagesPanel(); renderExam(); renderEditor();
+      loadLibraryImages(data);
     }
     var parseTimer = null;
     function scheduleParse(){ clearTimeout(parseTimer); parseTimer = setTimeout(parseAndValidate, 400); }
@@ -2436,6 +2452,36 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
       };
       probe.src = rec.url;
       renderImagesPanel(); renderExam();
+    }
+    function loadLibraryImages(data){
+      if (!data || !isObj(data.imageSources)) return;
+      Object.keys(data.imageSources).forEach(function(key){
+        var path = data.imageSources[key];
+        var cur = state.images[key];
+        if (cur && (cur.source === path || !cur.source)) return; // already loaded, or teacher replaced it with an upload
+        fetchLibraryImage(key, path);
+      });
+    }
+    function fetchLibraryImage(key, path){
+      if (!/^books\/[A-Za-z0-9._\/-]+$/.test(path) || path.indexOf('..') >= 0) return;
+      fetch(AI_DOCS_BASE + path).then(function(r){ if (!r.ok) throw new Error('not found'); return r.blob(); })
+      .then(function(blob){
+        if (!state.quiz || !isObj(state.quiz.imageSources) || state.quiz.imageSources[key] !== path) return;
+        if (!/^image\//.test(blob.type)) return;
+        if (state.images[key]){ try { URL.revokeObjectURL(state.images[key].url); } catch(e){} }
+        var rec = { url: URL.createObjectURL(blob), name: path.split('/').pop(), source: path };
+        state.images[key] = rec;
+        var probe = new Image();
+        probe.onload = function(){
+          if (state.images[key] === rec && probe.naturalWidth){
+            rec.aspect = probe.naturalWidth / probe.naturalHeight;
+            rec.naturalW = probe.naturalWidth;
+            renderExam();
+          }
+        };
+        probe.src = rec.url;
+        renderImagesPanel(); renderExam();
+      }).catch(function(){ /* not found: leave the slot empty so the teacher can upload the picture manually */ });
     }
     function missingImages(){
       if (!state.quiz) return [];
@@ -3820,13 +3866,15 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
         var section = 'اقرأ أولاً الدليل الأساسي للأداة من الرابط التالي والتزم به حرفياً:\n' + docsUrl()
           + '\n\nلا تفتح دليل القوالب التالي إلا إذا سألتك عن القوالب أو التصميم أو شكل الورقة — لا تحمّله في أي حالة أخرى حتى لا تستهلك سياقاً لا تحتاجه:\n' + templatesUrl()
           + '\n\nخريطة كل ملفات التوثيق موجودة هنا:\n' + indexUrl()
+          + '\n\nوإذا طلبتُ امتحاناً مبنياً على الكتب المدرسية (الصف التاسع أو البكالوريا) أو شكلاً من صفحة كتاب، فافتح فهرس مكتبة الكتب من الخريطة واتبع ملف FIGURES.md الخاص بالكتاب لنسخ مسارات الصور حرفياً في imageSources كما هو مشروح في الدليل.'
           + '\n(إذا لم تستطع فتح الروابط فأخبرني فوراً وسألصق لك المحتوى.)';
         copyText(buildPrompt(section)).then(function(){ toast('تم النسخ ✓'); }, function(){ toast('تعذّر النسخ'); });
       });
       $('btn-copy-full').addEventListener('click', function(){
         fetchGuide().then(function(guide){
           var section = 'فيما يلي الدليل الأساسي للأداة كاملاً، التزم به حرفياً:\n\n<دليل_الأداة>\n' + guide + '\n</دليل_الأداة>'
-            + '\n\nملاحظة: يوجد دليل قوالب منفصل على الرابط التالي — لا تفتحه إلا إذا طلبتُ منك شيئاً يخص القوالب أو التصميم أو شكل الورقة:\n' + templatesUrl();
+            + '\n\nملاحظة: يوجد دليل قوالب منفصل على الرابط التالي — لا تفتحه إلا إذا طلبتُ منك شيئاً يخص القوالب أو التصميم أو شكل الورقة:\n' + templatesUrl()
+            + '\n\nوإذا طلبتُ امتحاناً مبنياً على الكتب المدرسية (الصف التاسع أو البكالوريا) أو شكلاً من صفحة كتاب، فافتح فهرس مكتبة الكتب التالي واتبع ملف FIGURES.md الخاص بالكتاب لنسخ مسارات الصور حرفياً في imageSources كما هو مشروح في الدليل:\n' + AI_DOCS_BASE + 'books/INDEX.md';
           copyText(buildPrompt(section)).then(function(){ toast('تم النسخ ✓'); }, function(){ toast('تعذّر النسخ'); });
         });
       });
