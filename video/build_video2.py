@@ -19,8 +19,17 @@ F_LAT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 F_LATB = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 if not os.path.exists(F_LAT): F_LAT = F_REG    # non-Linux fallback: bundled Noto (has Latin glyphs)
 if not os.path.exists(F_LATB): F_LATB = F_BOLD
-VOICE = "avocado_v2:vd2_r8_rep1k_0534_v068_28k_g5k"  # Dazed Petal — LOCKED by the user 2026-11-26: this and ONLY this voice for this video. Do not substitute.
-TTS = "/opt/hatch/bin/tts"
+# Narration is INDEPENDENT of Muse (user requirement, 2026-11-26 — this
+# supersedes the earlier Muse-voice lock). Backends, chosen by VIDEO_TTS:
+#   edge  (default) Microsoft Edge neural TTS — real Syrian voice
+#         ar-SY-AmiraNeural (female). Needs internet + `pip install edge-tts`.
+#   coqui fully local Coqui TTS, Arabic Mai model — offline after a
+#         one-time model download. Needs `pip install TTS`.
+# Existing work2/voice-*.mp3 are reused; delete them or pass --regen
+# to re-record with the selected backend.
+TTS_BACKEND = os.environ.get("VIDEO_TTS", "edge")
+EDGE_VOICE = "ar-SY-AmiraNeural"
+COQUI_MODEL = "tts_models/ar/mai/glow-tts"
 
 # kind: phone / logos / books ; shot + pan start for phone scenes
 SCENES = [
@@ -186,8 +195,14 @@ def slide_books(i, ch, title, sub):
 
 def tts(text, path):
     if os.path.exists(path): return
-    r = subprocess.run([TTS, "speak", "--language", "ar", "--voice", VOICE,
-                        "--output", path, "--text-stdin"], input=text, capture_output=True, text=True)
+    if TTS_BACKEND == "coqui":
+        r = subprocess.run(["tts", "--model_name", COQUI_MODEL, "--text", text,
+                            "--out_path", path], capture_output=True, text=True)
+    else:
+        tf = path + ".txt"
+        open(tf, "w", encoding="utf-8").write(text)
+        r = subprocess.run(["edge-tts", "--voice", EDGE_VOICE, "--file", tf,
+                            "--write-media", path], capture_output=True, text=True)
     if r.returncode != 0 or not os.path.exists(path): raise RuntimeError(r.stdout + r.stderr)
 
 def dur(path):
@@ -197,6 +212,9 @@ def dur(path):
 def main():
     global BEZEL
     BEZEL = os.path.join(WORK, "bezel.png"); make_bezel(BEZEL)
+    if "--regen" in sys.argv:
+        for f in os.listdir(WORK):
+            if f.startswith("voice-") and f.endswith(".mp3"): os.remove(os.path.join(WORK, f))
     segs = []
     for i, (kind, shot, y0, ch, title, sub, narr) in enumerate(SCENES):
         mp3 = os.path.join(WORK, f"voice-{i}.mp3"); tts(narr, mp3)
