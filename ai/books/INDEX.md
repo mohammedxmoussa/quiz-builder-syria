@@ -7,6 +7,37 @@ when a teacher asks you to base an exam on textbook pages or content
 (e.g. «اعمل الاختبار من الصفحات 1–100 من كتاب الفيزياء»). For all other
 exams you do not need anything in this folder.
 
+## الصور والأشكال
+لكل كتاب مجلد صور بجانب ملفات النص: الأشكال المستخرجة من الكتاب في `images/` (باسم `img-PPP-III.jpg` حيث PPP رقم صفحة PDF)، وبعض الكتب لها أيضاً صور كاملة لكل صفحة في `pages-img/` (باسم `page-NNN.jpg`). ملفات النص نفسها تربط الشكل بصفحته. عند سؤال عن شكل أو رسم: افتح صورة الصفحة أو الشكل من نفس مجلد الكتاب.
+- `12-English-Sci-wb/`: 138 شكل
+- `12-English-lit-Sb/`: 255 شكل
+- `12-French-SB/`: 179 شكل
+- `12-French-lit/`: 96 شكل
+- `12-Lit-Philosophy-1/`: 20 شكل
+- `12-Lit-Philosophy-2/`: 23 شكل
+- `12-christianity/`: 18 شكل
+- `12-geography-Lit/`: 264 شكل
+- `12-islamic/`: 2 شكل
+- `12-lit-Russian/`: 1 شكل
+- `12-physics-Sci/`: 0 شكل + 268 صورة صفحة كاملة
+- `12-sci-Russian/`: 1 شكل
+- `12-sci-math-1/`: 2 شكل
+- `12-sci-math-2/`: 6 شكل
+- `12-science/`: 599 شكل + 287 صورة صفحة كاملة
+- `9-Algebra/`: 2 شكل
+- `9-English-AB/`: 53 شكل
+- `9-English-SB/`: 206 شكل
+- `9-Geometry/`: 14 شكل + 84 صورة صفحة كاملة
+- `9-Physics-Chemistry/`: 0 شكل + 180 صورة صفحة كاملة
+- `9-Russian/`: 2 شكل
+- `9-arabic/`: 175 شكل
+- `9-christianity/`: 128 شكل
+- `9-history/`: 123 شكل
+- `9-islamic/`: 1 شكل
+- `9-music/`: 58 شكل
+- `9-science/`: 523 شكل + 232 صورة صفحة كاملة
+- `9-technology/`: 358 شكل
+
 ## How to use this library
 
 1. Find the teacher's book below by grade and subject.
