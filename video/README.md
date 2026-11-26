@@ -42,7 +42,7 @@ automatically once the MP4 exists at the root (it is hidden until then).
 - **On-screen text carries NO tashkeel** (cleaner slides). **Narration text
   SHOULD carry tashkeel** on ambiguous words — the TTS reads exactly what
   is written. Vocalizations agreed with the project owner:
-  مُنْشِئ (the noon is sakinah), تْكون, تَستخدمه, مُؤَتْمَتَة.
+  مُنْشِئُ — noon sakinah, and keep the final damma: without it the voice reads مُنَشِّء, تْكون, تَستخدمه, مُؤَتْمَتَة.
   And the phrasing «ورقة واحدة، على الوجهين» (not «وجه وقفا»).
 - **Voice:** the `VOICE` constant in the script. Current voice:
   `avocado_v2:vd2_r8_rep1k_0534_v068_28k_g5k` ("Dazed Petal", female,
