@@ -17,7 +17,7 @@ F_KUFI = os.path.join(FONTS, "NotoKufiArabic_700Bold.ttf")
 F_REG = os.path.join(FONTS, "NotoSansArabic_400Regular.ttf")
 F_LAT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 F_LATB = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
-VOICE = "avocado_v2:vd2_r8_rep1k_0534_v068_28k_g5k"  # Dazed Petal — F, Middle Eastern, mid-range, light (user pick, 2026-11-26)
+VOICE = "avocado_v2:vd2_r8_rep1k_0534_v068_28k_g5k"  # Dazed Petal — LOCKED by the user 2026-11-26: this and ONLY this voice for this video. Do not substitute.
 TTS = "/opt/hatch/bin/tts"
 
 # kind: phone / logos / books ; shot + pan start for phone scenes

@@ -44,7 +44,7 @@ automatically once the MP4 exists at the root (it is hidden until then).
   is written. Vocalizations agreed with the project owner:
   مُنْشِئُ — noon sakinah, and keep the final damma: without it the voice reads مُنَشِّء, تْكون, تَستخدمه, مُؤَتْمَتَة.
   And the phrasing «ورقة واحدة، على الوجهين» (not «وجه وقفا»).
-- **Voice:** the `VOICE` constant in the script. Current voice:
+- **Voice — LOCKED:** use the `VOICE` constant in the script, **this and only this voice** (user rule, 2026-11-26 — a previously approved take once failed to reach the delivered video; do not substitute voices, and always narrate from the harakat text below). Current voice:
   `avocado_v2:vd2_r8_rep1k_0534_v068_28k_g5k` ("Dazed Petal", female,
   Middle Eastern, mid-range/light) — chosen by the owner from four
   auditions because it pronounces ج as ج (the previous voice said غ).
