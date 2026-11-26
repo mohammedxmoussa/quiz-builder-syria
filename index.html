@@ -2290,13 +2290,16 @@ Number the questions yourself? **No.** The tool numbers them automatically. Neve
     function fitPreview(){
       var pane = $('preview-pane'), wrap = $('sheet-wrap'), scaleEl = $('sheet-scale'), sheet = $('print-root');
       if ($('preview-scroll').hidden || !sheet.offsetWidth) return;
-      var avail = pane.clientWidth;
+      var avail = $('preview-scroll').clientWidth - 2;
+      if (avail <= 0) return;
       var sheetW = sheet.offsetWidth, sheetH = sheet.offsetHeight;
       var s = Math.min(1, avail / sheetW);
+      scaleEl.style.width = sheetW + 'px';
       scaleEl.style.transform = 'scale(' + s + ')';
-      scaleEl.style.transformOrigin = 'top center';
+      scaleEl.style.transformOrigin = 'top right';
       wrap.style.width = (sheetW * s) + 'px';
       wrap.style.height = (sheetH * s) + 'px';
+      wrap.style.overflow = 'hidden';
     }
     if (window.ResizeObserver){
       var ro = new ResizeObserver(function(){ fitPreview(); });
