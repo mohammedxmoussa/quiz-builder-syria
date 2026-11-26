@@ -22,14 +22,27 @@ exams you do not need anything in this folder.
    in the teacher's requested range. Do not invent book content for
    pages you did not read.
 
-## ⚠️ Scanned books — read this before promising anything
+## ⚠️ OCR books — quality grades, read this before promising anything
 
-Books whose status is «مسح ضوئي — النص غير مكتمل، يحتاج OCR» are scanned
-image PDFs. Their chunk files currently contain little or no text (OCR
-is still pending). If a teacher asks for an exam from a scanned book's
-pages, tell them honestly that this book's text is not available yet —
-do **not** write questions from memory and pretend they came from the
-book. Books marked «نص رقمي نظيف» are fully extracted and safe to use.
+All formerly scanned books have now been OCR'd, and each one carries a
+quality grade in its status line: «نص OCR — الدرجة X (ثقة NN%)», where
+the percentage is the OCR engine's mean word confidence. Use the grades
+like this:
+
+- **Grades A and B** — trustworthy. Write questions from the text as
+  you would from a digital book.
+- **Grade C** — usable, but carefully: prose is generally sound, yet
+  individual words, numbers and formulas may be misread. Prefer
+  questions whose answers do not hinge on one exact number or symbol.
+- **Grade D** — treat the exact wording with suspicion. The gist and
+  topics are real, but words, numbers and formulas are often wrong.
+  Prefer concept questions; do **not** quote numbers or formulas from
+  a grade-D book without checking the page image first, and tell the
+  teacher the text is low-quality OCR.
+
+Books marked «نص رقمي نظيف» are born-digital, fully extracted and
+safe to use. Whatever the grade, never write questions from memory
+and pretend they came from the book.
 
 Base URL of this folder (GitHub Pages):
 `https://mohammedxmoussa.github.io/quiz-builder-syria/ai/books/`
@@ -46,20 +59,20 @@ Base URL of this folder (GitHub Pages):
 
 ### الجبر — الصف التاسع
 
-- Total pages: 116 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- Total pages: 116 · Status: نص OCR — الدرجة B (ثقة 81%)
 - [الصفحات 1–50](9-Algebra/pages-001-050.md)
 - [الصفحات 51–100](9-Algebra/pages-051-100.md)
 - [الصفحات 101–116](9-Algebra/pages-101-116.md)
 
 ### الهندسة — الصف التاسع
 
-- Total pages: 84 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- Total pages: 84 · Status: نص OCR — الدرجة B (ثقة 81%)
 - [الصفحات 1–50](9-Geometry/pages-001-050.md)
 - [الصفحات 51–84](9-Geometry/pages-051-084.md)
 
 ### الفيزياء والكيمياء — الصف التاسع
 
-- Total pages: 180 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- Total pages: 180 · Status: نص OCR — الدرجة C (ثقة 75%) — الصيغ والمعادلات تحتاج حذراً
 - [الصفحات 1–50](9-Physics-Chemistry/pages-001-050.md)
 - [الصفحات 51–100](9-Physics-Chemistry/pages-051-100.md)
 - [الصفحات 101–150](9-Physics-Chemistry/pages-101-150.md)
@@ -76,7 +89,7 @@ Base URL of this folder (GitHub Pages):
 
 ### الجغرافية — الصف التاسع
 
-- Total pages: 176 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- Total pages: 176 · Status: نص OCR — الدرجة C (ثقة 76%)
 - [الصفحات 1–50](9-geography/pages-001-050.md)
 - [الصفحات 51–100](9-geography/pages-051-100.md)
 - [الصفحات 101–150](9-geography/pages-101-150.md)
@@ -84,14 +97,14 @@ Base URL of this folder (GitHub Pages):
 
 ### التاريخ — الصف التاسع
 
-- Total pages: 123 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- Total pages: 123 · Status: نص OCR — الدرجة B (ثقة 80%)
 - [الصفحات 1–50](9-history/pages-001-050.md)
 - [الصفحات 51–100](9-history/pages-051-100.md)
 - [الصفحات 101–123](9-history/pages-101-123.md)
 
 ### التربية الدينية الإسلامية — الصف التاسع
 
-- Total pages: 140 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- Total pages: 140 · Status: نص OCR — الدرجة D (ثقة 60%) — عرضة للأخطاء بسبب الخطوط المزخرفة
 - [الصفحات 1–50](9-islamic/pages-001-050.md)
 - [الصفحات 51–100](9-islamic/pages-051-100.md)
 - [الصفحات 101–140](9-islamic/pages-101-140.md)
@@ -117,13 +130,13 @@ Base URL of this folder (GitHub Pages):
 
 ### اللغة الفرنسية (كتاب الأنشطة) — الصف التاسع
 
-- Total pages: 56 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- Total pages: 56 · Status: نص OCR — الدرجة B (ثقة 87%)
 - [الصفحات 1–50](9-French-AB/pages-001-050.md)
 - [الصفحات 51–56](9-French-AB/pages-051-056.md)
 
 ### اللغة الروسية — الصف التاسع
 
-- Total pages: 96 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- Total pages: 96 · Status: نص OCR — الدرجة B (ثقة 86%)
 - [الصفحات 1–50](9-Russian/pages-001-050.md)
 - [الصفحات 51–96](9-Russian/pages-051-096.md)
 
@@ -137,7 +150,7 @@ Base URL of this folder (GitHub Pages):
 
 ### التربية الموسيقية — الصف التاسع
 
-- Total pages: 64 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- Total pages: 64 · Status: نص OCR — الدرجة D (ثقة 58%) — صفحات التدوين الموسيقي غير مقروءة كنص
 - [الصفحات 1–50](9-music/pages-001-050.md)
 - [الصفحات 51–64](9-music/pages-051-064.md)
 
@@ -159,7 +172,7 @@ Base URL of this folder (GitHub Pages):
 
 ### الرياضيات ١ — البكالوريا العلمي
 
-- Total pages: 232 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- Total pages: 232 · Status: نص OCR — الدرجة C (ثقة 74%) — الصيغ والمعادلات تحتاج حذراً
 - [الصفحات 1–50](12-sci-math-1/pages-001-050.md)
 - [الصفحات 51–100](12-sci-math-1/pages-051-100.md)
 - [الصفحات 101–150](12-sci-math-1/pages-101-150.md)
@@ -168,7 +181,7 @@ Base URL of this folder (GitHub Pages):
 
 ### الرياضيات ٢ — البكالوريا العلمي
 
-- Total pages: 196 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- Total pages: 196 · Status: نص OCR — الدرجة C (ثقة 77%) — الصيغ والمعادلات تحتاج حذراً
 - [الصفحات 1–50](12-sci-math-2/pages-001-050.md)
 - [الصفحات 51–100](12-sci-math-2/pages-051-100.md)
 - [الصفحات 101–150](12-sci-math-2/pages-101-150.md)
@@ -176,7 +189,7 @@ Base URL of this folder (GitHub Pages):
 
 ### الفيزياء — البكالوريا العلمي
 
-- Total pages: 268 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- Total pages: 268 · Status: نص OCR — الدرجة D (ثقة 67%) — النثر مقروء لكن الصيغ والرموز غير موثوقة
 - [الصفحات 1–50](12-physics-Sci/pages-001-050.md)
 - [الصفحات 51–100](12-physics-Sci/pages-051-100.md)
 - [الصفحات 101–150](12-physics-Sci/pages-101-150.md)
@@ -196,7 +209,7 @@ Base URL of this folder (GitHub Pages):
 
 ### الجغرافية — البكالوريا الأدبي
 
-- Total pages: 280 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- Total pages: 280 · Status: نص OCR — الدرجة B (ثقة 80%)
 - [الصفحات 1–50](12-geography-Lit/pages-001-050.md)
 - [الصفحات 51–100](12-geography-Lit/pages-051-100.md)
 - [الصفحات 101–150](12-geography-Lit/pages-101-150.md)
@@ -221,7 +234,7 @@ Base URL of this folder (GitHub Pages):
 
 ### التربية الدينية الإسلامية — البكالوريا
 
-- Total pages: 164 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- Total pages: 164 · Status: نص OCR — الدرجة D (ثقة 60%) — عرضة للأخطاء بسبب الخطوط المزخرفة
 - [الصفحات 1–50](12-islamic/pages-001-050.md)
 - [الصفحات 51–100](12-islamic/pages-051-100.md)
 - [الصفحات 101–150](12-islamic/pages-101-150.md)
@@ -262,14 +275,14 @@ Base URL of this folder (GitHub Pages):
 
 ### اللغة الروسية — البكالوريا العلمي
 
-- Total pages: 128 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- Total pages: 128 · Status: نص OCR — الدرجة B (ثقة 85%)
 - [الصفحات 1–50](12-sci-Russian/pages-001-050.md)
 - [الصفحات 51–100](12-sci-Russian/pages-051-100.md)
 - [الصفحات 101–128](12-sci-Russian/pages-101-128.md)
 
 ### اللغة الروسية — البكالوريا الأدبي
 
-- Total pages: 140 · Status: مسح ضوئي — النص غير مكتمل، يحتاج OCR
+- Total pages: 140 · Status: نص OCR — الدرجة B (ثقة 85%)
 - [الصفحات 1–50](12-lit-Russian/pages-001-050.md)
 - [الصفحات 51–100](12-lit-Russian/pages-051-100.md)
 - [الصفحات 101–140](12-lit-Russian/pages-101-140.md)
