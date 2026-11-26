@@ -33,6 +33,28 @@ automatically once the MP4 exists at the root (it is hidden until then).
 > can only reach GitHub via a normal `git push` (e.g. from a server) —
 > Muse's in-app GitHub integration pushes text files only.
 
+## Building on your own PC
+
+The build is **fully offline (0 bytes of internet)** as long as the
+narration files in `work2/` are present — the script reuses them as-is.
+You only need:
+
+- Python 3 + Pillow (`pip install Pillow`)
+- ffmpeg/ffprobe on your PATH (Windows: `winget install Gyan.FFmpeg`;
+  Linux: `sudo apt install ffmpeg`)
+
+```
+git clone https://github.com/mohammedxmoussa/quiz-builder-syria.git
+cd quiz-builder-syria/video
+python3 build_video2.py
+```
+
+Expected output: `exam-builder-intro-v2.mp4`, **82 seconds, ~1.7 MB**,
+identical to the published one — every input is the same file. Check
+scene 2 (~0:04): it says «مُنْشِئُ الاختبارات» with a sakinah noon.
+Caution: do not delete anything in `work2/` — re-recording narration
+is the one step that needs Muse's TTS.
+
 ## Editing the video
 
 - **Scenes, titles, narration:** the `SCENES` array at the top of
