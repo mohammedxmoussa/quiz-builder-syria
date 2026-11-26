@@ -55,6 +55,19 @@ scene 2 (~0:04): it says «مُنْشِئُ الاختبارات» with a sakina
 Caution: do not delete anything in `work2/` — re-recording narration
 is the one step that needs Muse's TTS.
 
+## Troubleshooting
+
+- **The build tries to run a `tts` command and fails:** that means a
+  narration file is missing from `work2/`. The script only calls TTS
+  for missing files. Restore `work2/voice-*.mp3` (from the repo itself
+  once the binary assets are pushed, or from `video-assets.zip`) and
+  rebuild — with all 9 files present, TTS is never invoked.
+- **`/opt/hatch/bin/tts` is Muse's internal TTS tool** (the `speak`
+  subcommand and the `avocado_v2:...` voice IDs are Muse's). It is
+  not Coqui TTS — Coqui's `tts` command is a different program that
+  cannot use these voices. Narration can only be (re)recorded inside
+  Muse; everything else in the build runs anywhere.
+
 ## Editing the video
 
 - **Scenes, titles, narration:** the `SCENES` array at the top of
