@@ -281,6 +281,10 @@
         display:grid; place-items:center; font-weight:800;
       }
       .landing-install{ min-height:3rem; font-size:1rem; }
+      .landing-video{ margin:.2rem 0; }
+      .landing-video[hidden]{ display:none; }
+      .landing-video video{ width:100%; border-radius:12px; border:1px solid var(--line); background:#000; display:block; }
+      .landing-video-cap{ margin:.45rem 0 0; font-size:.92rem; color:var(--ink-soft); }
 
       /* ---------- Summary bar (always visible at top of panel) ---------- */
       .summary-bar{
@@ -692,10 +696,25 @@
           <li><span class="n">٢</span> عدّل واختر القالب</li>
           <li><span class="n">٣</span> اطبع</li>
         </ol>
+        <div class="landing-video" id="landing-video" hidden>
+          <video id="landing-video-el" controls preload="metadata" playsinline poster="poster-v2.png"></video>
+          <p class="landing-video-cap">شاهد كيف يعمل — دقيقة و54 ثانية</p>
+        </div>
         <button type="button" class="btn primary" id="btn-landing-start" style="min-height:3.4rem;font-size:1.15rem">ابدأ إنشاء اختبار</button>
         <button type="button" class="btn landing-install" id="btn-install-landing">تثبيت التطبيق</button>
       </div>
     </div>
+    <script>
+      /* Show the intro video on the landing screen only once its file is in the repo. */
+      (function(){
+        var box = document.getElementById('landing-video');
+        var vid = document.getElementById('landing-video-el');
+        if (!box || !vid) return;
+        fetch('exam-builder-intro-v2.mp4', { method: 'HEAD' }).then(function(r){
+          if (r.ok){ vid.src = 'exam-builder-intro-v2.mp4'; box.hidden = false; }
+        }).catch(function(){ /* video not published yet: landing stays as it is */ });
+      })();
+    </script>
 
     <header class="app-head no-print">
       <h1>منشئ الاختبارات</h1>

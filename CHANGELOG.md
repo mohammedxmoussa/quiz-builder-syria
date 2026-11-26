@@ -7,6 +7,9 @@ grouped by date rather than version numbers.
 
 ## [Unreleased]
 
+### Added
+- **Landing screen: intro video player.** The 1:54 intro video (v2) plays from the first screen with its poster, under the caption «شاهد كيف يعمل». The player only appears once `exam-builder-intro-v2.mp4` is published to the repo root (it is a binary, so it travels via the server push like the book images); until then the landing screen is unchanged.
+
 ### Fixed
 - **Word export: exam columns now read in the right order.** The downloaded `.docx` never marked its sections as right-to-left, so Word (and LibreOffice) laid the two columns out left-to-right — the first question landed in the left column and the exam read backwards across columns. The bundled docx.js library has no section-level bidi option, so it is now patched (like the earlier Node-polyfill patches) to emit `<w:bidi/>` in each section's properties for Arabic templates; the English template stays LTR. Verified by rendering the generated file: question 1 now starts top-right.
 
