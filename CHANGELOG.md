@@ -7,6 +7,9 @@ grouped by date rather than version numbers.
 
 ## [Unreleased]
 
+### Fixed
+- **Word export: exam columns now read in the right order.** The downloaded `.docx` never marked its sections as right-to-left, so Word (and LibreOffice) laid the two columns out left-to-right — the first question landed in the left column and the exam read backwards across columns. The bundled docx.js library has no section-level bidi option, so it is now patched (like the earlier Node-polyfill patches) to emit `<w:bidi/>` in each section's properties for Arabic templates; the English template stays LTR. Verified by rendering the generated file: question 1 now starts top-right.
+
 ## 2026-11-26 — Textbook figures, OCR, and repo docs
 
 ### Added
