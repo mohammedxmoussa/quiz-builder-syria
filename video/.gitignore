@@ -1,0 +1,10 @@
+# build intermediates (regenerated on every run)
+work2/slide-*.png
+work2/seg-*.mp4
+work2/concat.txt
+work2/bezel.png
+work2/*.mp3.txt
+work2/*.new.mp3
+# local build outputs — the published copies live at the repo root
+exam-builder-intro-v2.mp4
+poster-v2.png

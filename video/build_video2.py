@@ -193,17 +193,22 @@ def slide_books(i, ch, title, sub):
         y += h + 20
     return img
 
+REGEN = "--regen" in sys.argv
+
 def tts(text, path):
-    if os.path.exists(path): return
-    if TTS_BACKEND == "coqui":
+    if os.path.exists(path) and not REGEN: return
+    tmp = path + ".new.mp3"   # record to a temp file; replace only on success,
+    if os.path.exists(tmp): os.remove(tmp)   # so a failed re-record never
+    if TTS_BACKEND == "coqui":               # destroys the previous narration
         r = subprocess.run(["tts", "--model_name", COQUI_MODEL, "--text", text,
-                            "--out_path", path], capture_output=True, text=True)
+                            "--out_path", tmp], capture_output=True, text=True)
     else:
         tf = path + ".txt"
         open(tf, "w", encoding="utf-8").write(text)
         r = subprocess.run(["edge-tts", "--voice", EDGE_VOICE, "--file", tf,
-                            "--write-media", path], capture_output=True, text=True)
-    if r.returncode != 0 or not os.path.exists(path): raise RuntimeError(r.stdout + r.stderr)
+                            "--write-media", tmp], capture_output=True, text=True)
+    if r.returncode != 0 or not os.path.exists(tmp): raise RuntimeError(r.stdout + r.stderr)
+    os.replace(tmp, path)
 
 def dur(path):
     return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
@@ -212,9 +217,7 @@ def dur(path):
 def main():
     global BEZEL
     BEZEL = os.path.join(WORK, "bezel.png"); make_bezel(BEZEL)
-    if "--regen" in sys.argv:
-        for f in os.listdir(WORK):
-            if f.startswith("voice-") and f.endswith(".mp3"): os.remove(os.path.join(WORK, f))
+    pass  # --regen is handled per-scene inside tts() (safe replace)
     segs = []
     for i, (kind, shot, y0, ch, title, sub, narr) in enumerate(SCENES):
         mp3 = os.path.join(WORK, f"voice-{i}.mp3"); tts(narr, mp3)
