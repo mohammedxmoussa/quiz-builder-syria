@@ -1,0 +1,119 @@
+# أشكال كتاب 9-arabic — فهرس الصور
+
+مسارات نسبية من مجلد `ai/` في موقع الأداة. انسخ المسار **حرفياً** إلى حقل `imageSources` في JSON الامتحان (راجع دليل `quiz-creator-ai.md`، قسم Images). لا تخترع مساراً غير موجود هنا.
+
+## الأشكال المستخرجة من صفحات الكتاب
+مرتبة برقم صفحة الكتاب. الشكل نفسه قد يظهر في الامتحان كما هو، أو استخدم صورة الصفحة الكاملة بدلاً منه.
+
+- صفحة 3: `books/9-arabic/images/img-003-003.jpg`، `books/9-arabic/images/img-003-005.jpg`
+- صفحة 6: `books/9-arabic/images/img-006-009.jpg`
+- صفحة 7: `books/9-arabic/images/img-007-010.jpg`
+- صفحة 8: `books/9-arabic/images/img-008-013.jpg`، `books/9-arabic/images/img-008-015.jpg`، `books/9-arabic/images/img-008-016.jpg`
+- صفحة 11: `books/9-arabic/images/img-011-000.jpg`
+- صفحة 12: `books/9-arabic/images/img-012-002.jpg`
+- صفحة 13: `books/9-arabic/images/img-013-003.jpg`
+- صفحة 14: `books/9-arabic/images/img-014-004.jpg`
+- صفحة 15: `books/9-arabic/images/img-015-005.jpg`
+- صفحة 16: `books/9-arabic/images/img-016-006.jpg`
+- صفحة 17: `books/9-arabic/images/img-017-009.jpg`، `books/9-arabic/images/img-017-010.jpg`، `books/9-arabic/images/img-017-011.jpg`
+- صفحة 19: `books/9-arabic/images/img-019-013.jpg`، `books/9-arabic/images/img-019-014.jpg`
+- صفحة 21: `books/9-arabic/images/img-021-000.jpg`
+- صفحة 22: `books/9-arabic/images/img-022-001.jpg`
+- صفحة 23: `books/9-arabic/images/img-023-004.jpg`، `books/9-arabic/images/img-023-006.jpg`، `books/9-arabic/images/img-023-007.jpg`
+- صفحة 26: `books/9-arabic/images/img-026-010.jpg`
+- صفحة 27: `books/9-arabic/images/img-027-011.jpg`
+- صفحة 28: `books/9-arabic/images/img-028-012.jpg`
+- صفحة 30: `books/9-arabic/images/img-030-014.jpg`
+- صفحة 32: `books/9-arabic/images/img-032-001.jpg`
+- صفحة 33: `books/9-arabic/images/img-033-004.jpg`، `books/9-arabic/images/img-033-005.jpg`، `books/9-arabic/images/img-033-006.jpg`
+- صفحة 36: `books/9-arabic/images/img-036-008.jpg`، `books/9-arabic/images/img-036-009.jpg`
+- صفحة 38: `books/9-arabic/images/img-038-012.jpg`، `books/9-arabic/images/img-038-014.jpg`
+- صفحة 41: `books/9-arabic/images/img-041-002.jpg`، `books/9-arabic/images/img-041-004.jpg`
+- صفحة 42: `books/9-arabic/images/img-042-005.jpg`
+- صفحة 46: `books/9-arabic/images/img-046-008.jpg`
+- صفحة 48: `books/9-arabic/images/img-048-010.jpg`
+- صفحة 49: `books/9-arabic/images/img-049-013.jpg`، `books/9-arabic/images/img-049-014.jpg`، `books/9-arabic/images/img-049-015.jpg`
+- صفحة 50: `books/9-arabic/images/img-050-016.jpg`، `books/9-arabic/images/img-050-017.jpg`
+- صفحة 52: `books/9-arabic/images/img-052-000.jpg`
+- صفحة 55: `books/9-arabic/images/img-055-005.jpg`
+- صفحة 56: `books/9-arabic/images/img-056-008.jpg`، `books/9-arabic/images/img-056-009.jpg`، `books/9-arabic/images/img-056-010.jpg`
+- صفحة 57: `books/9-arabic/images/img-057-011.jpg`
+- صفحة 58: `books/9-arabic/images/img-058-012.jpg`
+- صفحة 60: `books/9-arabic/images/img-060-016.jpg`
+- صفحة 62: `books/9-arabic/images/img-062-000.jpg`، `books/9-arabic/images/img-062-001.jpg`
+- صفحة 63: `books/9-arabic/images/img-063-004.jpg`، `books/9-arabic/images/img-063-005.jpg`، `books/9-arabic/images/img-063-006.jpg`
+- صفحة 64: `books/9-arabic/images/img-064-007.jpg`
+- صفحة 69: `books/9-arabic/images/img-069-010.jpg`
+- صفحة 71: `books/9-arabic/images/img-071-000.jpg`
+- صفحة 73: `books/9-arabic/images/img-073-002.jpg`
+- صفحة 75: `books/9-arabic/images/img-075-005.jpg`، `books/9-arabic/images/img-075-006.jpg`، `books/9-arabic/images/img-075-007.jpg`
+- صفحة 77: `books/9-arabic/images/img-077-009.jpg`
+- صفحة 79: `books/9-arabic/images/img-079-011.jpg`
+- صفحة 80: `books/9-arabic/images/img-080-013.jpg`
+- صفحة 83: `books/9-arabic/images/img-083-002.jpg`، `books/9-arabic/images/img-083-003.jpg`
+- صفحة 84: `books/9-arabic/images/img-084-006.jpg`، `books/9-arabic/images/img-084-007.png`، `books/9-arabic/images/img-084-009.jpg`، `books/9-arabic/images/img-084-010.jpg`
+- صفحة 85: `books/9-arabic/images/img-085-011.jpg`
+- صفحة 88: `books/9-arabic/images/img-088-013.jpg`
+- صفحة 89: `books/9-arabic/images/img-089-014.jpg`
+- صفحة 93: `books/9-arabic/images/img-093-001.jpg`
+- صفحة 94: `books/9-arabic/images/img-094-004.jpg`، `books/9-arabic/images/img-094-005.jpg`، `books/9-arabic/images/img-094-006.jpg`
+- صفحة 95: `books/9-arabic/images/img-095-007.jpg`
+- صفحة 96: `books/9-arabic/images/img-096-008.jpg`
+- صفحة 98: `books/9-arabic/images/img-098-010.jpg`
+- صفحة 100: `books/9-arabic/images/img-100-012.jpg`
+- صفحة 102: `books/9-arabic/images/img-102-000.jpg`
+- صفحة 103: `books/9-arabic/images/img-103-003.jpg`، `books/9-arabic/images/img-103-005.jpg`
+- صفحة 105: `books/9-arabic/images/img-105-006.jpg`
+- صفحة 107: `books/9-arabic/images/img-107-008.jpg`
+- صفحة 109: `books/9-arabic/images/img-109-010.jpg`، `books/9-arabic/images/img-109-011.jpg`، `books/9-arabic/images/img-109-013.jpg`، `books/9-arabic/images/img-109-014.png`
+- صفحة 110: `books/9-arabic/images/img-110-019.jpg`
+- صفحة 111: `books/9-arabic/images/img-111-003.jpg`
+- صفحة 112: `books/9-arabic/images/img-112-006.jpg`، `books/9-arabic/images/img-112-007.jpg`، `books/9-arabic/images/img-112-008.jpg`
+- صفحة 113: `books/9-arabic/images/img-113-009.jpg`
+- صفحة 117: `books/9-arabic/images/img-117-012.jpg`، `books/9-arabic/images/img-117-013.jpg`
+- صفحة 119: `books/9-arabic/images/img-119-014.jpg`، `books/9-arabic/images/img-119-016.jpg`
+- صفحة 122: `books/9-arabic/images/img-122-001.jpg`
+- صفحة 123: `books/9-arabic/images/img-123-004.jpg`
+- صفحة 124: `books/9-arabic/images/img-124-005.jpg`
+- صفحة 127: `books/9-arabic/images/img-127-007.jpg`
+- صفحة 128: `books/9-arabic/images/img-128-008.jpg`
+- صفحة 129: `books/9-arabic/images/img-129-009.jpg`
+- صفحة 132: `books/9-arabic/images/img-132-000.jpg`
+- صفحة 133: `books/9-arabic/images/img-133-003.jpg`، `books/9-arabic/images/img-133-005.jpg`، `books/9-arabic/images/img-133-006.jpg`
+- صفحة 137: `books/9-arabic/images/img-137-009.jpg`
+- صفحة 138: `books/9-arabic/images/img-138-010.jpg`
+- صفحة 139: `books/9-arabic/images/img-139-011.jpg`
+- صفحة 142: `books/9-arabic/images/img-142-000.jpg`
+- صفحة 143: `books/9-arabic/images/img-143-003.jpg`، `books/9-arabic/images/img-143-005.jpg`
+- صفحة 148: `books/9-arabic/images/img-148-010.jpg`، `books/9-arabic/images/img-148-012.jpg`
+- صفحة 149: `books/9-arabic/images/img-149-015.jpg`
+- صفحة 150: `books/9-arabic/images/img-150-016.jpg`
+- صفحة 151: `books/9-arabic/images/img-151-002.jpg`، `books/9-arabic/images/img-151-003.jpg`، `books/9-arabic/images/img-151-004.jpg`
+- صفحة 152: `books/9-arabic/images/img-152-005.jpg`
+- صفحة 155: `books/9-arabic/images/img-155-007.jpg`
+- صفحة 156: `books/9-arabic/images/img-156-008.jpg`، `books/9-arabic/images/img-156-009.jpg`
+- صفحة 159: `books/9-arabic/images/img-159-010.jpg`، `books/9-arabic/images/img-159-011.jpg`، `books/9-arabic/images/img-159-012.jpg`
+- صفحة 160: `books/9-arabic/images/img-160-015.jpg`، `books/9-arabic/images/img-160-016.jpg`، `books/9-arabic/images/img-160-017.jpg`
+- صفحة 162: `books/9-arabic/images/img-162-000.jpg`
+- صفحة 163: `books/9-arabic/images/img-163-002.jpg`
+- صفحة 165: `books/9-arabic/images/img-165-004.jpg`
+- صفحة 167: `books/9-arabic/images/img-167-005.jpg`، `books/9-arabic/images/img-167-006.jpg`
+- صفحة 168: `books/9-arabic/images/img-168-009.jpg`، `books/9-arabic/images/img-168-010.jpg`، `books/9-arabic/images/img-168-011.jpg`
+- صفحة 169: `books/9-arabic/images/img-169-012.jpg`
+- صفحة 173: `books/9-arabic/images/img-173-002.jpg`، `books/9-arabic/images/img-173-003.jpg`
+- صفحة 174: `books/9-arabic/images/img-174-004.jpg`، `books/9-arabic/images/img-174-005.jpg`، `books/9-arabic/images/img-174-006.jpg`
+- صفحة 175: `books/9-arabic/images/img-175-009.jpg`
+- صفحة 177: `books/9-arabic/images/img-177-013.jpg`، `books/9-arabic/images/img-177-015.jpg`
+- صفحة 178: `books/9-arabic/images/img-178-018.jpg`، `books/9-arabic/images/img-178-020.jpg`
+- صفحة 181: `books/9-arabic/images/img-181-001.jpg`
+- صفحة 182: `books/9-arabic/images/img-182-002.jpg`
+- صفحة 183: `books/9-arabic/images/img-183-003.jpg`
+- صفحة 184: `books/9-arabic/images/img-184-004.jpg`، `books/9-arabic/images/img-184-005.jpg`، `books/9-arabic/images/img-184-006.jpg`
+- صفحة 185: `books/9-arabic/images/img-185-008.jpg`
+- صفحة 186: `books/9-arabic/images/img-186-010.jpg`، `books/9-arabic/images/img-186-011.jpg`
+- صفحة 187: `books/9-arabic/images/img-187-014.jpg`، `books/9-arabic/images/img-187-015.jpg`، `books/9-arabic/images/img-187-016.jpg`، `books/9-arabic/images/img-187-017.jpg`
+- صفحة 190: `books/9-arabic/images/img-190-020.jpg`، `books/9-arabic/images/img-190-021.jpg`
+- صفحة 191: `books/9-arabic/images/img-191-000.jpg`
+- صفحة 192: `books/9-arabic/images/img-192-003.jpg`
+- صفحة 198: `books/9-arabic/images/img-198-005.jpg`
+- صفحة 199: `books/9-arabic/images/img-199-006.jpg`

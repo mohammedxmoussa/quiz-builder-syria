@@ -1,0 +1,84 @@
+# أشكال كتاب 9-christianity — فهرس الصور
+
+مسارات نسبية من مجلد `ai/` في موقع الأداة. انسخ المسار **حرفياً** إلى حقل `imageSources` في JSON الامتحان (راجع دليل `quiz-creator-ai.md`، قسم Images). لا تخترع مساراً غير موجود هنا.
+
+## الأشكال المستخرجة من صفحات الكتاب
+مرتبة برقم صفحة الكتاب. الشكل نفسه قد يظهر في الامتحان كما هو، أو استخدم صورة الصفحة الكاملة بدلاً منه.
+
+- صفحة 6: `books/9-christianity/images/img-006-007.jpg`، `books/9-christianity/images/img-006-008.jpg`
+- صفحة 9: `books/9-christianity/images/img-009-009.jpg`
+- صفحة 10: `books/9-christianity/images/img-010-010.jpg`، `books/9-christianity/images/img-010-011.jpg`
+- صفحة 11: `books/9-christianity/images/img-011-000.jpg`
+- صفحة 12: `books/9-christianity/images/img-012-001.jpg`، `books/9-christianity/images/img-012-002.jpg`
+- صفحة 14: `books/9-christianity/images/img-014-003.jpg`
+- صفحة 16: `books/9-christianity/images/img-016-004.jpg`
+- صفحة 17: `books/9-christianity/images/img-017-005.jpg`
+- صفحة 20: `books/9-christianity/images/img-020-006.jpg`
+- صفحة 22: `books/9-christianity/images/img-022-000.jpg`، `books/9-christianity/images/img-022-001.jpg`
+- صفحة 24: `books/9-christianity/images/img-024-002.jpg`، `books/9-christianity/images/img-024-003.jpg`
+- صفحة 26: `books/9-christianity/images/img-026-004.jpg`
+- صفحة 28: `books/9-christianity/images/img-028-005.jpg`
+- صفحة 30: `books/9-christianity/images/img-030-007.jpg`، `books/9-christianity/images/img-030-008.jpg`، `books/9-christianity/images/img-030-010.jpg`، `books/9-christianity/images/img-030-012.jpg`، `books/9-christianity/images/img-030-014.jpg`، `books/9-christianity/images/img-030-016.jpg`
+- صفحة 34: `books/9-christianity/images/img-034-000.jpg`
+- صفحة 35: `books/9-christianity/images/img-035-001.jpg`
+- صفحة 36: `books/9-christianity/images/img-036-002.jpg`
+- صفحة 40: `books/9-christianity/images/img-040-003.jpg`
+- صفحة 42: `books/9-christianity/images/img-042-000.jpg`
+- صفحة 43: `books/9-christianity/images/img-043-001.jpg`
+- صفحة 47: `books/9-christianity/images/img-047-002.jpg`
+- صفحة 48: `books/9-christianity/images/img-048-003.jpg`
+- صفحة 49: `books/9-christianity/images/img-049-004.jpg`
+- صفحة 52: `books/9-christianity/images/img-052-000.jpg`، `books/9-christianity/images/img-052-001.jpg`
+- صفحة 53: `books/9-christianity/images/img-053-002.jpg`
+- صفحة 54: `books/9-christianity/images/img-054-003.jpg`، `books/9-christianity/images/img-054-004.jpg`
+- صفحة 55: `books/9-christianity/images/img-055-005.jpg`، `books/9-christianity/images/img-055-006.jpg`
+- صفحة 56: `books/9-christianity/images/img-056-012.jpg`
+- صفحة 57: `books/9-christianity/images/img-057-013.png`، `books/9-christianity/images/img-057-014.jpg`، `books/9-christianity/images/img-057-015.jpg`، `books/9-christianity/images/img-057-016.jpg`، `books/9-christianity/images/img-057-018.png`، `books/9-christianity/images/img-057-019.jpg`، `books/9-christianity/images/img-057-020.jpg`، `books/9-christianity/images/img-057-021.jpg`، `books/9-christianity/images/img-057-022.png`، `books/9-christianity/images/img-057-023.jpg`، `books/9-christianity/images/img-057-024.jpg`، `books/9-christianity/images/img-057-025.jpg`
+- صفحة 59: `books/9-christianity/images/img-059-026.jpg`
+- صفحة 60: `books/9-christianity/images/img-060-027.jpg`
+- صفحة 61: `books/9-christianity/images/img-061-000.jpg`
+- صفحة 66: `books/9-christianity/images/img-066-002.jpg`
+- صفحة 67: `books/9-christianity/images/img-067-003.jpg`
+- صفحة 68: `books/9-christianity/images/img-068-004.jpg`، `books/9-christianity/images/img-068-005.jpg`، `books/9-christianity/images/img-068-007.jpg`، `books/9-christianity/images/img-068-008.jpg`، `books/9-christianity/images/img-068-009.jpg`، `books/9-christianity/images/img-068-010.jpg`، `books/9-christianity/images/img-068-011.jpg`، `books/9-christianity/images/img-068-012.jpg`، `books/9-christianity/images/img-068-013.jpg`، `books/9-christianity/images/img-068-014.jpg`
+- صفحة 71: `books/9-christianity/images/img-071-000.jpg`
+- صفحة 73: `books/9-christianity/images/img-073-001.jpg`، `books/9-christianity/images/img-073-002.jpg`
+- صفحة 74: `books/9-christianity/images/img-074-003.jpg`
+- صفحة 75: `books/9-christianity/images/img-075-004.jpg`، `books/9-christianity/images/img-075-008.jpg`، `books/9-christianity/images/img-075-009.jpg`، `books/9-christianity/images/img-075-010.jpg`، `books/9-christianity/images/img-075-011.jpg`، `books/9-christianity/images/img-075-012.jpg`
+- صفحة 78: `books/9-christianity/images/img-078-023.jpg`
+- صفحة 79: `books/9-christianity/images/img-079-024.jpg`
+- صفحة 80: `books/9-christianity/images/img-080-025.jpg`
+- صفحة 84: `books/9-christianity/images/img-084-001.jpg`
+- صفحة 85: `books/9-christianity/images/img-085-002.jpg`
+- صفحة 90: `books/9-christianity/images/img-090-003.jpg`
+- صفحة 91: `books/9-christianity/images/img-091-000.jpg`
+- صفحة 92: `books/9-christianity/images/img-092-001.jpg`
+- صفحة 93: `books/9-christianity/images/img-093-002.jpg`
+- صفحة 96: `books/9-christianity/images/img-096-003.jpg`
+- صفحة 97: `books/9-christianity/images/img-097-004.jpg`
+- صفحة 98: `books/9-christianity/images/img-098-005.jpg`
+- صفحة 100: `books/9-christianity/images/img-100-006.jpg`، `books/9-christianity/images/img-100-007.jpg`
+- صفحة 103: `books/9-christianity/images/img-103-000.jpg`
+- صفحة 105: `books/9-christianity/images/img-105-001.jpg`
+- صفحة 106: `books/9-christianity/images/img-106-002.jpg`
+- صفحة 107: `books/9-christianity/images/img-107-003.jpg`، `books/9-christianity/images/img-107-004.jpg`، `books/9-christianity/images/img-107-006.jpg`
+- صفحة 110: `books/9-christianity/images/img-110-008.jpg`، `books/9-christianity/images/img-110-009.jpg`
+- صفحة 111: `books/9-christianity/images/img-111-000.jpg`
+- صفحة 112: `books/9-christianity/images/img-112-001.jpg`
+- صفحة 113: `books/9-christianity/images/img-113-002.jpg`
+- صفحة 114: `books/9-christianity/images/img-114-003.jpg`
+- صفحة 115: `books/9-christianity/images/img-115-006.jpg`، `books/9-christianity/images/img-115-007.jpg`، `books/9-christianity/images/img-115-008.jpg`
+- صفحة 117: `books/9-christianity/images/img-117-009.jpg`
+- صفحة 119: `books/9-christianity/images/img-119-010.jpg`
+- صفحة 120: `books/9-christianity/images/img-120-011.jpg`
+- صفحة 121: `books/9-christianity/images/img-121-001.jpg`
+- صفحة 124: `books/9-christianity/images/img-124-003.jpg`
+- صفحة 125: `books/9-christianity/images/img-125-004.jpg`
+- صفحة 126: `books/9-christianity/images/img-126-005.jpg`، `books/9-christianity/images/img-126-006.jpg`
+- صفحة 129: `books/9-christianity/images/img-129-007.jpg`
+- صفحة 131: `books/9-christianity/images/img-131-000.jpg`
+- صفحة 137: `books/9-christianity/images/img-137-004.jpg`
+- صفحة 139: `books/9-christianity/images/img-139-005.jpg`
+- صفحة 142: `books/9-christianity/images/img-142-000.jpg`، `books/9-christianity/images/img-142-001.jpg`، `books/9-christianity/images/img-142-002.jpg`، `books/9-christianity/images/img-142-004.jpg`، `books/9-christianity/images/img-142-007.jpg`، `books/9-christianity/images/img-142-010.jpg`
+- صفحة 145: `books/9-christianity/images/img-145-012.jpg`
+- صفحة 147: `books/9-christianity/images/img-147-013.jpg`
+- صفحة 148: `books/9-christianity/images/img-148-014.jpg`

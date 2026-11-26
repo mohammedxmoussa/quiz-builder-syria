@@ -1,0 +1,114 @@
+# أشكال كتاب 9-history — فهرس الصور
+
+مسارات نسبية من مجلد `ai/` في موقع الأداة. انسخ المسار **حرفياً** إلى حقل `imageSources` في JSON الامتحان (راجع دليل `quiz-creator-ai.md`، قسم Images). لا تخترع مساراً غير موجود هنا.
+
+## الأشكال المستخرجة من صفحات الكتاب
+مرتبة برقم صفحة الكتاب. الشكل نفسه قد يظهر في الامتحان كما هو، أو استخدم صورة الصفحة الكاملة بدلاً منه.
+
+- صفحة 1: `books/9-history/images/img-001-000.jpg`
+- صفحة 3: `books/9-history/images/img-003-004.jpg`، `books/9-history/images/img-003-005.png`
+- صفحة 4: `books/9-history/images/img-004-007.png`
+- صفحة 6: `books/9-history/images/img-006-011.png`
+- صفحة 7: `books/9-history/images/img-007-013.png`
+- صفحة 8: `books/9-history/images/img-008-015.png`
+- صفحة 10: `books/9-history/images/img-010-019.png`
+- صفحة 11: `books/9-history/images/img-011-001.png`
+- صفحة 14: `books/9-history/images/img-014-007.png`
+- صفحة 15: `books/9-history/images/img-015-009.png`
+- صفحة 16: `books/9-history/images/img-016-011.png`
+- صفحة 17: `books/9-history/images/img-017-013.png`
+- صفحة 18: `books/9-history/images/img-018-015.jpg`
+- صفحة 19: `books/9-history/images/img-019-017.png`
+- صفحة 20: `books/9-history/images/img-020-018.jpg`، `books/9-history/images/img-020-019.png`
+- صفحة 21: `books/9-history/images/img-021-001.png`
+- صفحة 23: `books/9-history/images/img-023-004.jpg`، `books/9-history/images/img-023-005.png`
+- صفحة 24: `books/9-history/images/img-024-007.png`
+- صفحة 25: `books/9-history/images/img-025-009.png`
+- صفحة 26: `books/9-history/images/img-026-011.png`
+- صفحة 27: `books/9-history/images/img-027-013.png`، `books/9-history/images/img-027-014.jpg`، `books/9-history/images/img-027-015.jpg`
+- صفحة 28: `books/9-history/images/img-028-017.png`
+- صفحة 29: `books/9-history/images/img-029-019.png`
+- صفحة 30: `books/9-history/images/img-030-021.png`
+- صفحة 33: `books/9-history/images/img-033-005.png`
+- صفحة 34: `books/9-history/images/img-034-006.jpg`، `books/9-history/images/img-034-007.png`
+- صفحة 35: `books/9-history/images/img-035-009.png`
+- صفحة 36: `books/9-history/images/img-036-011.png`
+- صفحة 37: `books/9-history/images/img-037-013.jpg`
+- صفحة 38: `books/9-history/images/img-038-015.jpg`
+- صفحة 41: `books/9-history/images/img-041-001.png`
+- صفحة 42: `books/9-history/images/img-042-003.jpg`
+- صفحة 43: `books/9-history/images/img-043-005.png`
+- صفحة 44: `books/9-history/images/img-044-007.png`
+- صفحة 45: `books/9-history/images/img-045-008.jpg`، `books/9-history/images/img-045-009.png`
+- صفحة 46: `books/9-history/images/img-046-010.jpg`، `books/9-history/images/img-046-011.png`
+- صفحة 47: `books/9-history/images/img-047-013.png`
+- صفحة 48: `books/9-history/images/img-048-015.png`
+- صفحة 49: `books/9-history/images/img-049-017.jpg`
+- صفحة 50: `books/9-history/images/img-050-019.png`
+- صفحة 51: `books/9-history/images/img-051-001.jpg`
+- صفحة 52: `books/9-history/images/img-052-003.png`
+- صفحة 53: `books/9-history/images/img-053-005.png`
+- صفحة 54: `books/9-history/images/img-054-007.jpg`
+- صفحة 55: `books/9-history/images/img-055-009.png`
+- صفحة 56: `books/9-history/images/img-056-011.png`
+- صفحة 57: `books/9-history/images/img-057-013.png`
+- صفحة 58: `books/9-history/images/img-058-015.png`
+- صفحة 59: `books/9-history/images/img-059-017.png`
+- صفحة 60: `books/9-history/images/img-060-019.png`
+- صفحة 61: `books/9-history/images/img-061-001.png`
+- صفحة 62: `books/9-history/images/img-062-002.jpg`، `books/9-history/images/img-062-003.png`
+- صفحة 63: `books/9-history/images/img-063-005.png`
+- صفحة 64: `books/9-history/images/img-064-007.png`
+- صفحة 65: `books/9-history/images/img-065-009.png`
+- صفحة 66: `books/9-history/images/img-066-011.png`
+- صفحة 67: `books/9-history/images/img-067-013.png`
+- صفحة 68: `books/9-history/images/img-068-015.jpg`
+- صفحة 69: `books/9-history/images/img-069-016.jpg`، `books/9-history/images/img-069-017.png`
+- صفحة 70: `books/9-history/images/img-070-018.jpg`، `books/9-history/images/img-070-019.png`
+- صفحة 71: `books/9-history/images/img-071-001.png`
+- صفحة 72: `books/9-history/images/img-072-002.jpg`، `books/9-history/images/img-072-003.png`
+- صفحة 74: `books/9-history/images/img-074-007.png`
+- صفحة 75: `books/9-history/images/img-075-009.png`
+- صفحة 76: `books/9-history/images/img-076-011.png`
+- صفحة 77: `books/9-history/images/img-077-013.jpg`
+- صفحة 78: `books/9-history/images/img-078-015.jpg`
+- صفحة 79: `books/9-history/images/img-079-017.jpg`
+- صفحة 80: `books/9-history/images/img-080-018.jpg`، `books/9-history/images/img-080-019.jpg`
+- صفحة 81: `books/9-history/images/img-081-001.png`
+- صفحة 82: `books/9-history/images/img-082-003.png`
+- صفحة 83: `books/9-history/images/img-083-005.jpg`
+- صفحة 84: `books/9-history/images/img-084-007.png`
+- صفحة 85: `books/9-history/images/img-085-009.jpg`
+- صفحة 86: `books/9-history/images/img-086-011.png`
+- صفحة 87: `books/9-history/images/img-087-013.png`
+- صفحة 89: `books/9-history/images/img-089-017.png`
+- صفحة 90: `books/9-history/images/img-090-019.jpg`
+- صفحة 92: `books/9-history/images/img-092-003.png`
+- صفحة 93: `books/9-history/images/img-093-005.jpg`
+- صفحة 94: `books/9-history/images/img-094-007.png`
+- صفحة 96: `books/9-history/images/img-096-011.jpg`
+- صفحة 97: `books/9-history/images/img-097-013.png`
+- صفحة 98: `books/9-history/images/img-098-015.png`
+- صفحة 99: `books/9-history/images/img-099-017.png`
+- صفحة 100: `books/9-history/images/img-100-019.jpg`
+- صفحة 101: `books/9-history/images/img-101-001.png`
+- صفحة 102: `books/9-history/images/img-102-003.jpg`
+- صفحة 104: `books/9-history/images/img-104-007.jpg`
+- صفحة 105: `books/9-history/images/img-105-009.jpg`
+- صفحة 106: `books/9-history/images/img-106-011.jpg`
+- صفحة 107: `books/9-history/images/img-107-013.png`
+- صفحة 108: `books/9-history/images/img-108-015.png`
+- صفحة 109: `books/9-history/images/img-109-017.jpg`
+- صفحة 110: `books/9-history/images/img-110-019.png`
+- صفحة 111: `books/9-history/images/img-111-001.png`
+- صفحة 112: `books/9-history/images/img-112-002.png`، `books/9-history/images/img-112-003.png`
+- صفحة 113: `books/9-history/images/img-113-005.png`
+- صفحة 114: `books/9-history/images/img-114-007.jpg`
+- صفحة 115: `books/9-history/images/img-115-009.png`
+- صفحة 117: `books/9-history/images/img-117-012.jpg`، `books/9-history/images/img-117-013.png`
+- صفحة 118: `books/9-history/images/img-118-015.jpg`
+- صفحة 119: `books/9-history/images/img-119-017.jpg`
+- صفحة 120: `books/9-history/images/img-120-019.png`
+- صفحة 121: `books/9-history/images/img-121-001.jpg`
+- صفحة 122: `books/9-history/images/img-122-003.jpg`
+- صفحة 123: `books/9-history/images/img-123-004.jpg`، `books/9-history/images/img-123-005.jpg`

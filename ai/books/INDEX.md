@@ -8,35 +8,35 @@ when a teacher asks you to base an exam on textbook pages or content
 exams you do not need anything in this folder.
 
 ## الصور والأشكال
-لكل كتاب مجلد صور بجانب ملفات النص: الأشكال المستخرجة من الكتاب في `images/` (باسم `img-PPP-III.jpg` حيث PPP رقم صفحة PDF)، وبعض الكتب لها أيضاً صور كاملة لكل صفحة في `pages-img/` (باسم `page-NNN.jpg`). ملفات النص نفسها تربط الشكل بصفحته. عند سؤال عن شكل أو رسم: افتح صورة الصفحة أو الشكل من نفس مجلد الكتاب.
-- `12-English-Sci-wb/`: 138 شكل
-- `12-English-lit-Sb/`: 255 شكل
-- `12-French-SB/`: 179 شكل
-- `12-French-lit/`: 96 شكل
-- `12-Lit-Philosophy-1/`: 20 شكل
-- `12-Lit-Philosophy-2/`: 23 شكل
-- `12-christianity/`: 18 شكل
-- `12-geography-Lit/`: 264 شكل
-- `12-islamic/`: 2 شكل
-- `12-lit-Russian/`: 1 شكل
-- `12-physics-Sci/`: 0 شكل + 268 صورة صفحة كاملة
-- `12-sci-Russian/`: 1 شكل
-- `12-sci-math-1/`: 2 شكل
-- `12-sci-math-2/`: 6 شكل
-- `12-science/`: 599 شكل + 287 صورة صفحة كاملة
-- `9-Algebra/`: 2 شكل
-- `9-English-AB/`: 53 شكل
-- `9-English-SB/`: 206 شكل
-- `9-Geometry/`: 14 شكل + 84 صورة صفحة كاملة
-- `9-Physics-Chemistry/`: 0 شكل + 180 صورة صفحة كاملة
-- `9-Russian/`: 2 شكل
-- `9-arabic/`: 175 شكل
-- `9-christianity/`: 128 شكل
-- `9-history/`: 123 شكل
-- `9-islamic/`: 1 شكل
-- `9-music/`: 58 شكل
-- `9-science/`: 523 شكل + 232 صورة صفحة كاملة
-- `9-technology/`: 358 شكل
+لكل كتاب مجلد صور بجانب ملفات النص: الأشكال المستخرجة من الكتاب في `images/`، وبعض الكتب لها أيضاً صور كاملة لكل صفحة في `pages-img/` (باسم `page-NNN.jpg` حيث NNN رقم الصفحة بثلاث خانات). **أسماء الأشكال ليست متسلسلة ولا يمكن تخمينها**: لكل كتاب ملف `FIGURES.md` في مجلده يسرد كل أشكاله مرتبة برقم الصفحة مع مساراتها الدقيقة — افتحه عند الحاجة إلى شكل من صفحة معينة، وانسخ المسار حرفياً. عند سؤال عن شكل أو رسم في صفحة: افتح `FIGURES.md` الخاص بالكتاب، أو صورة الصفحة الكاملة إن وجدت.
+- `12-English-Sci-wb/`: 138 شكل — فهرس الأشكال: `12-English-Sci-wb/FIGURES.md`
+- `12-English-lit-Sb/`: 255 شكل — فهرس الأشكال: `12-English-lit-Sb/FIGURES.md`
+- `12-French-SB/`: 179 شكل — فهرس الأشكال: `12-French-SB/FIGURES.md`
+- `12-French-lit/`: 96 شكل — فهرس الأشكال: `12-French-lit/FIGURES.md`
+- `12-Lit-Philosophy-1/`: 20 شكل — فهرس الأشكال: `12-Lit-Philosophy-1/FIGURES.md`
+- `12-Lit-Philosophy-2/`: 23 شكل — فهرس الأشكال: `12-Lit-Philosophy-2/FIGURES.md`
+- `12-christianity/`: 18 شكل — فهرس الأشكال: `12-christianity/FIGURES.md`
+- `12-geography-Lit/`: 264 شكل — فهرس الأشكال: `12-geography-Lit/FIGURES.md`
+- `12-islamic/`: 2 شكل — فهرس الأشكال: `12-islamic/FIGURES.md`
+- `12-lit-Russian/`: 1 شكل — فهرس الأشكال: `12-lit-Russian/FIGURES.md`
+- `12-physics-Sci/`: 0 شكل + 268 صورة صفحة كاملة — فهرس الأشكال: `12-physics-Sci/FIGURES.md`
+- `12-sci-Russian/`: 1 شكل — فهرس الأشكال: `12-sci-Russian/FIGURES.md`
+- `12-sci-math-1/`: 2 شكل — فهرس الأشكال: `12-sci-math-1/FIGURES.md`
+- `12-sci-math-2/`: 6 شكل — فهرس الأشكال: `12-sci-math-2/FIGURES.md`
+- `12-science/`: 599 شكل + 287 صورة صفحة كاملة — فهرس الأشكال: `12-science/FIGURES.md`
+- `9-Algebra/`: 2 شكل — فهرس الأشكال: `9-Algebra/FIGURES.md`
+- `9-English-AB/`: 53 شكل — فهرس الأشكال: `9-English-AB/FIGURES.md`
+- `9-English-SB/`: 206 شكل — فهرس الأشكال: `9-English-SB/FIGURES.md`
+- `9-Geometry/`: 14 شكل + 84 صورة صفحة كاملة — فهرس الأشكال: `9-Geometry/FIGURES.md`
+- `9-Physics-Chemistry/`: 0 شكل + 180 صورة صفحة كاملة — فهرس الأشكال: `9-Physics-Chemistry/FIGURES.md`
+- `9-Russian/`: 2 شكل — فهرس الأشكال: `9-Russian/FIGURES.md`
+- `9-arabic/`: 175 شكل — فهرس الأشكال: `9-arabic/FIGURES.md`
+- `9-christianity/`: 128 شكل — فهرس الأشكال: `9-christianity/FIGURES.md`
+- `9-history/`: 123 شكل — فهرس الأشكال: `9-history/FIGURES.md`
+- `9-islamic/`: 1 شكل — فهرس الأشكال: `9-islamic/FIGURES.md`
+- `9-music/`: 58 شكل — فهرس الأشكال: `9-music/FIGURES.md`
+- `9-science/`: 523 شكل + 232 صورة صفحة كاملة — فهرس الأشكال: `9-science/FIGURES.md`
+- `9-technology/`: 358 شكل — فهرس الأشكال: `9-technology/FIGURES.md`
 
 ## How to use this library
 

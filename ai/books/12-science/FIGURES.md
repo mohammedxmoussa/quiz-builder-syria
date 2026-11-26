@@ -1,0 +1,252 @@
+# أشكال كتاب 12-science — فهرس الصور
+
+مسارات نسبية من مجلد `ai/` في موقع الأداة. انسخ المسار **حرفياً** إلى حقل `imageSources` في JSON الامتحان (راجع دليل `quiz-creator-ai.md`، قسم Images). لا تخترع مساراً غير موجود هنا.
+
+## صور الصفحات الكاملة
+لكل صفحة صورة كاملة: `books/12-science/pages-img/page-NNN.jpg` حيث NNN هو رقم الصفحة بثلاث خانات (001، 002، …). الصفحات المتوفرة: من 1 إلى 287 (287 صفحة).
+
+## الأشكال المستخرجة من صفحات الكتاب
+مرتبة برقم صفحة الكتاب. الشكل نفسه قد يظهر في الامتحان كما هو، أو استخدم صورة الصفحة الكاملة بدلاً منه.
+
+- صفحة 5: `books/12-science/images/img-005-000.jpg`، `books/12-science/images/img-005-001.jpg`
+- صفحة 6: `books/12-science/images/img-006-002.jpg`، `books/12-science/images/img-006-004.jpg`
+- صفحة 8: `books/12-science/images/img-008-006.jpg`، `books/12-science/images/img-008-009.jpg`
+- صفحة 9: `books/12-science/images/img-009-014.jpg`، `books/12-science/images/img-009-015.png`، `books/12-science/images/img-009-016.jpg`، `books/12-science/images/img-009-018.jpg`، `books/12-science/images/img-009-020.jpg`، `books/12-science/images/img-009-022.jpg`
+- صفحة 10: `books/12-science/images/img-010-026.jpg`، `books/12-science/images/img-010-027.jpg`، `books/12-science/images/img-010-028.png`
+- صفحة 11: `books/12-science/images/img-011-002.jpg`، `books/12-science/images/img-011-003.png`، `books/12-science/images/img-011-004.jpg`
+- صفحة 12: `books/12-science/images/img-012-009.jpg`، `books/12-science/images/img-012-011.jpg`، `books/12-science/images/img-012-021.jpg`
+- صفحة 13: `books/12-science/images/img-013-024.jpg`، `books/12-science/images/img-013-025.png`، `books/12-science/images/img-013-026.jpg`، `books/12-science/images/img-013-027.png`، `books/12-science/images/img-013-028.jpg`
+- صفحة 14: `books/12-science/images/img-014-033.jpg`، `books/12-science/images/img-014-035.jpg`، `books/12-science/images/img-014-037.jpg`
+- صفحة 15: `books/12-science/images/img-015-041.jpg`، `books/12-science/images/img-015-042.png`، `books/12-science/images/img-015-043.jpg`، `books/12-science/images/img-015-044.png`
+- صفحة 16: `books/12-science/images/img-016-048.jpg`، `books/12-science/images/img-016-053.jpg`، `books/12-science/images/img-016-055.jpg`، `books/12-science/images/img-016-056.png`
+- صفحة 17: `books/12-science/images/img-017-059.jpg`، `books/12-science/images/img-017-060.png`
+- صفحة 18: `books/12-science/images/img-018-065.jpg`
+- صفحة 20: `books/12-science/images/img-020-070.jpg`، `books/12-science/images/img-020-072.jpg`، `books/12-science/images/img-020-074.jpg`، `books/12-science/images/img-020-075.png`
+- صفحة 21: `books/12-science/images/img-021-007.jpg`
+- صفحة 22: `books/12-science/images/img-022-012.jpg`، `books/12-science/images/img-022-014.jpg`
+- صفحة 23: `books/12-science/images/img-023-019.jpg`
+- صفحة 24: `books/12-science/images/img-024-022.jpg`، `books/12-science/images/img-024-026.jpg`، `books/12-science/images/img-024-028.jpg`
+- صفحة 26: `books/12-science/images/img-026-032.jpg`، `books/12-science/images/img-026-033.png`، `books/12-science/images/img-026-034.jpg`، `books/12-science/images/img-026-035.png`
+- صفحة 27: `books/12-science/images/img-027-039.jpg`، `books/12-science/images/img-027-040.jpg`
+- صفحة 28: `books/12-science/images/img-028-044.jpg`
+- صفحة 29: `books/12-science/images/img-029-049.jpg`، `books/12-science/images/img-029-052.png`
+- صفحة 30: `books/12-science/images/img-030-053.jpg`
+- صفحة 31: `books/12-science/images/img-031-001.jpg`، `books/12-science/images/img-031-002.png`، `books/12-science/images/img-031-003.jpg`
+- صفحة 32: `books/12-science/images/img-032-013.jpg`
+- صفحة 33: `books/12-science/images/img-033-020.png`
+- صفحة 34: `books/12-science/images/img-034-024.jpg`، `books/12-science/images/img-034-026.jpg`، `books/12-science/images/img-034-028.jpg`، `books/12-science/images/img-034-029.png`، `books/12-science/images/img-034-030.jpg`
+- صفحة 35: `books/12-science/images/img-035-038.jpg`
+- صفحة 36: `books/12-science/images/img-036-043.jpg`
+- صفحة 37: `books/12-science/images/img-037-049.jpg`، `books/12-science/images/img-037-052.jpg`
+- صفحة 38: `books/12-science/images/img-038-063.jpg`
+- صفحة 39: `books/12-science/images/img-039-066.jpg`
+- صفحة 40: `books/12-science/images/img-040-070.jpg`، `books/12-science/images/img-040-071.jpg`، `books/12-science/images/img-040-072.jpg`، `books/12-science/images/img-040-074.png`
+- صفحة 41: `books/12-science/images/img-041-008.jpg`
+- صفحة 42: `books/12-science/images/img-042-015.jpg`، `books/12-science/images/img-042-021.jpg`
+- صفحة 43: `books/12-science/images/img-043-025.jpg`
+- صفحة 44: `books/12-science/images/img-044-030.jpg`
+- صفحة 45: `books/12-science/images/img-045-034.jpg`
+- صفحة 46: `books/12-science/images/img-046-038.png`، `books/12-science/images/img-046-040.jpg`
+- صفحة 47: `books/12-science/images/img-047-043.jpg`، `books/12-science/images/img-047-044.png`، `books/12-science/images/img-047-045.jpg`
+- صفحة 48: `books/12-science/images/img-048-050.jpg`
+- صفحة 49: `books/12-science/images/img-049-056.jpg`، `books/12-science/images/img-049-058.jpg`
+- صفحة 50: `books/12-science/images/img-050-062.jpg`، `books/12-science/images/img-050-063.jpg`
+- صفحة 51: `books/12-science/images/img-051-001.png`
+- صفحة 52: `books/12-science/images/img-052-005.jpg`، `books/12-science/images/img-052-006.png`، `books/12-science/images/img-052-007.jpg`، `books/12-science/images/img-052-009.png`
+- صفحة 53: `books/12-science/images/img-053-014.jpg`، `books/12-science/images/img-053-015.png`
+- صفحة 54: `books/12-science/images/img-054-017.jpg`، `books/12-science/images/img-054-018.jpg`
+- صفحة 56: `books/12-science/images/img-056-027.jpg`، `books/12-science/images/img-056-028.png`، `books/12-science/images/img-056-029.jpg`، `books/12-science/images/img-056-030.png`، `books/12-science/images/img-056-035.jpg`
+- صفحة 57: `books/12-science/images/img-057-038.jpg`
+- صفحة 59: `books/12-science/images/img-059-043.jpg`، `books/12-science/images/img-059-045.png`، `books/12-science/images/img-059-046.jpg`، `books/12-science/images/img-059-048.jpg`
+- صفحة 60: `books/12-science/images/img-060-055.jpg`، `books/12-science/images/img-060-056.jpg`
+- صفحة 61: `books/12-science/images/img-061-003.jpg`، `books/12-science/images/img-061-004.png`
+- صفحة 62: `books/12-science/images/img-062-009.jpg`، `books/12-science/images/img-062-010.png`
+- صفحة 63: `books/12-science/images/img-063-012.jpg`، `books/12-science/images/img-063-013.png`، `books/12-science/images/img-063-014.jpg`، `books/12-science/images/img-063-015.png`، `books/12-science/images/img-063-016.jpg`
+- صفحة 64: `books/12-science/images/img-064-019.jpg`، `books/12-science/images/img-064-021.jpg`
+- صفحة 66: `books/12-science/images/img-066-027.jpg`
+- صفحة 67: `books/12-science/images/img-067-032.jpg`، `books/12-science/images/img-067-033.png`، `books/12-science/images/img-067-034.jpg`، `books/12-science/images/img-067-038.jpg`، `books/12-science/images/img-067-039.png`
+- صفحة 68: `books/12-science/images/img-068-044.png`، `books/12-science/images/img-068-045.jpg`، `books/12-science/images/img-068-046.jpg`
+- صفحة 69: `books/12-science/images/img-069-048.jpg`، `books/12-science/images/img-069-049.png`، `books/12-science/images/img-069-050.png`
+- صفحة 70: `books/12-science/images/img-070-054.jpg`، `books/12-science/images/img-070-055.png`، `books/12-science/images/img-070-056.jpg`، `books/12-science/images/img-070-058.png`
+- صفحة 71: `books/12-science/images/img-071-004.jpg`
+- صفحة 72: `books/12-science/images/img-072-006.jpg`
+- صفحة 73: `books/12-science/images/img-073-009.jpg`، `books/12-science/images/img-073-011.png`، `books/12-science/images/img-073-012.jpg`
+- صفحة 74: `books/12-science/images/img-074-017.jpg`
+- صفحة 75: `books/12-science/images/img-075-023.jpg`، `books/12-science/images/img-075-024.png`، `books/12-science/images/img-075-025.jpg`، `books/12-science/images/img-075-027.jpg`
+- صفحة 77: `books/12-science/images/img-077-034.jpg`، `books/12-science/images/img-077-035.png`، `books/12-science/images/img-077-036.jpg`
+- صفحة 78: `books/12-science/images/img-078-045.jpg`
+- صفحة 79: `books/12-science/images/img-079-048.jpg`، `books/12-science/images/img-079-050.jpg`، `books/12-science/images/img-079-052.jpg`
+- صفحة 80: `books/12-science/images/img-080-058.png`، `books/12-science/images/img-080-059.jpg`
+- صفحة 81: `books/12-science/images/img-081-002.jpg`، `books/12-science/images/img-081-003.png`
+- صفحة 82: `books/12-science/images/img-082-004.jpg`
+- صفحة 83: `books/12-science/images/img-083-005.jpg`، `books/12-science/images/img-083-006.png`، `books/12-science/images/img-083-007.jpg`، `books/12-science/images/img-083-008.jpg`، `books/12-science/images/img-083-009.jpg`
+- صفحة 84: `books/12-science/images/img-084-015.jpg`
+- صفحة 85: `books/12-science/images/img-085-019.jpg`، `books/12-science/images/img-085-020.png`، `books/12-science/images/img-085-021.jpg`، `books/12-science/images/img-085-023.jpg`
+- صفحة 86: `books/12-science/images/img-086-045.jpg`، `books/12-science/images/img-086-046.jpg`
+- صفحة 88: `books/12-science/images/img-088-050.jpg`، `books/12-science/images/img-088-052.jpg`، `books/12-science/images/img-088-053.png`
+- صفحة 89: `books/12-science/images/img-089-057.jpg`، `books/12-science/images/img-089-058.jpg`
+- صفحة 90: `books/12-science/images/img-090-062.jpg`، `books/12-science/images/img-090-064.jpg`، `books/12-science/images/img-090-068.jpg`
+- صفحة 91: `books/12-science/images/img-091-002.jpg`، `books/12-science/images/img-091-004.jpg`، `books/12-science/images/img-091-006.jpg`
+- صفحة 92: `books/12-science/images/img-092-012.jpg`، `books/12-science/images/img-092-013.jpg`
+- صفحة 94: `books/12-science/images/img-094-021.jpg`
+- صفحة 95: `books/12-science/images/img-095-026.jpg`، `books/12-science/images/img-095-027.jpg`، `books/12-science/images/img-095-028.png`، `books/12-science/images/img-095-029.jpg`، `books/12-science/images/img-095-031.jpg`، `books/12-science/images/img-095-033.jpg`، `books/12-science/images/img-095-035.jpg`، `books/12-science/images/img-095-037.jpg`
+- صفحة 96: `books/12-science/images/img-096-042.jpg`
+- صفحة 97: `books/12-science/images/img-097-050.jpg`، `books/12-science/images/img-097-051.jpg`
+- صفحة 98: `books/12-science/images/img-098-060.jpg`، `books/12-science/images/img-098-062.jpg`، `books/12-science/images/img-098-063.png`
+- صفحة 99: `books/12-science/images/img-099-066.jpg`، `books/12-science/images/img-099-067.jpg`، `books/12-science/images/img-099-068.png`، `books/12-science/images/img-099-069.jpg`
+- صفحة 100: `books/12-science/images/img-100-072.jpg`، `books/12-science/images/img-100-073.png`
+- صفحة 102: `books/12-science/images/img-102-003.jpg`، `books/12-science/images/img-102-004.jpg`، `books/12-science/images/img-102-005.jpg`، `books/12-science/images/img-102-007.png`
+- صفحة 103: `books/12-science/images/img-103-012.jpg`، `books/12-science/images/img-103-014.jpg`
+- صفحة 104: `books/12-science/images/img-104-023.jpg`، `books/12-science/images/img-104-024.jpg`
+- صفحة 105: `books/12-science/images/img-105-028.jpg`، `books/12-science/images/img-105-030.jpg`
+- صفحة 106: `books/12-science/images/img-106-035.jpg`
+- صفحة 109: `books/12-science/images/img-109-041.jpg`، `books/12-science/images/img-109-042.png`، `books/12-science/images/img-109-044.png`
+- صفحة 110: `books/12-science/images/img-110-048.jpg`، `books/12-science/images/img-110-049.jpg`
+- صفحة 111: `books/12-science/images/img-111-002.jpg`، `books/12-science/images/img-111-003.png`
+- صفحة 112: `books/12-science/images/img-112-010.jpg`، `books/12-science/images/img-112-012.png`، `books/12-science/images/img-112-013.jpg`، `books/12-science/images/img-112-015.jpg`
+- صفحة 113: `books/12-science/images/img-113-021.jpg`، `books/12-science/images/img-113-023.jpg`، `books/12-science/images/img-113-027.jpg`
+- صفحة 114: `books/12-science/images/img-114-034.jpg`
+- صفحة 115: `books/12-science/images/img-115-040.jpg`
+- صفحة 116: `books/12-science/images/img-116-045.jpg`، `books/12-science/images/img-116-047.jpg`، `books/12-science/images/img-116-049.jpg`
+- صفحة 117: `books/12-science/images/img-117-053.jpg`، `books/12-science/images/img-117-055.jpg`، `books/12-science/images/img-117-057.jpg`
+- صفحة 118: `books/12-science/images/img-118-060.jpg`
+- صفحة 120: `books/12-science/images/img-120-066.jpg`
+- صفحة 124: `books/12-science/images/img-124-000.jpg`
+- صفحة 125: `books/12-science/images/img-125-002.jpg`
+- صفحة 126: `books/12-science/images/img-126-006.jpg`
+- صفحة 127: `books/12-science/images/img-127-009.jpg`، `books/12-science/images/img-127-010.png`، `books/12-science/images/img-127-011.jpg`، `books/12-science/images/img-127-012.png`، `books/12-science/images/img-127-013.jpg`
+- صفحة 128: `books/12-science/images/img-128-018.jpg`، `books/12-science/images/img-128-020.jpg`، `books/12-science/images/img-128-022.jpg`، `books/12-science/images/img-128-023.png`، `books/12-science/images/img-128-024.jpg`
+- صفحة 129: `books/12-science/images/img-129-028.jpg`، `books/12-science/images/img-129-030.jpg`، `books/12-science/images/img-129-032.jpg`
+- صفحة 130: `books/12-science/images/img-130-037.jpg`، `books/12-science/images/img-130-038.png`
+- صفحة 131: `books/12-science/images/img-131-004.jpg`، `books/12-science/images/img-131-005.jpg`، `books/12-science/images/img-131-007.jpg`، `books/12-science/images/img-131-010.jpg`
+- صفحة 132: `books/12-science/images/img-132-012.jpg`، `books/12-science/images/img-132-014.jpg`
+- صفحة 133: `books/12-science/images/img-133-015.jpg`، `books/12-science/images/img-133-016.png`، `books/12-science/images/img-133-017.jpg`
+- صفحة 134: `books/12-science/images/img-134-026.jpg`، `books/12-science/images/img-134-027.png`، `books/12-science/images/img-134-028.jpg`، `books/12-science/images/img-134-029.jpg`
+- صفحة 135: `books/12-science/images/img-135-032.jpg`، `books/12-science/images/img-135-033.png`، `books/12-science/images/img-135-034.jpg`، `books/12-science/images/img-135-035.png`
+- صفحة 136: `books/12-science/images/img-136-042.jpg`
+- صفحة 137: `books/12-science/images/img-137-048.jpg`، `books/12-science/images/img-137-049.jpg`
+- صفحة 138: `books/12-science/images/img-138-051.jpg`
+- صفحة 139: `books/12-science/images/img-139-054.jpg`، `books/12-science/images/img-139-055.png`، `books/12-science/images/img-139-056.jpg`، `books/12-science/images/img-139-058.jpg`، `books/12-science/images/img-139-060.jpg`
+- صفحة 140: `books/12-science/images/img-140-066.png`
+- صفحة 141: `books/12-science/images/img-141-002.jpg`، `books/12-science/images/img-141-003.png`، `books/12-science/images/img-141-004.jpg`
+- صفحة 142: `books/12-science/images/img-142-009.jpg`، `books/12-science/images/img-142-011.jpg`
+- صفحة 145: `books/12-science/images/img-145-016.jpg`، `books/12-science/images/img-145-017.png`، `books/12-science/images/img-145-018.jpg`، `books/12-science/images/img-145-019.png`
+- صفحة 146: `books/12-science/images/img-146-027.jpg`، `books/12-science/images/img-146-029.jpg`، `books/12-science/images/img-146-030.jpg`
+- صفحة 147: `books/12-science/images/img-147-033.jpg`، `books/12-science/images/img-147-034.jpg`
+- صفحة 149: `books/12-science/images/img-149-037.jpg`، `books/12-science/images/img-149-038.png`، `books/12-science/images/img-149-039.jpg`، `books/12-science/images/img-149-041.jpg`، `books/12-science/images/img-149-043.jpg`
+- صفحة 150: `books/12-science/images/img-150-048.jpg`، `books/12-science/images/img-150-049.jpg`
+- صفحة 151: `books/12-science/images/img-151-002.jpg`، `books/12-science/images/img-151-004.jpg`، `books/12-science/images/img-151-009.jpg`، `books/12-science/images/img-151-011.jpg`، `books/12-science/images/img-151-012.png`
+- صفحة 152: `books/12-science/images/img-152-016.jpg`، `books/12-science/images/img-152-017.png`، `books/12-science/images/img-152-018.jpg`، `books/12-science/images/img-152-020.jpg`، `books/12-science/images/img-152-022.jpg`، `books/12-science/images/img-152-023.png`
+- صفحة 153: `books/12-science/images/img-153-031.jpg`
+- صفحة 154: `books/12-science/images/img-154-036.jpg`
+- صفحة 155: `books/12-science/images/img-155-040.jpg`، `books/12-science/images/img-155-041.png`
+- صفحة 156: `books/12-science/images/img-156-044.jpg`، `books/12-science/images/img-156-046.jpg`، `books/12-science/images/img-156-047.png`، `books/12-science/images/img-156-048.jpg`، `books/12-science/images/img-156-049.png`
+- صفحة 157: `books/12-science/images/img-157-051.jpg`
+- صفحة 158: `books/12-science/images/img-158-056.jpg`، `books/12-science/images/img-158-057.jpg`، `books/12-science/images/img-158-058.jpg`، `books/12-science/images/img-158-059.png`، `books/12-science/images/img-158-060.jpg`، `books/12-science/images/img-158-061.png`
+- صفحة 159: `books/12-science/images/img-159-066.jpg`
+- صفحة 160: `books/12-science/images/img-160-074.jpg`، `books/12-science/images/img-160-077.jpg`، `books/12-science/images/img-160-078.jpg`
+- صفحة 161: `books/12-science/images/img-161-003.jpg`، `books/12-science/images/img-161-005.jpg`، `books/12-science/images/img-161-006.png`
+- صفحة 162: `books/12-science/images/img-162-013.jpg`، `books/12-science/images/img-162-015.jpg`
+- صفحة 163: `books/12-science/images/img-163-019.jpg`، `books/12-science/images/img-163-021.jpg`، `books/12-science/images/img-163-023.jpg`
+- صفحة 164: `books/12-science/images/img-164-027.jpg`
+- صفحة 165: `books/12-science/images/img-165-035.jpg`، `books/12-science/images/img-165-037.jpg`، `books/12-science/images/img-165-039.jpg`
+- صفحة 166: `books/12-science/images/img-166-043.jpg`، `books/12-science/images/img-166-045.jpg`، `books/12-science/images/img-166-046.jpg`، `books/12-science/images/img-166-047.jpg`، `books/12-science/images/img-166-049.jpg`، `books/12-science/images/img-166-051.jpg`، `books/12-science/images/img-166-053.jpg`
+- صفحة 167: `books/12-science/images/img-167-057.jpg`، `books/12-science/images/img-167-060.jpg`
+- صفحة 169: `books/12-science/images/img-169-064.jpg`، `books/12-science/images/img-169-065.png`
+- صفحة 170: `books/12-science/images/img-170-068.jpg`، `books/12-science/images/img-170-070.jpg`، `books/12-science/images/img-170-071.jpg`، `books/12-science/images/img-170-072.png`
+- صفحة 173: `books/12-science/images/img-173-011.jpg`، `books/12-science/images/img-173-012.png`، `books/12-science/images/img-173-013.jpg`، `books/12-science/images/img-173-014.png`
+- صفحة 174: `books/12-science/images/img-174-019.jpg`، `books/12-science/images/img-174-020.jpg`، `books/12-science/images/img-174-021.jpg`
+- صفحة 175: `books/12-science/images/img-175-025.jpg`، `books/12-science/images/img-175-026.jpg`
+- صفحة 176: `books/12-science/images/img-176-030.jpg`، `books/12-science/images/img-176-031.png`، `books/12-science/images/img-176-032.jpg`، `books/12-science/images/img-176-033.png`
+- صفحة 177: `books/12-science/images/img-177-039.png`
+- صفحة 178: `books/12-science/images/img-178-043.jpg`، `books/12-science/images/img-178-044.png`، `books/12-science/images/img-178-045.jpg`، `books/12-science/images/img-178-047.png`
+- صفحة 179: `books/12-science/images/img-179-052.jpg`، `books/12-science/images/img-179-053.png`
+- صفحة 180: `books/12-science/images/img-180-061.jpg`، `books/12-science/images/img-180-062.png`
+- صفحة 181: `books/12-science/images/img-181-002.jpg`، `books/12-science/images/img-181-005.jpg`، `books/12-science/images/img-181-008.jpg`، `books/12-science/images/img-181-011.jpg`
+- صفحة 182: `books/12-science/images/img-182-031.jpg`، `books/12-science/images/img-182-032.png`
+- صفحة 183: `books/12-science/images/img-183-037.png`
+- صفحة 184: `books/12-science/images/img-184-041.jpg`، `books/12-science/images/img-184-043.jpg`، `books/12-science/images/img-184-044.png`، `books/12-science/images/img-184-045.jpg`، `books/12-science/images/img-184-046.jpg`، `books/12-science/images/img-184-047.jpg`، `books/12-science/images/img-184-048.jpg`
+- صفحة 185: `books/12-science/images/img-185-051.jpg`
+- صفحة 186: `books/12-science/images/img-186-056.jpg`
+- صفحة 187: `books/12-science/images/img-187-062.jpg`، `books/12-science/images/img-187-064.jpg`
+- صفحة 188: `books/12-science/images/img-188-066.jpg`
+- صفحة 189: `books/12-science/images/img-189-070.jpg`، `books/12-science/images/img-189-072.png`، `books/12-science/images/img-189-073.jpg`
+- صفحة 190: `books/12-science/images/img-190-078.jpg`، `books/12-science/images/img-190-079.jpg`، `books/12-science/images/img-190-080.jpg`
+- صفحة 191: `books/12-science/images/img-191-003.jpg`، `books/12-science/images/img-191-007.jpg`
+- صفحة 192: `books/12-science/images/img-192-008.jpg`
+- صفحة 193: `books/12-science/images/img-193-027.jpg`
+- صفحة 194: `books/12-science/images/img-194-031.jpg`، `books/12-science/images/img-194-033.jpg`، `books/12-science/images/img-194-034.png`
+- صفحة 195: `books/12-science/images/img-195-038.jpg`، `books/12-science/images/img-195-039.jpg`
+- صفحة 196: `books/12-science/images/img-196-046.jpg`، `books/12-science/images/img-196-047.jpg`
+- صفحة 197: `books/12-science/images/img-197-049.jpg`، `books/12-science/images/img-197-051.png`، `books/12-science/images/img-197-052.jpg`، `books/12-science/images/img-197-053.jpg`
+- صفحة 198: `books/12-science/images/img-198-057.jpg`، `books/12-science/images/img-198-059.jpg`، `books/12-science/images/img-198-060.png`
+- صفحة 199: `books/12-science/images/img-199-063.jpg`، `books/12-science/images/img-199-065.jpg`، `books/12-science/images/img-199-067.jpg`، `books/12-science/images/img-199-069.jpg`
+- صفحة 200: `books/12-science/images/img-200-074.jpg`، `books/12-science/images/img-200-076.jpg`، `books/12-science/images/img-200-077.png`، `books/12-science/images/img-200-078.jpg`، `books/12-science/images/img-200-079.png`
+- صفحة 201: `books/12-science/images/img-201-002.jpg`، `books/12-science/images/img-201-004.jpg`
+- صفحة 202: `books/12-science/images/img-202-012.jpg`، `books/12-science/images/img-202-013.jpg`، `books/12-science/images/img-202-015.jpg`
+- صفحة 203: `books/12-science/images/img-203-019.jpg`، `books/12-science/images/img-203-021.jpg`، `books/12-science/images/img-203-022.jpg`، `books/12-science/images/img-203-024.jpg`
+- صفحة 205: `books/12-science/images/img-205-028.jpg`، `books/12-science/images/img-205-030.png`، `books/12-science/images/img-205-031.jpg`، `books/12-science/images/img-205-033.jpg`
+- صفحة 206: `books/12-science/images/img-206-038.jpg`، `books/12-science/images/img-206-043.jpg`، `books/12-science/images/img-206-044.jpg`
+- صفحة 207: `books/12-science/images/img-207-048.jpg`، `books/12-science/images/img-207-050.jpg`، `books/12-science/images/img-207-051.jpg`
+- صفحة 209: `books/12-science/images/img-209-054.jpg`، `books/12-science/images/img-209-056.png`
+- صفحة 210: `books/12-science/images/img-210-063.jpg`، `books/12-science/images/img-210-065.jpg`، `books/12-science/images/img-210-067.jpg`، `books/12-science/images/img-210-069.jpg`، `books/12-science/images/img-210-071.jpg`، `books/12-science/images/img-210-073.jpg`، `books/12-science/images/img-210-075.jpg`
+- صفحة 211: `books/12-science/images/img-211-002.jpg`، `books/12-science/images/img-211-004.jpg`
+- صفحة 212: `books/12-science/images/img-212-008.jpg`، `books/12-science/images/img-212-010.jpg`، `books/12-science/images/img-212-012.jpg`، `books/12-science/images/img-212-014.jpg`
+- صفحة 214: `books/12-science/images/img-214-017.jpg`، `books/12-science/images/img-214-018.jpg`
+- صفحة 215: `books/12-science/images/img-215-019.jpg`
+- صفحة 216: `books/12-science/images/img-216-021.jpg`
+- صفحة 217: `books/12-science/images/img-217-023.jpg`
+- صفحة 218: `books/12-science/images/img-218-025.jpg`، `books/12-science/images/img-218-026.jpg`
+- صفحة 219: `books/12-science/images/img-219-027.jpg`، `books/12-science/images/img-219-029.jpg`
+- صفحة 220: `books/12-science/images/img-220-032.png`، `books/12-science/images/img-220-033.jpg`، `books/12-science/images/img-220-035.jpg`
+- صفحة 221: `books/12-science/images/img-221-000.jpg`
+- صفحة 222: `books/12-science/images/img-222-002.jpg`
+- صفحة 223: `books/12-science/images/img-223-005.jpg`
+- صفحة 224: `books/12-science/images/img-224-009.jpg`، `books/12-science/images/img-224-010.png`، `books/12-science/images/img-224-011.jpg`، `books/12-science/images/img-224-013.png`
+- صفحة 225: `books/12-science/images/img-225-019.jpg`
+- صفحة 226: `books/12-science/images/img-226-024.jpg`
+- صفحة 227: `books/12-science/images/img-227-034.jpg`، `books/12-science/images/img-227-035.jpg`
+- صفحة 228: `books/12-science/images/img-228-042.jpg`
+- صفحة 229: `books/12-science/images/img-229-046.jpg`
+- صفحة 230: `books/12-science/images/img-230-051.jpg`
+- صفحة 231: `books/12-science/images/img-231-003.jpg`، `books/12-science/images/img-231-004.png`
+- صفحة 232: `books/12-science/images/img-232-008.jpg`، `books/12-science/images/img-232-009.jpg`، `books/12-science/images/img-232-010.png`، `books/12-science/images/img-232-011.jpg`
+- صفحة 235: `books/12-science/images/img-235-016.jpg`، `books/12-science/images/img-235-017.png`، `books/12-science/images/img-235-018.png`، `books/12-science/images/img-235-019.jpg`، `books/12-science/images/img-235-020.jpg`، `books/12-science/images/img-235-021.jpg`
+- صفحة 236: `books/12-science/images/img-236-029.jpg`
+- صفحة 237: `books/12-science/images/img-237-035.jpg`، `books/12-science/images/img-237-036.jpg`، `books/12-science/images/img-237-039.jpg`، `books/12-science/images/img-237-040.jpg`
+- صفحة 238: `books/12-science/images/img-238-047.jpg`، `books/12-science/images/img-238-048.jpg`
+- صفحة 239: `books/12-science/images/img-239-055.jpg`، `books/12-science/images/img-239-056.jpg`
+- صفحة 240: `books/12-science/images/img-240-062.jpg`، `books/12-science/images/img-240-064.jpg`، `books/12-science/images/img-240-065.jpg`
+- صفحة 241: `books/12-science/images/img-241-006.jpg`، `books/12-science/images/img-241-007.jpg`، `books/12-science/images/img-241-009.jpg`
+- صفحة 243: `books/12-science/images/img-243-018.jpg`، `books/12-science/images/img-243-019.jpg`، `books/12-science/images/img-243-020.jpg`
+- صفحة 244: `books/12-science/images/img-244-025.jpg`
+- صفحة 245: `books/12-science/images/img-245-030.jpg`، `books/12-science/images/img-245-031.png`، `books/12-science/images/img-245-033.png`
+- صفحة 246: `books/12-science/images/img-246-039.png`، `books/12-science/images/img-246-040.jpg`
+- صفحة 247: `books/12-science/images/img-247-045.jpg`
+- صفحة 248: `books/12-science/images/img-248-051.jpg`، `books/12-science/images/img-248-053.jpg`
+- صفحة 249: `books/12-science/images/img-249-057.jpg`
+- صفحة 250: `books/12-science/images/img-250-063.jpg`، `books/12-science/images/img-250-065.jpg`، `books/12-science/images/img-250-067.jpg`، `books/12-science/images/img-250-069.png`
+- صفحة 251: `books/12-science/images/img-251-005.jpg`
+- صفحة 252: `books/12-science/images/img-252-011.jpg`، `books/12-science/images/img-252-012.png`، `books/12-science/images/img-252-013.jpg`، `books/12-science/images/img-252-014.png`
+- صفحة 254: `books/12-science/images/img-254-020.jpg`، `books/12-science/images/img-254-021.png`، `books/12-science/images/img-254-022.jpg`، `books/12-science/images/img-254-024.png`
+- صفحة 255: `books/12-science/images/img-255-030.jpg`، `books/12-science/images/img-255-032.jpg`، `books/12-science/images/img-255-034.jpg`
+- صفحة 256: `books/12-science/images/img-256-044.jpg`
+- صفحة 257: `books/12-science/images/img-257-049.jpg`، `books/12-science/images/img-257-051.jpg`، `books/12-science/images/img-257-052.png`
+- صفحة 258: `books/12-science/images/img-258-057.jpg`، `books/12-science/images/img-258-058.png`
+- صفحة 259: `books/12-science/images/img-259-062.jpg`، `books/12-science/images/img-259-063.png`
+- صفحة 260: `books/12-science/images/img-260-068.jpg`، `books/12-science/images/img-260-070.jpg`
+- صفحة 261: `books/12-science/images/img-261-003.jpg`
+- صفحة 262: `books/12-science/images/img-262-006.jpg`
+- صفحة 263: `books/12-science/images/img-263-009.jpg`، `books/12-science/images/img-263-012.jpg`، `books/12-science/images/img-263-014.jpg`
+- صفحة 264: `books/12-science/images/img-264-020.jpg`، `books/12-science/images/img-264-022.jpg`
+- صفحة 265: `books/12-science/images/img-265-030.jpg`
+- صفحة 266: `books/12-science/images/img-266-036.jpg`
+- صفحة 267: `books/12-science/images/img-267-041.jpg`
+- صفحة 268: `books/12-science/images/img-268-047.jpg`، `books/12-science/images/img-268-049.jpg`
+- صفحة 271: `books/12-science/images/img-271-000.jpg`، `books/12-science/images/img-271-003.jpg`، `books/12-science/images/img-271-004.png`
+- صفحة 272: `books/12-science/images/img-272-009.jpg`، `books/12-science/images/img-272-010.jpg`
+- صفحة 273: `books/12-science/images/img-273-014.jpg`، `books/12-science/images/img-273-016.jpg`
+- صفحة 274: `books/12-science/images/img-274-022.jpg`، `books/12-science/images/img-274-023.png`، `books/12-science/images/img-274-024.jpg`
+- صفحة 275: `books/12-science/images/img-275-029.jpg`، `books/12-science/images/img-275-030.jpg`، `books/12-science/images/img-275-031.jpg`
+- صفحة 279: `books/12-science/images/img-279-033.png`
+- صفحة 280: `books/12-science/images/img-280-035.jpg`

@@ -1,0 +1,93 @@
+# أشكال كتاب 12-English-lit-Sb — فهرس الصور
+
+مسارات نسبية من مجلد `ai/` في موقع الأداة. انسخ المسار **حرفياً** إلى حقل `imageSources` في JSON الامتحان (راجع دليل `quiz-creator-ai.md`، قسم Images). لا تخترع مساراً غير موجود هنا.
+
+## الأشكال المستخرجة من صفحات الكتاب
+مرتبة برقم صفحة الكتاب. الشكل نفسه قد يظهر في الامتحان كما هو، أو استخدم صورة الصفحة الكاملة بدلاً منه.
+
+- صفحة 10: `books/12-English-lit-Sb/images/img-010-004.png`، `books/12-English-lit-Sb/images/img-010-005.png`، `books/12-English-lit-Sb/images/img-010-009.jpg`، `books/12-English-lit-Sb/images/img-010-010.png`، `books/12-English-lit-Sb/images/img-010-016.jpg`، `books/12-English-lit-Sb/images/img-010-017.png`
+- صفحة 11: `books/12-English-lit-Sb/images/img-011-022.jpg`، `books/12-English-lit-Sb/images/img-011-023.png`، `books/12-English-lit-Sb/images/img-011-026.png`، `books/12-English-lit-Sb/images/img-011-027.jpg`
+- صفحة 14: `books/12-English-lit-Sb/images/img-014-051.png`، `books/12-English-lit-Sb/images/img-014-055.png`، `books/12-English-lit-Sb/images/img-014-057.jpg`
+- صفحة 17: `books/12-English-lit-Sb/images/img-017-094.jpg`
+- صفحة 18: `books/12-English-lit-Sb/images/img-018-102.png`، `books/12-English-lit-Sb/images/img-018-103.jpg`
+- صفحة 19: `books/12-English-lit-Sb/images/img-019-117.png`، `books/12-English-lit-Sb/images/img-019-120.jpg`، `books/12-English-lit-Sb/images/img-019-123.png`، `books/12-English-lit-Sb/images/img-019-131.png`، `books/12-English-lit-Sb/images/img-019-133.png`، `books/12-English-lit-Sb/images/img-019-134.png`
+- صفحة 20: `books/12-English-lit-Sb/images/img-020-139.png`، `books/12-English-lit-Sb/images/img-020-140.jpg`، `books/12-English-lit-Sb/images/img-020-142.jpg`، `books/12-English-lit-Sb/images/img-020-147.png`، `books/12-English-lit-Sb/images/img-020-148.png`، `books/12-English-lit-Sb/images/img-020-149.png`، `books/12-English-lit-Sb/images/img-020-150.png`، `books/12-English-lit-Sb/images/img-020-151.png`، `books/12-English-lit-Sb/images/img-020-152.png`، `books/12-English-lit-Sb/images/img-020-153.png`
+- صفحة 21: `books/12-English-lit-Sb/images/img-021-162.png`، `books/12-English-lit-Sb/images/img-021-163.jpg`
+- صفحة 22: `books/12-English-lit-Sb/images/img-022-177.png`
+- صفحة 23: `books/12-English-lit-Sb/images/img-023-182.jpg`
+- صفحة 25: `books/12-English-lit-Sb/images/img-025-203.png`، `books/12-English-lit-Sb/images/img-025-207.png`، `books/12-English-lit-Sb/images/img-025-217.jpg`، `books/12-English-lit-Sb/images/img-025-220.jpg`
+- صفحة 26: `books/12-English-lit-Sb/images/img-026-225.png`، `books/12-English-lit-Sb/images/img-026-226.jpg`
+- صفحة 28: `books/12-English-lit-Sb/images/img-028-247.jpg`، `books/12-English-lit-Sb/images/img-028-249.jpg`
+- صفحة 29: `books/12-English-lit-Sb/images/img-029-258.png`، `books/12-English-lit-Sb/images/img-029-259.jpg`
+- صفحة 30: `books/12-English-lit-Sb/images/img-030-268.jpg`
+- صفحة 32: `books/12-English-lit-Sb/images/img-032-288.jpg`، `books/12-English-lit-Sb/images/img-032-293.png`
+- صفحة 34: `books/12-English-lit-Sb/images/img-034-314.png`، `books/12-English-lit-Sb/images/img-034-315.jpg`، `books/12-English-lit-Sb/images/img-034-318.jpg`، `books/12-English-lit-Sb/images/img-034-322.jpg`، `books/12-English-lit-Sb/images/img-034-326.jpg`
+- صفحة 35: `books/12-English-lit-Sb/images/img-035-343.png`
+- صفحة 36: `books/12-English-lit-Sb/images/img-036-353.jpg`، `books/12-English-lit-Sb/images/img-036-359.jpg`، `books/12-English-lit-Sb/images/img-036-361.jpg`
+- صفحة 37: `books/12-English-lit-Sb/images/img-037-366.jpg`، `books/12-English-lit-Sb/images/img-037-367.png`، `books/12-English-lit-Sb/images/img-037-368.png`
+- صفحة 39: `books/12-English-lit-Sb/images/img-039-388.jpg`
+- صفحة 40: `books/12-English-lit-Sb/images/img-040-406.png`
+- صفحة 42: `books/12-English-lit-Sb/images/img-042-426.png`، `books/12-English-lit-Sb/images/img-042-427.jpg`
+- صفحة 43: `books/12-English-lit-Sb/images/img-043-441.png`
+- صفحة 45: `books/12-English-lit-Sb/images/img-045-462.jpg`، `books/12-English-lit-Sb/images/img-045-463.png`
+- صفحة 48: `books/12-English-lit-Sb/images/img-048-479.png`، `books/12-English-lit-Sb/images/img-048-480.jpg`
+- صفحة 52: `books/12-English-lit-Sb/images/img-052-505.jpg`، `books/12-English-lit-Sb/images/img-052-509.png`
+- صفحة 53: `books/12-English-lit-Sb/images/img-053-524.jpg`، `books/12-English-lit-Sb/images/img-053-525.png`
+- صفحة 54: `books/12-English-lit-Sb/images/img-054-536.png`، `books/12-English-lit-Sb/images/img-054-537.png`، `books/12-English-lit-Sb/images/img-054-538.jpg`، `books/12-English-lit-Sb/images/img-054-540.png`
+- صفحة 55: `books/12-English-lit-Sb/images/img-055-549.png`
+- صفحة 56: `books/12-English-lit-Sb/images/img-056-573.jpg`
+- صفحة 57: `books/12-English-lit-Sb/images/img-057-588.png`، `books/12-English-lit-Sb/images/img-057-589.png`، `books/12-English-lit-Sb/images/img-057-590.png`، `books/12-English-lit-Sb/images/img-057-591.jpg`
+- صفحة 58: `books/12-English-lit-Sb/images/img-058-607.jpg`، `books/12-English-lit-Sb/images/img-058-621.jpg`
+- صفحة 59: `books/12-English-lit-Sb/images/img-059-633.jpg`، `books/12-English-lit-Sb/images/img-059-635.png`، `books/12-English-lit-Sb/images/img-059-636.jpg`، `books/12-English-lit-Sb/images/img-059-637.png`
+- صفحة 60: `books/12-English-lit-Sb/images/img-060-642.jpg`، `books/12-English-lit-Sb/images/img-060-643.jpg`
+- صفحة 61: `books/12-English-lit-Sb/images/img-061-654.png`
+- صفحة 63: `books/12-English-lit-Sb/images/img-063-683.jpg`، `books/12-English-lit-Sb/images/img-063-687.png`، `books/12-English-lit-Sb/images/img-063-688.jpg`
+- صفحة 64: `books/12-English-lit-Sb/images/img-064-696.png`، `books/12-English-lit-Sb/images/img-064-697.png`، `books/12-English-lit-Sb/images/img-064-698.png`، `books/12-English-lit-Sb/images/img-064-702.png`، `books/12-English-lit-Sb/images/img-064-703.png`
+- صفحة 66: `books/12-English-lit-Sb/images/img-066-714.jpg`، `books/12-English-lit-Sb/images/img-066-715.png`، `books/12-English-lit-Sb/images/img-066-717.jpg`، `books/12-English-lit-Sb/images/img-066-722.jpg`، `books/12-English-lit-Sb/images/img-066-725.jpg`
+- صفحة 67: `books/12-English-lit-Sb/images/img-067-734.jpg`، `books/12-English-lit-Sb/images/img-067-736.jpg`، `books/12-English-lit-Sb/images/img-067-737.jpg`
+- صفحة 68: `books/12-English-lit-Sb/images/img-068-748.png`، `books/12-English-lit-Sb/images/img-068-749.png`
+- صفحة 69: `books/12-English-lit-Sb/images/img-069-758.png`، `books/12-English-lit-Sb/images/img-069-761.png`، `books/12-English-lit-Sb/images/img-069-767.png`، `books/12-English-lit-Sb/images/img-069-772.png`، `books/12-English-lit-Sb/images/img-069-776.jpg`
+- صفحة 70: `books/12-English-lit-Sb/images/img-070-786.png`، `books/12-English-lit-Sb/images/img-070-787.png`، `books/12-English-lit-Sb/images/img-070-801.jpg`، `books/12-English-lit-Sb/images/img-070-802.png`، `books/12-English-lit-Sb/images/img-070-804.jpg`، `books/12-English-lit-Sb/images/img-070-807.png`، `books/12-English-lit-Sb/images/img-070-810.jpg`، `books/12-English-lit-Sb/images/img-070-817.png`، `books/12-English-lit-Sb/images/img-070-822.jpg`، `books/12-English-lit-Sb/images/img-070-825.png`، `books/12-English-lit-Sb/images/img-070-828.jpg`، `books/12-English-lit-Sb/images/img-070-835.jpg`
+- صفحة 71: `books/12-English-lit-Sb/images/img-071-850.png`، `books/12-English-lit-Sb/images/img-071-851.jpg`
+- صفحة 72: `books/12-English-lit-Sb/images/img-072-857.png`، `books/12-English-lit-Sb/images/img-072-858.png`، `books/12-English-lit-Sb/images/img-072-859.png`، `books/12-English-lit-Sb/images/img-072-860.png`، `books/12-English-lit-Sb/images/img-072-861.png`، `books/12-English-lit-Sb/images/img-072-867.jpg`، `books/12-English-lit-Sb/images/img-072-877.png`
+- صفحة 73: `books/12-English-lit-Sb/images/img-073-882.jpg`، `books/12-English-lit-Sb/images/img-073-883.png`
+- صفحة 74: `books/12-English-lit-Sb/images/img-074-900.jpg`
+- صفحة 75: `books/12-English-lit-Sb/images/img-075-911.jpg`
+- صفحة 76: `books/12-English-lit-Sb/images/img-076-917.jpg`
+- صفحة 78: `books/12-English-lit-Sb/images/img-078-947.png`، `books/12-English-lit-Sb/images/img-078-948.jpg`
+- صفحة 79: `books/12-English-lit-Sb/images/img-079-968.png`، `books/12-English-lit-Sb/images/img-079-969.png`، `books/12-English-lit-Sb/images/img-079-970.png`، `books/12-English-lit-Sb/images/img-079-974.png`
+- صفحة 81: `books/12-English-lit-Sb/images/img-081-989.png`
+- صفحة 83: `books/12-English-lit-Sb/images/img-083-1004.png`، `books/12-English-lit-Sb/images/img-083-1005.jpg`
+- صفحة 84: `books/12-English-lit-Sb/images/img-084-1007.png`، `books/12-English-lit-Sb/images/img-084-1014.png`، `books/12-English-lit-Sb/images/img-084-1015.png`
+- صفحة 88: `books/12-English-lit-Sb/images/img-088-1027.jpg`، `books/12-English-lit-Sb/images/img-088-1032.jpg`، `books/12-English-lit-Sb/images/img-088-1033.png`
+- صفحة 89: `books/12-English-lit-Sb/images/img-089-1042.png`، `books/12-English-lit-Sb/images/img-089-1043.jpg`، `books/12-English-lit-Sb/images/img-089-1045.png`، `books/12-English-lit-Sb/images/img-089-1046.jpg`، `books/12-English-lit-Sb/images/img-089-1048.png`، `books/12-English-lit-Sb/images/img-089-1049.png`
+- صفحة 92: `books/12-English-lit-Sb/images/img-092-1072.png`
+- صفحة 93: `books/12-English-lit-Sb/images/img-093-1081.png`، `books/12-English-lit-Sb/images/img-093-1082.jpg`
+- صفحة 94: `books/12-English-lit-Sb/images/img-094-1095.jpg`، `books/12-English-lit-Sb/images/img-094-1096.png`
+- صفحة 96: `books/12-English-lit-Sb/images/img-096-1128.jpg`، `books/12-English-lit-Sb/images/img-096-1129.png`
+- صفحة 97: `books/12-English-lit-Sb/images/img-097-1138.png`، `books/12-English-lit-Sb/images/img-097-1142.jpg`، `books/12-English-lit-Sb/images/img-097-1144.png`، `books/12-English-lit-Sb/images/img-097-1145.png`، `books/12-English-lit-Sb/images/img-097-1149.png`، `books/12-English-lit-Sb/images/img-097-1150.jpg`، `books/12-English-lit-Sb/images/img-097-1151.png`، `books/12-English-lit-Sb/images/img-097-1152.jpg`، `books/12-English-lit-Sb/images/img-097-1153.png`
+- صفحة 98: `books/12-English-lit-Sb/images/img-098-1158.png`، `books/12-English-lit-Sb/images/img-098-1159.jpg`، `books/12-English-lit-Sb/images/img-098-1160.png`، `books/12-English-lit-Sb/images/img-098-1161.png`، `books/12-English-lit-Sb/images/img-098-1166.png`، `books/12-English-lit-Sb/images/img-098-1167.png`
+- صفحة 99: `books/12-English-lit-Sb/images/img-099-1174.png`، `books/12-English-lit-Sb/images/img-099-1175.png`، `books/12-English-lit-Sb/images/img-099-1176.png`، `books/12-English-lit-Sb/images/img-099-1177.jpg`
+- صفحة 100: `books/12-English-lit-Sb/images/img-100-1189.png`
+- صفحة 101: `books/12-English-lit-Sb/images/img-101-1196.png`
+- صفحة 102: `books/12-English-lit-Sb/images/img-102-1211.png`، `books/12-English-lit-Sb/images/img-102-1214.png`، `books/12-English-lit-Sb/images/img-102-1215.png`، `books/12-English-lit-Sb/images/img-102-1216.jpg`، `books/12-English-lit-Sb/images/img-102-1224.png`
+- صفحة 103: `books/12-English-lit-Sb/images/img-103-1233.png`، `books/12-English-lit-Sb/images/img-103-1234.png`، `books/12-English-lit-Sb/images/img-103-1236.jpg`، `books/12-English-lit-Sb/images/img-103-1240.jpg`، `books/12-English-lit-Sb/images/img-103-1246.jpg`، `books/12-English-lit-Sb/images/img-103-1252.jpg`
+- صفحة 104: `books/12-English-lit-Sb/images/img-104-1260.png`، `books/12-English-lit-Sb/images/img-104-1261.png`، `books/12-English-lit-Sb/images/img-104-1267.png`، `books/12-English-lit-Sb/images/img-104-1274.png`، `books/12-English-lit-Sb/images/img-104-1279.jpg`، `books/12-English-lit-Sb/images/img-104-1283.jpg`، `books/12-English-lit-Sb/images/img-104-1286.jpg`، `books/12-English-lit-Sb/images/img-104-1287.png`
+- صفحة 105: `books/12-English-lit-Sb/images/img-105-1294.jpg`، `books/12-English-lit-Sb/images/img-105-1295.png`، `books/12-English-lit-Sb/images/img-105-1298.jpg`، `books/12-English-lit-Sb/images/img-105-1299.png`
+- صفحة 106: `books/12-English-lit-Sb/images/img-106-1304.jpg`، `books/12-English-lit-Sb/images/img-106-1305.jpg`، `books/12-English-lit-Sb/images/img-106-1311.jpg`، `books/12-English-lit-Sb/images/img-106-1312.jpg`، `books/12-English-lit-Sb/images/img-106-1313.jpg`، `books/12-English-lit-Sb/images/img-106-1314.jpg`
+- صفحة 108: `books/12-English-lit-Sb/images/img-108-1324.jpg`، `books/12-English-lit-Sb/images/img-108-1329.jpg`
+- صفحة 109: `books/12-English-lit-Sb/images/img-109-1340.jpg`، `books/12-English-lit-Sb/images/img-109-1344.jpg`
+- صفحة 110: `books/12-English-lit-Sb/images/img-110-1357.png`، `books/12-English-lit-Sb/images/img-110-1358.png`
+- صفحة 112: `books/12-English-lit-Sb/images/img-112-1375.png`
+- صفحة 114: `books/12-English-lit-Sb/images/img-114-1394.png`، `books/12-English-lit-Sb/images/img-114-1396.jpg`، `books/12-English-lit-Sb/images/img-114-1406.png`، `books/12-English-lit-Sb/images/img-114-1407.png`
+- صفحة 115: `books/12-English-lit-Sb/images/img-115-1423.jpg`
+- صفحة 116: `books/12-English-lit-Sb/images/img-116-1429.jpg`، `books/12-English-lit-Sb/images/img-116-1431.png`، `books/12-English-lit-Sb/images/img-116-1434.png`، `books/12-English-lit-Sb/images/img-116-1435.jpg`
+- صفحة 117: `books/12-English-lit-Sb/images/img-117-1443.jpg`، `books/12-English-lit-Sb/images/img-117-1444.jpg`، `books/12-English-lit-Sb/images/img-117-1445.jpg`
+- صفحة 120: `books/12-English-lit-Sb/images/img-120-1482.png`
+- صفحة 121: `books/12-English-lit-Sb/images/img-121-1493.png`، `books/12-English-lit-Sb/images/img-121-1494.jpg`
+- صفحة 122: `books/12-English-lit-Sb/images/img-122-1516.png`، `books/12-English-lit-Sb/images/img-122-1518.png`، `books/12-English-lit-Sb/images/img-122-1519.png`، `books/12-English-lit-Sb/images/img-122-1520.png`
+- صفحة 123: `books/12-English-lit-Sb/images/img-123-1528.png`، `books/12-English-lit-Sb/images/img-123-1529.jpg`
+- صفحة 124: `books/12-English-lit-Sb/images/img-124-1530.png`
+- صفحة 126: `books/12-English-lit-Sb/images/img-126-1543.jpg`، `books/12-English-lit-Sb/images/img-126-1544.png`
+- صفحة 127: `books/12-English-lit-Sb/images/img-127-1549.jpg`، `books/12-English-lit-Sb/images/img-127-1553.jpg`
+- صفحة 128: `books/12-English-lit-Sb/images/img-128-1559.jpg`، `books/12-English-lit-Sb/images/img-128-1560.png`

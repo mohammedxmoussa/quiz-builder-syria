@@ -1,0 +1,151 @@
+# أشكال كتاب 12-geography-Lit — فهرس الصور
+
+مسارات نسبية من مجلد `ai/` في موقع الأداة. انسخ المسار **حرفياً** إلى حقل `imageSources` في JSON الامتحان (راجع دليل `quiz-creator-ai.md`، قسم Images). لا تخترع مساراً غير موجود هنا.
+
+## الأشكال المستخرجة من صفحات الكتاب
+مرتبة برقم صفحة الكتاب. الشكل نفسه قد يظهر في الامتحان كما هو، أو استخدم صورة الصفحة الكاملة بدلاً منه.
+
+- صفحة 1: `books/12-geography-Lit/images/img-001-000.png`
+- صفحة 6: `books/12-geography-Lit/images/img-006-3780.png`، `books/12-geography-Lit/images/img-006-3781.png`، `books/12-geography-Lit/images/img-006-3782.png`، `books/12-geography-Lit/images/img-006-3783.png`، `books/12-geography-Lit/images/img-006-3784.png`، `books/12-geography-Lit/images/img-006-3785.png`
+- صفحة 9: `books/12-geography-Lit/images/img-009-16358.jpg`
+- صفحة 10: `books/12-geography-Lit/images/img-010-21306.png`
+- صفحة 11: `books/12-geography-Lit/images/img-011-1646.png`
+- صفحة 12: `books/12-geography-Lit/images/img-012-1718.jpg`
+- صفحة 13: `books/12-geography-Lit/images/img-013-1749.jpg`
+- صفحة 14: `books/12-geography-Lit/images/img-014-1750.jpg`
+- صفحة 16: `books/12-geography-Lit/images/img-016-3255.jpg`
+- صفحة 17: `books/12-geography-Lit/images/img-017-3256.jpg`
+- صفحة 21: `books/12-geography-Lit/images/img-021-000.jpg`
+- صفحة 23: `books/12-geography-Lit/images/img-023-039.jpg`
+- صفحة 24: `books/12-geography-Lit/images/img-024-040.jpg`
+- صفحة 25: `books/12-geography-Lit/images/img-025-041.jpg`
+- صفحة 26: `books/12-geography-Lit/images/img-026-042.jpg`
+- صفحة 27: `books/12-geography-Lit/images/img-027-043.jpg`، `books/12-geography-Lit/images/img-027-044.jpg`
+- صفحة 30: `books/12-geography-Lit/images/img-030-1461.jpg`
+- صفحة 32: `books/12-geography-Lit/images/img-032-000.jpg`، `books/12-geography-Lit/images/img-032-001.jpg`
+- صفحة 34: `books/12-geography-Lit/images/img-034-003.jpg`
+- صفحة 35: `books/12-geography-Lit/images/img-035-004.png`
+- صفحة 36: `books/12-geography-Lit/images/img-036-127.jpg`
+- صفحة 38: `books/12-geography-Lit/images/img-038-129.jpg`
+- صفحة 40: `books/12-geography-Lit/images/img-040-1554.jpg`، `books/12-geography-Lit/images/img-040-1555.png`، `books/12-geography-Lit/images/img-040-1556.png`
+- صفحة 41: `books/12-geography-Lit/images/img-041-000.jpg`
+- صفحة 42: `books/12-geography-Lit/images/img-042-2425.png`، `books/12-geography-Lit/images/img-042-2427.png`
+- صفحة 43: `books/12-geography-Lit/images/img-043-2429.jpg`
+- صفحة 44: `books/12-geography-Lit/images/img-044-2430.jpg`، `books/12-geography-Lit/images/img-044-2431.png`
+- صفحة 45: `books/12-geography-Lit/images/img-045-2480.png`
+- صفحة 46: `books/12-geography-Lit/images/img-046-2482.jpg`
+- صفحة 47: `books/12-geography-Lit/images/img-047-5148.png`، `books/12-geography-Lit/images/img-047-5149.png`، `books/12-geography-Lit/images/img-047-5150.png`
+- صفحة 48: `books/12-geography-Lit/images/img-048-7895.png`، `books/12-geography-Lit/images/img-048-7896.png`، `books/12-geography-Lit/images/img-048-7897.png`، `books/12-geography-Lit/images/img-048-7898.png`، `books/12-geography-Lit/images/img-048-7899.png`، `books/12-geography-Lit/images/img-048-7900.png`، `books/12-geography-Lit/images/img-048-7901.png`، `books/12-geography-Lit/images/img-048-7902.png`، `books/12-geography-Lit/images/img-048-7903.png`
+- صفحة 49: `books/12-geography-Lit/images/img-049-7905.jpg`
+- صفحة 52: `books/12-geography-Lit/images/img-052-1992.png`، `books/12-geography-Lit/images/img-052-1993.png`
+- صفحة 54: `books/12-geography-Lit/images/img-054-2002.jpg`
+- صفحة 56: `books/12-geography-Lit/images/img-056-2319.png`، `books/12-geography-Lit/images/img-056-2320.jpg`، `books/12-geography-Lit/images/img-056-2321.png`
+- صفحة 59: `books/12-geography-Lit/images/img-059-3190.jpg`
+- صفحة 63: `books/12-geography-Lit/images/img-063-000.png`
+- صفحة 64: `books/12-geography-Lit/images/img-064-158.jpg`
+- صفحة 68: `books/12-geography-Lit/images/img-068-8646.jpg`
+- صفحة 69: `books/12-geography-Lit/images/img-069-12854.png`
+- صفحة 72: `books/12-geography-Lit/images/img-072-23170.png`
+- صفحة 74: `books/12-geography-Lit/images/img-074-23175.jpg`، `books/12-geography-Lit/images/img-074-23176.jpg`
+- صفحة 75: `books/12-geography-Lit/images/img-075-23227.jpg`
+- صفحة 77: `books/12-geography-Lit/images/img-077-23434.jpg`، `books/12-geography-Lit/images/img-077-23435.png`، `books/12-geography-Lit/images/img-077-23436.png`، `books/12-geography-Lit/images/img-077-23437.png`، `books/12-geography-Lit/images/img-077-23438.png`، `books/12-geography-Lit/images/img-077-23439.png`، `books/12-geography-Lit/images/img-077-23440.jpg`
+- صفحة 78: `books/12-geography-Lit/images/img-078-23471.jpg`، `books/12-geography-Lit/images/img-078-23472.jpg`، `books/12-geography-Lit/images/img-078-23473.jpg`، `books/12-geography-Lit/images/img-078-23474.jpg`
+- صفحة 80: `books/12-geography-Lit/images/img-080-23475.png`
+- صفحة 81: `books/12-geography-Lit/images/img-081-177.png`، `books/12-geography-Lit/images/img-081-178.png`
+- صفحة 85: `books/12-geography-Lit/images/img-085-5334.png`، `books/12-geography-Lit/images/img-085-5335.jpg`، `books/12-geography-Lit/images/img-085-5336.jpg`
+- صفحة 87: `books/12-geography-Lit/images/img-087-14988.jpg`، `books/12-geography-Lit/images/img-087-14989.jpg`
+- صفحة 88: `books/12-geography-Lit/images/img-088-18769.png`
+- صفحة 96: `books/12-geography-Lit/images/img-096-8805.jpg`
+- صفحة 98: `books/12-geography-Lit/images/img-098-12000.png`
+- صفحة 99: `books/12-geography-Lit/images/img-099-12005.jpg`، `books/12-geography-Lit/images/img-099-12006.jpg`، `books/12-geography-Lit/images/img-099-12007.jpg`، `books/12-geography-Lit/images/img-099-12008.jpg`، `books/12-geography-Lit/images/img-099-12009.jpg`، `books/12-geography-Lit/images/img-099-12010.jpg`، `books/12-geography-Lit/images/img-099-12011.png`، `books/12-geography-Lit/images/img-099-13136.png`
+- صفحة 100: `books/12-geography-Lit/images/img-100-14077.jpg`
+- صفحة 101: `books/12-geography-Lit/images/img-101-2895.png`
+- صفحة 107: `books/12-geography-Lit/images/img-107-7461.png`
+- صفحة 110: `books/12-geography-Lit/images/img-110-7465.jpg`
+- صفحة 113: `books/12-geography-Lit/images/img-113-099.jpg`
+- صفحة 114: `books/12-geography-Lit/images/img-114-4297.png`
+- صفحة 116: `books/12-geography-Lit/images/img-116-4298.jpg`، `books/12-geography-Lit/images/img-116-4299.jpg`، `books/12-geography-Lit/images/img-116-4300.png`
+- صفحة 119: `books/12-geography-Lit/images/img-119-10408.png`، `books/12-geography-Lit/images/img-119-10409.png`
+- صفحة 120: `books/12-geography-Lit/images/img-120-10411.jpg`
+- صفحة 121: `books/12-geography-Lit/images/img-121-000.jpg`
+- صفحة 122: `books/12-geography-Lit/images/img-122-3492.png`، `books/12-geography-Lit/images/img-122-3495.png`
+- صفحة 123: `books/12-geography-Lit/images/img-123-3501.jpg`، `books/12-geography-Lit/images/img-123-3502.jpg`، `books/12-geography-Lit/images/img-123-3503.jpg`، `books/12-geography-Lit/images/img-123-3504.jpg`، `books/12-geography-Lit/images/img-123-3505.jpg`، `books/12-geography-Lit/images/img-123-3506.jpg`، `books/12-geography-Lit/images/img-123-3507.jpg`
+- صفحة 128: `books/12-geography-Lit/images/img-128-8607.png`
+- صفحة 133: `books/12-geography-Lit/images/img-133-8608.jpg`
+- صفحة 134: `books/12-geography-Lit/images/img-134-10103.png`
+- صفحة 135: `books/12-geography-Lit/images/img-135-11411.png`
+- صفحة 137: `books/12-geography-Lit/images/img-137-15028.jpg`، `books/12-geography-Lit/images/img-137-15876.png`
+- صفحة 138: `books/12-geography-Lit/images/img-138-15877.jpg`
+- صفحة 139: `books/12-geography-Lit/images/img-139-15878.jpg`
+- صفحة 140: `books/12-geography-Lit/images/img-140-15879.jpg`، `books/12-geography-Lit/images/img-140-15880.png`
+- صفحة 141: `books/12-geography-Lit/images/img-141-610.jpg`، `books/12-geography-Lit/images/img-141-611.jpg`
+- صفحة 142: `books/12-geography-Lit/images/img-142-2162.jpg`
+- صفحة 143: `books/12-geography-Lit/images/img-143-2166.jpg`، `books/12-geography-Lit/images/img-143-2167.jpg`، `books/12-geography-Lit/images/img-143-2168.jpg`
+- صفحة 148: `books/12-geography-Lit/images/img-148-4554.jpg`
+- صفحة 150: `books/12-geography-Lit/images/img-150-4583.jpg`
+- صفحة 153: `books/12-geography-Lit/images/img-153-3256.png`، `books/12-geography-Lit/images/img-153-3257.png`، `books/12-geography-Lit/images/img-153-3258.jpg`
+- صفحة 154: `books/12-geography-Lit/images/img-154-4546.png`، `books/12-geography-Lit/images/img-154-4547.png`، `books/12-geography-Lit/images/img-154-4548.png`، `books/12-geography-Lit/images/img-154-4549.png`، `books/12-geography-Lit/images/img-154-4550.png`، `books/12-geography-Lit/images/img-154-4551.png`
+- صفحة 158: `books/12-geography-Lit/images/img-158-4610.jpg`
+- صفحة 159: `books/12-geography-Lit/images/img-159-4611.jpg`
+- صفحة 164: `books/12-geography-Lit/images/img-164-12441.jpg`
+- صفحة 165: `books/12-geography-Lit/images/img-165-17341.png`، `books/12-geography-Lit/images/img-165-17343.png`، `books/12-geography-Lit/images/img-165-17347.png`، `books/12-geography-Lit/images/img-165-17350.png`، `books/12-geography-Lit/images/img-165-17351.png`
+- صفحة 168: `books/12-geography-Lit/images/img-168-17353.png`، `books/12-geography-Lit/images/img-168-17354.png`
+- صفحة 170: `books/12-geography-Lit/images/img-170-22919.png`
+- صفحة 171: `books/12-geography-Lit/images/img-171-000.jpg`
+- صفحة 174: `books/12-geography-Lit/images/img-174-002.jpg`، `books/12-geography-Lit/images/img-174-770.png`
+- صفحة 175: `books/12-geography-Lit/images/img-175-772.jpg`
+- صفحة 182: `books/12-geography-Lit/images/img-182-10553.png`
+- صفحة 183: `books/12-geography-Lit/images/img-183-10557.jpg`
+- صفحة 184: `books/12-geography-Lit/images/img-184-12171.png`
+- صفحة 188: `books/12-geography-Lit/images/img-188-17003.png`
+- صفحة 189: `books/12-geography-Lit/images/img-189-17006.png`
+- صفحة 190: `books/12-geography-Lit/images/img-190-19717.png`، `books/12-geography-Lit/images/img-190-19719.png`، `books/12-geography-Lit/images/img-190-19723.png`
+- صفحة 191: `books/12-geography-Lit/images/img-191-000.jpg`، `books/12-geography-Lit/images/img-191-1159.png`
+- صفحة 194: `books/12-geography-Lit/images/img-194-5343.png`
+- صفحة 197: `books/12-geography-Lit/images/img-197-14700.png`
+- صفحة 198: `books/12-geography-Lit/images/img-198-14704.jpg`
+- صفحة 200: `books/12-geography-Lit/images/img-200-17200.jpg`، `books/12-geography-Lit/images/img-200-17201.png`، `books/12-geography-Lit/images/img-200-17203.png`، `books/12-geography-Lit/images/img-200-17204.png`
+- صفحة 202: `books/12-geography-Lit/images/img-202-1623.png`
+- صفحة 203: `books/12-geography-Lit/images/img-203-1624.jpg`
+- صفحة 206: `books/12-geography-Lit/images/img-206-3539.jpg`، `books/12-geography-Lit/images/img-206-3845.jpg`
+- صفحة 209: `books/12-geography-Lit/images/img-209-4150.jpg`
+- صفحة 213: `books/12-geography-Lit/images/img-213-2156.png`، `books/12-geography-Lit/images/img-213-2157.png`
+- صفحة 216: `books/12-geography-Lit/images/img-216-6257.png`، `books/12-geography-Lit/images/img-216-6258.png`، `books/12-geography-Lit/images/img-216-6259.png`
+- صفحة 221: `books/12-geography-Lit/images/img-221-000.jpg`
+- صفحة 222: `books/12-geography-Lit/images/img-222-001.jpg`، `books/12-geography-Lit/images/img-222-002.jpg`
+- صفحة 224: `books/12-geography-Lit/images/img-224-4443.png`، `books/12-geography-Lit/images/img-224-4444.png`، `books/12-geography-Lit/images/img-224-4445.png`، `books/12-geography-Lit/images/img-224-4446.png`، `books/12-geography-Lit/images/img-224-4449.png`
+- صفحة 225: `books/12-geography-Lit/images/img-225-6487.jpg`، `books/12-geography-Lit/images/img-225-6488.png`
+- صفحة 227: `books/12-geography-Lit/images/img-227-6490.jpg`، `books/12-geography-Lit/images/img-227-8690.png`، `books/12-geography-Lit/images/img-227-8691.png`، `books/12-geography-Lit/images/img-227-8692.png`
+- صفحة 230: `books/12-geography-Lit/images/img-230-8696.jpg`
+- صفحة 232: `books/12-geography-Lit/images/img-232-3518.png`
+- صفحة 233: `books/12-geography-Lit/images/img-233-5814.png`، `books/12-geography-Lit/images/img-233-5815.png`، `books/12-geography-Lit/images/img-233-5816.png`
+- صفحة 235: `books/12-geography-Lit/images/img-235-14203.png`، `books/12-geography-Lit/images/img-235-14206.png`
+- صفحة 237: `books/12-geography-Lit/images/img-237-22917.jpg`
+- صفحة 238: `books/12-geography-Lit/images/img-238-24543.jpg`
+- صفحة 241: `books/12-geography-Lit/images/img-241-000.jpg`، `books/12-geography-Lit/images/img-241-001.png`، `books/12-geography-Lit/images/img-241-773.png`
+- صفحة 242: `books/12-geography-Lit/images/img-242-775.jpg`
+- صفحة 243: `books/12-geography-Lit/images/img-243-2752.png`، `books/12-geography-Lit/images/img-243-2753.png`، `books/12-geography-Lit/images/img-243-2755.png`، `books/12-geography-Lit/images/img-243-2756.png`
+- صفحة 245: `books/12-geography-Lit/images/img-245-2758.jpg`
+- صفحة 246: `books/12-geography-Lit/images/img-246-2759.png`
+- صفحة 247: `books/12-geography-Lit/images/img-247-2760.jpg`، `books/12-geography-Lit/images/img-247-2761.jpg`، `books/12-geography-Lit/images/img-247-2762.jpg`
+- صفحة 249: `books/12-geography-Lit/images/img-249-2827.jpg`، `books/12-geography-Lit/images/img-249-2828.png`، `books/12-geography-Lit/images/img-249-2829.png`
+- صفحة 250: `books/12-geography-Lit/images/img-250-4323.jpg`، `books/12-geography-Lit/images/img-250-4324.png`، `books/12-geography-Lit/images/img-250-4325.png`
+- صفحة 252: `books/12-geography-Lit/images/img-252-000.png`، `books/12-geography-Lit/images/img-252-001.jpg`
+- صفحة 253: `books/12-geography-Lit/images/img-253-002.png`
+- صفحة 254: `books/12-geography-Lit/images/img-254-003.png`، `books/12-geography-Lit/images/img-254-004.jpg`
+- صفحة 255: `books/12-geography-Lit/images/img-255-1722.png`
+- صفحة 256: `books/12-geography-Lit/images/img-256-1725.png`
+- صفحة 257: `books/12-geography-Lit/images/img-257-1726.jpg`
+- صفحة 258: `books/12-geography-Lit/images/img-258-1727.jpg`
+- صفحة 259: `books/12-geography-Lit/images/img-259-1730.jpg`
+- صفحة 260: `books/12-geography-Lit/images/img-260-3040.jpg`، `books/12-geography-Lit/images/img-260-3041.jpg`
+- صفحة 261: `books/12-geography-Lit/images/img-261-000.png`
+- صفحة 262: `books/12-geography-Lit/images/img-262-1462.png`، `books/12-geography-Lit/images/img-262-2477.png`، `books/12-geography-Lit/images/img-262-2479.png`
+- صفحة 263: `books/12-geography-Lit/images/img-263-5598.png`
+- صفحة 264: `books/12-geography-Lit/images/img-264-10142.png`، `books/12-geography-Lit/images/img-264-10144.png`
+- صفحة 267: `books/12-geography-Lit/images/img-267-10161.png`، `books/12-geography-Lit/images/img-267-10162.jpg`، `books/12-geography-Lit/images/img-267-10163.jpg`، `books/12-geography-Lit/images/img-267-10164.jpg`
+- صفحة 272: `books/12-geography-Lit/images/img-272-3141.png`، `books/12-geography-Lit/images/img-272-3144.png`، `books/12-geography-Lit/images/img-272-3145.png`، `books/12-geography-Lit/images/img-272-3146.png`
+- صفحة 274: `books/12-geography-Lit/images/img-274-3148.jpg`، `books/12-geography-Lit/images/img-274-3149.jpg`
+- صفحة 276: `books/12-geography-Lit/images/img-276-3150.jpg`
+- صفحة 277: `books/12-geography-Lit/images/img-277-3151.jpg`، `books/12-geography-Lit/images/img-277-3152.png`
+- صفحة 278: `books/12-geography-Lit/images/img-278-3153.jpg`

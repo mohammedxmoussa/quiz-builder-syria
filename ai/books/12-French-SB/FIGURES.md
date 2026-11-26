@@ -1,0 +1,72 @@
+# أشكال كتاب 12-French-SB — فهرس الصور
+
+مسارات نسبية من مجلد `ai/` في موقع الأداة. انسخ المسار **حرفياً** إلى حقل `imageSources` في JSON الامتحان (راجع دليل `quiz-creator-ai.md`، قسم Images). لا تخترع مساراً غير موجود هنا.
+
+## الأشكال المستخرجة من صفحات الكتاب
+مرتبة برقم صفحة الكتاب. الشكل نفسه قد يظهر في الامتحان كما هو، أو استخدم صورة الصفحة الكاملة بدلاً منه.
+
+- صفحة 4: `books/12-French-SB/images/img-004-004.png`، `books/12-French-SB/images/img-004-006.jpg`، `books/12-French-SB/images/img-004-008.jpg`، `books/12-French-SB/images/img-004-010.jpg`، `books/12-French-SB/images/img-004-012.jpg`، `books/12-French-SB/images/img-004-014.jpg`، `books/12-French-SB/images/img-004-016.png`
+- صفحة 6: `books/12-French-SB/images/img-006-020.jpg`، `books/12-French-SB/images/img-006-022.jpg`، `books/12-French-SB/images/img-006-024.jpg`، `books/12-French-SB/images/img-006-025.jpg`، `books/12-French-SB/images/img-006-026.png`
+- صفحة 7: `books/12-French-SB/images/img-007-034.png`، `books/12-French-SB/images/img-007-044.png`، `books/12-French-SB/images/img-007-047.png`، `books/12-French-SB/images/img-007-049.png`، `books/12-French-SB/images/img-007-052.png`، `books/12-French-SB/images/img-007-053.png`، `books/12-French-SB/images/img-007-054.jpg`، `books/12-French-SB/images/img-007-055.png`، `books/12-French-SB/images/img-007-056.png`، `books/12-French-SB/images/img-007-057.png`
+- صفحة 8: `books/12-French-SB/images/img-008-062.jpg`، `books/12-French-SB/images/img-008-065.jpg`
+- صفحة 9: `books/12-French-SB/images/img-009-100.jpg`
+- صفحة 13: `books/12-French-SB/images/img-013-169.png`
+- صفحة 14: `books/12-French-SB/images/img-014-181.png`، `books/12-French-SB/images/img-014-184.png`
+- صفحة 15: `books/12-French-SB/images/img-015-227.png`، `books/12-French-SB/images/img-015-228.jpg`، `books/12-French-SB/images/img-015-229.png`، `books/12-French-SB/images/img-015-230.jpg`، `books/12-French-SB/images/img-015-232.jpg`
+- صفحة 16: `books/12-French-SB/images/img-016-235.jpg`، `books/12-French-SB/images/img-016-236.png`، `books/12-French-SB/images/img-016-237.png`، `books/12-French-SB/images/img-016-241.jpg`، `books/12-French-SB/images/img-016-242.png`
+- صفحة 17: `books/12-French-SB/images/img-017-249.jpg`، `books/12-French-SB/images/img-017-250.png`
+- صفحة 18: `books/12-French-SB/images/img-018-252.png`
+- صفحة 23: `books/12-French-SB/images/img-023-268.jpg`، `books/12-French-SB/images/img-023-270.png`
+- صفحة 24: `books/12-French-SB/images/img-024-273.jpg`
+- صفحة 26: `books/12-French-SB/images/img-026-310.jpg`، `books/12-French-SB/images/img-026-312.jpg`، `books/12-French-SB/images/img-026-313.png`
+- صفحة 27: `books/12-French-SB/images/img-027-345.png`
+- صفحة 28: `books/12-French-SB/images/img-028-353.png`، `books/12-French-SB/images/img-028-354.jpg`
+- صفحة 31: `books/12-French-SB/images/img-031-438.png`
+- صفحة 32: `books/12-French-SB/images/img-032-441.jpg`، `books/12-French-SB/images/img-032-442.jpg`، `books/12-French-SB/images/img-032-443.jpg`، `books/12-French-SB/images/img-032-445.jpg`، `books/12-French-SB/images/img-032-447.jpg`، `books/12-French-SB/images/img-032-449.jpg`
+- صفحة 35: `books/12-French-SB/images/img-035-486.jpg`، `books/12-French-SB/images/img-035-487.jpg`، `books/12-French-SB/images/img-035-488.png`
+- صفحة 36: `books/12-French-SB/images/img-036-492.jpg`
+- صفحة 40: `books/12-French-SB/images/img-040-499.png`
+- صفحة 41: `books/12-French-SB/images/img-041-501.jpg`، `books/12-French-SB/images/img-041-503.png`، `books/12-French-SB/images/img-041-504.png`، `books/12-French-SB/images/img-041-505.png`
+- صفحة 42: `books/12-French-SB/images/img-042-508.jpg`، `books/12-French-SB/images/img-042-509.png`، `books/12-French-SB/images/img-042-510.jpg`، `books/12-French-SB/images/img-042-511.png`
+- صفحة 44: `books/12-French-SB/images/img-044-546.png`، `books/12-French-SB/images/img-044-548.png`، `books/12-French-SB/images/img-044-550.png`
+- صفحة 47: `books/12-French-SB/images/img-047-617.jpg`
+- صفحة 49: `books/12-French-SB/images/img-049-651.png`
+- صفحة 51: `books/12-French-SB/images/img-051-684.jpg`، `books/12-French-SB/images/img-051-685.png`
+- صفحة 52: `books/12-French-SB/images/img-052-690.jpg`، `books/12-French-SB/images/img-052-692.jpg`
+- صفحة 53: `books/12-French-SB/images/img-053-698.jpg`
+- صفحة 54: `books/12-French-SB/images/img-054-700.jpg`
+- صفحة 57: `books/12-French-SB/images/img-057-705.jpg`
+- صفحة 58: `books/12-French-SB/images/img-058-707.png`
+- صفحة 59: `books/12-French-SB/images/img-059-708.jpg`
+- صفحة 60: `books/12-French-SB/images/img-060-711.jpg`، `books/12-French-SB/images/img-060-712.jpg`، `books/12-French-SB/images/img-060-713.png`
+- صفحة 63: `books/12-French-SB/images/img-063-780.jpg`، `books/12-French-SB/images/img-063-782.jpg`، `books/12-French-SB/images/img-063-785.jpg`، `books/12-French-SB/images/img-063-787.jpg`
+- صفحة 64: `books/12-French-SB/images/img-064-789.png`، `books/12-French-SB/images/img-064-790.jpg`، `books/12-French-SB/images/img-064-792.jpg`، `books/12-French-SB/images/img-064-793.jpg`، `books/12-French-SB/images/img-064-794.png`
+- صفحة 67: `books/12-French-SB/images/img-067-861.png`
+- صفحة 68: `books/12-French-SB/images/img-068-863.png`، `books/12-French-SB/images/img-068-864.jpg`، `books/12-French-SB/images/img-068-865.png`، `books/12-French-SB/images/img-068-866.jpg`، `books/12-French-SB/images/img-068-867.png`، `books/12-French-SB/images/img-068-868.png`، `books/12-French-SB/images/img-068-870.jpg`، `books/12-French-SB/images/img-068-873.jpg`، `books/12-French-SB/images/img-068-876.jpg`
+- صفحة 70: `books/12-French-SB/images/img-070-916.jpg`، `books/12-French-SB/images/img-070-919.jpg`
+- صفحة 72: `books/12-French-SB/images/img-072-922.jpg`
+- صفحة 74: `books/12-French-SB/images/img-074-925.jpg`، `books/12-French-SB/images/img-074-926.jpg`
+- صفحة 75: `books/12-French-SB/images/img-075-928.png`، `books/12-French-SB/images/img-075-929.jpg`، `books/12-French-SB/images/img-075-930.png`
+- صفحة 77: `books/12-French-SB/images/img-077-933.jpg`، `books/12-French-SB/images/img-077-935.png`
+- صفحة 78: `books/12-French-SB/images/img-078-937.jpg`، `books/12-French-SB/images/img-078-938.png`، `books/12-French-SB/images/img-078-939.jpg`، `books/12-French-SB/images/img-078-940.png`
+- صفحة 80: `books/12-French-SB/images/img-080-975.jpg`، `books/12-French-SB/images/img-080-976.jpg`، `books/12-French-SB/images/img-080-977.jpg`
+- صفحة 81: `books/12-French-SB/images/img-081-1009.png`
+- صفحة 82: `books/12-French-SB/images/img-082-1014.jpg`، `books/12-French-SB/images/img-082-1016.png`، `books/12-French-SB/images/img-082-1017.jpg`
+- صفحة 83: `books/12-French-SB/images/img-083-1050.png`، `books/12-French-SB/images/img-083-1051.png`
+- صفحة 85: `books/12-French-SB/images/img-085-1086.png`
+- صفحة 86: `books/12-French-SB/images/img-086-1090.jpg`، `books/12-French-SB/images/img-086-1091.jpg`
+- صفحة 88: `books/12-French-SB/images/img-088-1139.jpg`، `books/12-French-SB/images/img-088-1141.jpg`
+- صفحة 89: `books/12-French-SB/images/img-089-1144.png`، `books/12-French-SB/images/img-089-1147.png`، `books/12-French-SB/images/img-089-1149.png`، `books/12-French-SB/images/img-089-1150.png`، `books/12-French-SB/images/img-089-1151.png`
+- صفحة 91: `books/12-French-SB/images/img-091-1155.jpg`
+- صفحة 94: `books/12-French-SB/images/img-094-1159.png`
+- صفحة 95: `books/12-French-SB/images/img-095-1160.jpg`، `books/12-French-SB/images/img-095-1162.png`
+- صفحة 96: `books/12-French-SB/images/img-096-1164.jpg`، `books/12-French-SB/images/img-096-1165.jpg`، `books/12-French-SB/images/img-096-1166.png`، `books/12-French-SB/images/img-096-1169.jpg`، `books/12-French-SB/images/img-096-1170.png`
+- صفحة 98: `books/12-French-SB/images/img-098-1203.png`، `books/12-French-SB/images/img-098-1204.png`، `books/12-French-SB/images/img-098-1205.png`
+- صفحة 100: `books/12-French-SB/images/img-100-1240.png`، `books/12-French-SB/images/img-100-1242.png`، `books/12-French-SB/images/img-100-1244.jpg`
+- صفحة 102: `books/12-French-SB/images/img-102-1279.png`
+- صفحة 104: `books/12-French-SB/images/img-104-1313.jpg`، `books/12-French-SB/images/img-104-1314.png`، `books/12-French-SB/images/img-104-1315.png`، `books/12-French-SB/images/img-104-1316.png`، `books/12-French-SB/images/img-104-1322.jpg`، `books/12-French-SB/images/img-104-1323.png`
+- صفحة 105: `books/12-French-SB/images/img-105-1357.jpg`، `books/12-French-SB/images/img-105-1358.png`، `books/12-French-SB/images/img-105-1363.jpg`، `books/12-French-SB/images/img-105-1364.png`، `books/12-French-SB/images/img-105-1365.png`
+- صفحة 106: `books/12-French-SB/images/img-106-1370.jpg`، `books/12-French-SB/images/img-106-1372.jpg`، `books/12-French-SB/images/img-106-1374.jpg`، `books/12-French-SB/images/img-106-1376.jpg`، `books/12-French-SB/images/img-106-1378.jpg`، `books/12-French-SB/images/img-106-1381.jpg`، `books/12-French-SB/images/img-106-1384.jpg`، `books/12-French-SB/images/img-106-1387.jpg`، `books/12-French-SB/images/img-106-1390.jpg`، `books/12-French-SB/images/img-106-1393.jpg`
+- صفحة 107: `books/12-French-SB/images/img-107-1395.jpg`
+- صفحة 108: `books/12-French-SB/images/img-108-1397.jpg`
+- صفحة 111: `books/12-French-SB/images/img-111-1401.jpg`

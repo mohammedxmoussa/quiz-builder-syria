@@ -1,0 +1,144 @@
+# أشكال كتاب 9-technology — فهرس الصور
+
+مسارات نسبية من مجلد `ai/` في موقع الأداة. انسخ المسار **حرفياً** إلى حقل `imageSources` في JSON الامتحان (راجع دليل `quiz-creator-ai.md`، قسم Images). لا تخترع مساراً غير موجود هنا.
+
+## الأشكال المستخرجة من صفحات الكتاب
+مرتبة برقم صفحة الكتاب. الشكل نفسه قد يظهر في الامتحان كما هو، أو استخدم صورة الصفحة الكاملة بدلاً منه.
+
+- صفحة 6: `books/9-technology/images/img-006-013.jpg`
+- صفحة 7: `books/9-technology/images/img-007-017.jpg`، `books/9-technology/images/img-007-018.png`، `books/9-technology/images/img-007-019.jpg`، `books/9-technology/images/img-007-020.jpg`
+- صفحة 8: `books/9-technology/images/img-008-023.jpg`، `books/9-technology/images/img-008-024.jpg`
+- صفحة 9: `books/9-technology/images/img-009-029.jpg`، `books/9-technology/images/img-009-032.jpg`، `books/9-technology/images/img-009-035.jpg`، `books/9-technology/images/img-009-038.jpg`
+- صفحة 10: `books/9-technology/images/img-010-042.jpg`، `books/9-technology/images/img-010-044.jpg`، `books/9-technology/images/img-010-046.jpg`، `books/9-technology/images/img-010-048.jpg`، `books/9-technology/images/img-010-049.png`، `books/9-technology/images/img-010-050.jpg`، `books/9-technology/images/img-010-051.png`
+- صفحة 11: `books/9-technology/images/img-011-002.jpg`، `books/9-technology/images/img-011-004.jpg`، `books/9-technology/images/img-011-006.jpg`، `books/9-technology/images/img-011-008.jpg`
+- صفحة 12: `books/9-technology/images/img-012-012.jpg`، `books/9-technology/images/img-012-014.jpg`
+- صفحة 15: `books/9-technology/images/img-015-022.jpg`، `books/9-technology/images/img-015-023.png`، `books/9-technology/images/img-015-024.jpg`، `books/9-technology/images/img-015-026.jpg`، `books/9-technology/images/img-015-028.jpg`، `books/9-technology/images/img-015-030.jpg`، `books/9-technology/images/img-015-032.jpg`، `books/9-technology/images/img-015-034.jpg`
+- صفحة 16: `books/9-technology/images/img-016-038.jpg`، `books/9-technology/images/img-016-039.png`، `books/9-technology/images/img-016-040.jpg`
+- صفحة 17: `books/9-technology/images/img-017-044.jpg`
+- صفحة 18: `books/9-technology/images/img-018-048.jpg`، `books/9-technology/images/img-018-050.jpg`، `books/9-technology/images/img-018-051.png`
+- صفحة 19: `books/9-technology/images/img-019-055.jpg`، `books/9-technology/images/img-019-059.jpg`، `books/9-technology/images/img-019-061.jpg`
+- صفحة 20: `books/9-technology/images/img-020-065.jpg`
+- صفحة 21: `books/9-technology/images/img-021-001.png`، `books/9-technology/images/img-021-002.jpg`، `books/9-technology/images/img-021-005.jpg`، `books/9-technology/images/img-021-007.jpg`، `books/9-technology/images/img-021-008.jpg`
+- صفحة 23: `books/9-technology/images/img-023-017.jpg`
+- صفحة 24: `books/9-technology/images/img-024-020.jpg`، `books/9-technology/images/img-024-021.jpg`، `books/9-technology/images/img-024-022.jpg`
+- صفحة 25: `books/9-technology/images/img-025-025.jpg`، `books/9-technology/images/img-025-027.jpg`، `books/9-technology/images/img-025-028.jpg`، `books/9-technology/images/img-025-029.png`، `books/9-technology/images/img-025-030.jpg`
+- صفحة 26: `books/9-technology/images/img-026-032.jpg`، `books/9-technology/images/img-026-034.jpg`، `books/9-technology/images/img-026-036.jpg`، `books/9-technology/images/img-026-037.jpg`، `books/9-technology/images/img-026-038.jpg`
+- صفحة 27: `books/9-technology/images/img-027-040.jpg`، `books/9-technology/images/img-027-042.jpg`، `books/9-technology/images/img-027-043.jpg`، `books/9-technology/images/img-027-044.jpg`، `books/9-technology/images/img-027-045.png`
+- صفحة 28: `books/9-technology/images/img-028-048.jpg`، `books/9-technology/images/img-028-049.jpg`، `books/9-technology/images/img-028-050.jpg`، `books/9-technology/images/img-028-051.jpg`
+- صفحة 29: `books/9-technology/images/img-029-053.jpg`، `books/9-technology/images/img-029-054.jpg`
+- صفحة 30: `books/9-technology/images/img-030-056.jpg`، `books/9-technology/images/img-030-057.jpg`
+- صفحة 31: `books/9-technology/images/img-031-004.png`، `books/9-technology/images/img-031-005.jpg`، `books/9-technology/images/img-031-006.jpg`، `books/9-technology/images/img-031-007.jpg`
+- صفحة 32: `books/9-technology/images/img-032-012.jpg`، `books/9-technology/images/img-032-013.jpg`، `books/9-technology/images/img-032-015.jpg`، `books/9-technology/images/img-032-016.jpg`، `books/9-technology/images/img-032-019.jpg`
+- صفحة 33: `books/9-technology/images/img-033-022.jpg`، `books/9-technology/images/img-033-023.jpg`
+- صفحة 34: `books/9-technology/images/img-034-030.jpg`
+- صفحة 35: `books/9-technology/images/img-035-032.jpg`
+- صفحة 36: `books/9-technology/images/img-036-035.jpg`، `books/9-technology/images/img-036-039.jpg`
+- صفحة 37: `books/9-technology/images/img-037-041.jpg`، `books/9-technology/images/img-037-048.jpg`
+- صفحة 38: `books/9-technology/images/img-038-050.jpg`، `books/9-technology/images/img-038-052.jpg`
+- صفحة 39: `books/9-technology/images/img-039-055.jpg`، `books/9-technology/images/img-039-056.jpg`
+- صفحة 40: `books/9-technology/images/img-040-061.jpg`، `books/9-technology/images/img-040-062.jpg`
+- صفحة 41: `books/9-technology/images/img-041-001.jpg`، `books/9-technology/images/img-041-003.jpg`، `books/9-technology/images/img-041-004.jpg`، `books/9-technology/images/img-041-005.jpg`
+- صفحة 42: `books/9-technology/images/img-042-007.jpg`، `books/9-technology/images/img-042-008.jpg`، `books/9-technology/images/img-042-009.jpg`، `books/9-technology/images/img-042-010.jpg`
+- صفحة 44: `books/9-technology/images/img-044-018.jpg`، `books/9-technology/images/img-044-022.jpg`، `books/9-technology/images/img-044-024.jpg`
+- صفحة 45: `books/9-technology/images/img-045-028.jpg`
+- صفحة 46: `books/9-technology/images/img-046-030.jpg`، `books/9-technology/images/img-046-031.png`، `books/9-technology/images/img-046-032.jpg`، `books/9-technology/images/img-046-033.png`، `books/9-technology/images/img-046-034.jpg`
+- صفحة 47: `books/9-technology/images/img-047-037.jpg`، `books/9-technology/images/img-047-039.jpg`، `books/9-technology/images/img-047-040.png`، `books/9-technology/images/img-047-043.jpg`، `books/9-technology/images/img-047-047.jpg`، `books/9-technology/images/img-047-049.jpg`
+- صفحة 48: `books/9-technology/images/img-048-054.jpg`، `books/9-technology/images/img-048-055.png`، `books/9-technology/images/img-048-062.jpg`، `books/9-technology/images/img-048-064.jpg`، `books/9-technology/images/img-048-066.jpg`
+- صفحة 49: `books/9-technology/images/img-049-069.jpg`، `books/9-technology/images/img-049-070.png`، `books/9-technology/images/img-049-071.jpg`، `books/9-technology/images/img-049-072.png`
+- صفحة 50: `books/9-technology/images/img-050-077.jpg`
+- صفحة 52: `books/9-technology/images/img-052-002.jpg`، `books/9-technology/images/img-052-003.jpg`
+- صفحة 53: `books/9-technology/images/img-053-005.jpg`، `books/9-technology/images/img-053-006.jpg`
+- صفحة 54: `books/9-technology/images/img-054-008.jpg`، `books/9-technology/images/img-054-009.png`
+- صفحة 55: `books/9-technology/images/img-055-011.jpg`، `books/9-technology/images/img-055-012.png`
+- صفحة 56: `books/9-technology/images/img-056-014.jpg`، `books/9-technology/images/img-056-015.jpg`
+- صفحة 57: `books/9-technology/images/img-057-017.jpg`، `books/9-technology/images/img-057-018.jpg`
+- صفحة 58: `books/9-technology/images/img-058-021.jpg`، `books/9-technology/images/img-058-022.png`، `books/9-technology/images/img-058-023.jpg`، `books/9-technology/images/img-058-024.jpg`، `books/9-technology/images/img-058-025.jpg`، `books/9-technology/images/img-058-026.png`
+- صفحة 59: `books/9-technology/images/img-059-028.jpg`، `books/9-technology/images/img-059-029.jpg`
+- صفحة 60: `books/9-technology/images/img-060-031.jpg`، `books/9-technology/images/img-060-032.png`، `books/9-technology/images/img-060-033.jpg`، `books/9-technology/images/img-060-035.jpg`
+- صفحة 61: `books/9-technology/images/img-061-001.jpg`، `books/9-technology/images/img-061-003.jpg`، `books/9-technology/images/img-061-005.jpg`، `books/9-technology/images/img-061-006.png`، `books/9-technology/images/img-061-007.jpg`، `books/9-technology/images/img-061-009.jpg`، `books/9-technology/images/img-061-010.png`
+- صفحة 62: `books/9-technology/images/img-062-012.jpg`، `books/9-technology/images/img-062-014.jpg`، `books/9-technology/images/img-062-016.jpg`، `books/9-technology/images/img-062-018.jpg`
+- صفحة 66: `books/9-technology/images/img-066-025.jpg`، `books/9-technology/images/img-066-029.jpg`، `books/9-technology/images/img-066-031.jpg`
+- صفحة 67: `books/9-technology/images/img-067-035.jpg`
+- صفحة 68: `books/9-technology/images/img-068-037.jpg`، `books/9-technology/images/img-068-038.png`، `books/9-technology/images/img-068-039.jpg`
+- صفحة 69: `books/9-technology/images/img-069-042.jpg`، `books/9-technology/images/img-069-043.png`
+- صفحة 70: `books/9-technology/images/img-070-045.jpg`، `books/9-technology/images/img-070-047.jpg`، `books/9-technology/images/img-070-048.png`
+- صفحة 71: `books/9-technology/images/img-071-001.jpg`
+- صفحة 72: `books/9-technology/images/img-072-004.jpg`
+- صفحة 73: `books/9-technology/images/img-073-007.jpg`، `books/9-technology/images/img-073-008.png`، `books/9-technology/images/img-073-009.jpg`، `books/9-technology/images/img-073-011.jpg`، `books/9-technology/images/img-073-012.png`
+- صفحة 74: `books/9-technology/images/img-074-014.jpg`، `books/9-technology/images/img-074-016.jpg`، `books/9-technology/images/img-074-017.png`
+- صفحة 75: `books/9-technology/images/img-075-021.jpg`، `books/9-technology/images/img-075-022.png`
+- صفحة 76: `books/9-technology/images/img-076-026.jpg`، `books/9-technology/images/img-076-027.png`، `books/9-technology/images/img-076-028.jpg`، `books/9-technology/images/img-076-029.png`
+- صفحة 77: `books/9-technology/images/img-077-031.jpg`، `books/9-technology/images/img-077-032.jpg`
+- صفحة 78: `books/9-technology/images/img-078-040.jpg`، `books/9-technology/images/img-078-042.jpg`، `books/9-technology/images/img-078-043.png`
+- صفحة 79: `books/9-technology/images/img-079-047.jpg`، `books/9-technology/images/img-079-048.png`، `books/9-technology/images/img-079-049.jpg`
+- صفحة 80: `books/9-technology/images/img-080-054.jpg`، `books/9-technology/images/img-080-056.jpg`
+- صفحة 82: `books/9-technology/images/img-082-004.jpg`، `books/9-technology/images/img-082-005.png`، `books/9-technology/images/img-082-006.jpg`
+- صفحة 84: `books/9-technology/images/img-084-016.jpg`، `books/9-technology/images/img-084-017.png`
+- صفحة 86: `books/9-technology/images/img-086-022.jpg`، `books/9-technology/images/img-086-023.png`
+- صفحة 87: `books/9-technology/images/img-087-026.jpg`
+- صفحة 88: `books/9-technology/images/img-088-031.jpg`، `books/9-technology/images/img-088-032.png`
+- صفحة 90: `books/9-technology/images/img-090-041.jpg`، `books/9-technology/images/img-090-042.jpg`
+- صفحة 91: `books/9-technology/images/img-091-001.jpg`، `books/9-technology/images/img-091-002.png`، `books/9-technology/images/img-091-003.jpg`
+- صفحة 94: `books/9-technology/images/img-094-009.jpg`، `books/9-technology/images/img-094-011.jpg`، `books/9-technology/images/img-094-014.jpg`
+- صفحة 97: `books/9-technology/images/img-097-023.jpg`، `books/9-technology/images/img-097-025.jpg`
+- صفحة 101: `books/9-technology/images/img-101-001.jpg`، `books/9-technology/images/img-101-002.png`، `books/9-technology/images/img-101-005.jpg`، `books/9-technology/images/img-101-006.png`
+- صفحة 103: `books/9-technology/images/img-103-013.jpg`
+- صفحة 105: `books/9-technology/images/img-105-019.jpg`، `books/9-technology/images/img-105-020.jpg`، `books/9-technology/images/img-105-023.jpg`، `books/9-technology/images/img-105-024.png`
+- صفحة 106: `books/9-technology/images/img-106-026.jpg`، `books/9-technology/images/img-106-031.jpg`
+- صفحة 107: `books/9-technology/images/img-107-036.jpg`، `books/9-technology/images/img-107-037.jpg`، `books/9-technology/images/img-107-038.jpg`، `books/9-technology/images/img-107-040.jpg`
+- صفحة 108: `books/9-technology/images/img-108-044.jpg`، `books/9-technology/images/img-108-045.jpg`، `books/9-technology/images/img-108-046.jpg`، `books/9-technology/images/img-108-047.png`
+- صفحة 109: `books/9-technology/images/img-109-052.jpg`، `books/9-technology/images/img-109-057.jpg`
+- صفحة 110: `books/9-technology/images/img-110-067.jpg`، `books/9-technology/images/img-110-070.jpg`
+- صفحة 111: `books/9-technology/images/img-111-005.jpg`، `books/9-technology/images/img-111-006.jpg`
+- صفحة 113: `books/9-technology/images/img-113-017.jpg`
+- صفحة 114: `books/9-technology/images/img-114-028.jpg`
+- صفحة 119: `books/9-technology/images/img-119-040.jpg`
+- صفحة 123: `books/9-technology/images/img-123-004.jpg`، `books/9-technology/images/img-123-008.jpg`، `books/9-technology/images/img-123-010.jpg`
+- صفحة 124: `books/9-technology/images/img-124-014.jpg`
+- صفحة 125: `books/9-technology/images/img-125-016.jpg`، `books/9-technology/images/img-125-018.jpg`، `books/9-technology/images/img-125-019.jpg`
+- صفحة 126: `books/9-technology/images/img-126-022.jpg`
+- صفحة 127: `books/9-technology/images/img-127-026.jpg`
+- صفحة 128: `books/9-technology/images/img-128-030.jpg`، `books/9-technology/images/img-128-031.jpg`
+- صفحة 130: `books/9-technology/images/img-130-035.jpg`
+- صفحة 131: `books/9-technology/images/img-131-001.jpg`
+- صفحة 132: `books/9-technology/images/img-132-007.jpg`، `books/9-technology/images/img-132-008.png`، `books/9-technology/images/img-132-009.jpg`
+- صفحة 133: `books/9-technology/images/img-133-012.jpg`، `books/9-technology/images/img-133-013.jpg`
+- صفحة 134: `books/9-technology/images/img-134-015.jpg`، `books/9-technology/images/img-134-016.png`، `books/9-technology/images/img-134-019.jpg`، `books/9-technology/images/img-134-020.png`
+- صفحة 135: `books/9-technology/images/img-135-024.jpg`، `books/9-technology/images/img-135-025.png`، `books/9-technology/images/img-135-026.jpg`
+- صفحة 136: `books/9-technology/images/img-136-030.jpg`، `books/9-technology/images/img-136-031.png`، `books/9-technology/images/img-136-032.jpg`، `books/9-technology/images/img-136-033.png`
+- صفحة 137: `books/9-technology/images/img-137-035.jpg`
+- صفحة 142: `books/9-technology/images/img-142-005.jpg`، `books/9-technology/images/img-142-006.png`، `books/9-technology/images/img-142-009.jpg`، `books/9-technology/images/img-142-010.jpg`
+- صفحة 144: `books/9-technology/images/img-144-015.jpg`، `books/9-technology/images/img-144-016.jpg`
+- صفحة 146: `books/9-technology/images/img-146-019.jpg`
+- صفحة 148: `books/9-technology/images/img-148-063.jpg`، `books/9-technology/images/img-148-064.jpg`، `books/9-technology/images/img-148-065.jpg`
+- صفحة 150: `books/9-technology/images/img-150-072.jpg`، `books/9-technology/images/img-150-073.jpg`
+- صفحة 151: `books/9-technology/images/img-151-001.jpg`، `books/9-technology/images/img-151-002.jpg`
+- صفحة 153: `books/9-technology/images/img-153-009.jpg`
+- صفحة 154: `books/9-technology/images/img-154-012.jpg`، `books/9-technology/images/img-154-013.jpg`
+- صفحة 155: `books/9-technology/images/img-155-017.jpg`
+- صفحة 156: `books/9-technology/images/img-156-021.jpg`
+- صفحة 157: `books/9-technology/images/img-157-023.jpg`
+- صفحة 158: `books/9-technology/images/img-158-028.jpg`، `books/9-technology/images/img-158-029.jpg`
+- صفحة 159: `books/9-technology/images/img-159-031.jpg`، `books/9-technology/images/img-159-032.jpg`
+- صفحة 161: `books/9-technology/images/img-161-001.jpg`
+- صفحة 163: `books/9-technology/images/img-163-044.jpg`
+- صفحة 165: `books/9-technology/images/img-165-048.jpg`
+- صفحة 166: `books/9-technology/images/img-166-050.jpg`، `books/9-technology/images/img-166-051.jpg`، `books/9-technology/images/img-166-054.jpg`، `books/9-technology/images/img-166-056.jpg`، `books/9-technology/images/img-166-057.jpg`
+- صفحة 167: `books/9-technology/images/img-167-063.jpg`، `books/9-technology/images/img-167-064.jpg`، `books/9-technology/images/img-167-066.jpg`، `books/9-technology/images/img-167-067.jpg`
+- صفحة 168: `books/9-technology/images/img-168-073.jpg`، `books/9-technology/images/img-168-074.jpg`، `books/9-technology/images/img-168-076.jpg`
+- صفحة 169: `books/9-technology/images/img-169-082.jpg`، `books/9-technology/images/img-169-083.jpg`
+- صفحة 171: `books/9-technology/images/img-171-002.jpg`
+- صفحة 172: `books/9-technology/images/img-172-010.jpg`، `books/9-technology/images/img-172-011.jpg`
+- صفحة 173: `books/9-technology/images/img-173-017.png`، `books/9-technology/images/img-173-018.jpg`، `books/9-technology/images/img-173-024.jpg`
+- صفحة 175: `books/9-technology/images/img-175-030.jpg`، `books/9-technology/images/img-175-031.jpg`، `books/9-technology/images/img-175-033.jpg`، `books/9-technology/images/img-175-034.jpg`
+- صفحة 176: `books/9-technology/images/img-176-037.jpg`
+- صفحة 177: `books/9-technology/images/img-177-040.jpg`
+- صفحة 179: `books/9-technology/images/img-179-048.jpg`، `books/9-technology/images/img-179-051.jpg`، `books/9-technology/images/img-179-053.jpg`، `books/9-technology/images/img-179-054.jpg`، `books/9-technology/images/img-179-056.jpg`، `books/9-technology/images/img-179-057.jpg`
+- صفحة 180: `books/9-technology/images/img-180-063.jpg`، `books/9-technology/images/img-180-064.jpg`
+- صفحة 181: `books/9-technology/images/img-181-001.jpg`، `books/9-technology/images/img-181-005.jpg`، `books/9-technology/images/img-181-006.jpg`
+- صفحة 182: `books/9-technology/images/img-182-012.jpg`، `books/9-technology/images/img-182-013.jpg`
+- صفحة 183: `books/9-technology/images/img-183-016.jpg`، `books/9-technology/images/img-183-017.jpg`، `books/9-technology/images/img-183-019.jpg`
+- صفحة 184: `books/9-technology/images/img-184-021.jpg`، `books/9-technology/images/img-184-022.jpg`، `books/9-technology/images/img-184-024.jpg`، `books/9-technology/images/img-184-025.jpg`
+- صفحة 185: `books/9-technology/images/img-185-028.jpg`
+- صفحة 186: `books/9-technology/images/img-186-031.jpg`
+- صفحة 187: `books/9-technology/images/img-187-034.jpg`
