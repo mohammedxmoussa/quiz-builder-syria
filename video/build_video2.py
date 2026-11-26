@@ -2,7 +2,7 @@
 """Exam Builder intro video v2: text + REAL phone screenshots of the site
 (slow vertical pan), a chatbot-logos scene, Syrian-style Arabic narration
 (Middle Eastern voice, no brand names in scene 3). Re-runnable."""
-import os, subprocess
+import os, sys, subprocess
 from PIL import Image, ImageDraw, ImageFont
 
 HERE = os.path.dirname(os.path.abspath(__file__))
