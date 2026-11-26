@@ -8,7 +8,7 @@ grouped by date rather than version numbers.
 ## [Unreleased]
 
 ### Added
-- **Landing screen: intro video player.** The 1:54 intro video (v2) plays from the first screen with its poster, under the caption «شاهد كيف يعمل». The player only appears once `exam-builder-intro-v2.mp4` is published to the repo root (it is a binary, so it travels via the server push like the book images); until then the landing screen is unchanged.
+- **Landing screen: intro video player.** The 1:21 intro video (v2) plays from the first screen with its poster, under the caption «شاهد كيف يعمل». The player only appears once `exam-builder-intro-v2.mp4` is published to the repo root (it is a binary, so it travels via the server push like the book images); until then the landing screen is unchanged.
 
 ### Fixed
 - **Mobile preview: the exam page now fits the phone screen.** The preview scaler measured the pane including its padding and scaled the sheet around its center, so on phones the paper rendered wider than the screen and spilled off the edge. It now measures the exact inner width of the preview area, pins the scale origin to the top-right (the RTL start), and clips the wrapper to the scaled page — verified with real phone screenshots (360px and 390px, tab view and full-screen view) showing the whole page inside the screen.
